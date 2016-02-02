@@ -1,0 +1,140 @@
+html{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+section{
+    width: 100%;
+}
+a:hover{
+    background-color: brown;
+    color: #fff;
+}
+/*
+*
+* Top level navigation
+*
+*/
+nav ul  li{
+    display: inline-block;
+}
+
+
+/*
+*
+*Banner
+*/
+#kitchen__banner{
+    width: 100%;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+.banner{width: 100%;height:100%;}
+.image-banner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.detail{
+    position: absolute;
+    bottom: 80px;
+    left: 380px;
+}
+
+/*
+*
+*Kitchen logo
+*
+*/
+
+
+
+/*
+*Kitchen__menu
+*k-inner__nav
+*
+*/
+#kitchen__logo {
+	background-color: #000;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    border: 3px solid #fff;
+    overflow: hidden;
+}
+#kitchen__menu {
+    position: relative;
+	height: 60px;
+    padding: 1%;
+}
+.k-inner__nav ul li{
+	height: 50px;
+}
+.k-inner__nav ul li a{
+    padding: 5% 0;
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 100%;
+    vertical-align: middle;
+}
+/*
+*
+*side__nav
+*
+*/
+.side__nav {
+	width: 100%;
+}
+.side__nav ul li {
+	display: block;
+    height: 50px;
+    width: 100%;
+}
+.side__nav ul li a{
+    padding: 5% 0;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+#side__menu{
+    background-color: darkgrey;
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+#side__menu li{
+    display: block;
+  
+/*
+*
+*Kitchen content
+*    
+*/    
+}
+#kitchen__content{
+    height: 100%;
+    background-color: bisque;
+    float: right;
+    width: 80%;
+}
+.card{
+    width: 450px;
+    height: 500px;
+}
+.menu-pic{
+    height:200px ;
+    background-color: beige;
+}
+.menu{
+    
+    background-color: floralwhite;
+}
