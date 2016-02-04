@@ -140,14 +140,22 @@ nav ul  li{
 }
 
 
-
-
 /*BANNER ARE TeST*/
+#identity {
+	overflow: hidden;
+}
 .main{
     display:block;
     position:relative;
     width: 980px;
     margin: 0 auto;
+}
+/**/
+.identity_holder {
+	display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
 }
 .cover{
     display:block;
@@ -156,6 +164,12 @@ nav ul  li{
     overflow:hidden;
     z-index:1;
 }
+.k_banner {
+	display: block;
+    position: relative;
+    height: 350px;
+}
+.k_banner img{max-width: 100%: z-index:1;}
 .cover img{
    max-width:100%;
     z-index:1;
@@ -169,6 +183,17 @@ nav ul  li{
     height:200px;
     margin: -100px 0 10px 20px;
     z-index:999;
+    
+}
+.k_profile-pic {
+	display: block;
+    position: relative;
+    border: 3px solid #000;
+    width: 200px;
+    height: 200px;
+    /*margin: -100px 0 10px 20px;*/
+    border-radius: 50%;
+    z-index: 9999;
 }
 .profile img{
    max-width:100%;
