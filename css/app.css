@@ -113,7 +113,14 @@ nav ul  li{
 }
 #side__menu li{
     display: block;
-  
+}
+.menu-nav{
+    background-color: #eee;
+    height: auto;
+}
+.button {
+	width: 100%;
+}  
 /*
 *
 *Kitchen content
@@ -135,8 +142,9 @@ nav ul  li{
     background-color: beige;
 }
 .menu{
-    
-    background-color: floralwhite;
+    overflow: hidden;
+    height: 300px;
+    background-color: #eee;
 }
 
 
