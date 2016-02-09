@@ -26,15 +26,16 @@ nav ul  li{
 
 /*
 *
-*Banner
+*Banner and cover
 */
-#kitchen__banner{
+#identity{
     width: 100%;
     position: relative;
     height: 350px;
-    overflow: hidden;
+    
 }
-.banner{width: 100%;height:100%;}
+.k_banner{width: 100%;height:100%;}
+
 .image-banner{
     position: relative;
     width: 100%;
@@ -45,7 +46,13 @@ nav ul  li{
     bottom: 80px;
     left: 380px;
 }
-
+.k_profile-pic {
+    position: absolute;
+    bottom: -50px;
+    
+	height: 200px;
+    width: 200px;
+}
 /*
 *
 *Kitchen logo
@@ -149,7 +156,7 @@ nav ul  li{
 
 
 /*BANNER ARE TeST*/
-#identity {
+/*#identity {
 	overflow: hidden;
 }
 .main{
@@ -158,7 +165,7 @@ nav ul  li{
     width: 980px;
     margin: 0 auto;
 }
-/**/
+
 .identity_holder {
 	display: block;
     position: relative;
@@ -203,7 +210,12 @@ nav ul  li{
     
     z-index: 9999;
 }
-.profile img{
+/*.profile img{
    max-width:100%;
     z-index:999;
+}*/
+
+.t-profile {
+	height: 200px;
+    width: 200px;
 }
