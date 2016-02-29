@@ -359,11 +359,16 @@ text-align: center;
     height: 136px;
 }
 /*rewrite css*/
-.icon {
-	width: 30px;
+.kitchen-testimonials,.kitchen-services,.kitchen-delivery-areas,.kitchen-sales{
+    display: block;
+    line-height: 40px;
+    width: 100%;
+}
+i,.icon {
+	max-width: 8px;
 }
 .icon-text {
-	padding-left: 20px;
+	padding-left: 25px;
 }
 .styled-grid {
 	padding: 20px;
