@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">  
-      <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>
+      <!--<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>-->
+      <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css" />
   </head>
   <body>
@@ -132,7 +133,7 @@
                 </div>
             </div>
             <div class="small-9 medium-9 large-9 columns">
-                <div class="expanded row">
+                <div class="expanded row" id="row">
                    <div class="large-12 columns">
                      <div class="tabs-content" data-tabs-content="example-tabs">
                             <div class="tabs-panel is-active" id="panel1">
@@ -197,9 +198,16 @@
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="https://raw.githubusercontent.com/kombai/freewall/master/freewall.js"></script>  
     <script src="js/animatedModal.js-master/animatedModal.min.js"></script>
     <script>
         $("#add-item").animatedModal();
-      </script>  
+    </script>  
+    <script>
+        $(function(){
+           var wall = new Freewall("#row");
+            wall.fillWidth();
+        });
+    </script>  
   </body>
 </html>      
