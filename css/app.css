@@ -17,8 +17,7 @@ i{
     
 }
 a:hover{
-
-    color: #fff;
+    color: #ea5c22;
 }
 
 /**--------- Aligning Divs ---------**/
@@ -57,7 +56,7 @@ nav ul  li{
     display: inline-block;
 }
 .add-item {
-	color: #fff;
+	color: #212121;
     padding: 0 3px;
 }
 
@@ -98,10 +97,6 @@ nav ul  li{
 *Kitchen logo
 *
 */
-.kitchen-logo {
-	z-index: 1000;
-    border: 3px solid #000;
-}
 
 
 /*
@@ -109,18 +104,20 @@ nav ul  li{
 *k-inner__nav
 *
 */
-
+.k-inner__nav {
+	margin-left: 10%;
+}
 /*------------- Kitchen Menu------------*/
 
 #kitchen__menu {
-    background-color: #fafafa;
+    background-color: #fff;
     position: relative;
-	height: 90px;
-    padding: 1%;
-       border-bottom: 1px solid grey;
+	height: 64.7px;
+    padding: 2px 1%;
+       border-bottom: 1px solid #ea5c22;
 /*    margin-top: 50px;*/
 }
-#kitchen__menu>.kitchen_menu_list>.k-inner__nav{
+.kitchen_menu_list{
     
 }
 
@@ -132,8 +129,8 @@ nav ul  li{
     border: 3px solid #fff;
     border-radius: 50%;
     position: absolute;
-    bottom: -9px;
-    left: 75px;
+    bottom: 0px;
+    left: 315px;
     overflow: hidden;
 }
 
@@ -231,7 +228,7 @@ text-align: center;
 	/*position: relative;*/
 }
 .side-card {
-	background-color:#eee ;
+	background-color:#fff ;
     position: relative;
 }
 .menu{
@@ -315,8 +312,8 @@ text-align: center;
   /* Small only */
   @media screen and (max-width: 39.9375em) {
         .card {
-            width: calc(100% - 10px);
-            height: 300px;
+            width:400px; /*calc(100% - 10px)*/
+            height: 500px;
             margin: 5px 5px 5px 5px;
             border: 3px solid #fff;
             border-radius: 5px;
@@ -329,7 +326,7 @@ text-align: center;
   /* Medium only */
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       .card{
-            width: calc(50% - 10px);
+            width:400px; /*calc(50% - 10px);*/
             height: 300px;
             margin: 5px 5px 5px 5px;
             border: 3px solid #fff;
@@ -340,7 +337,7 @@ text-align: center;
   /* Large and up */
   @media screen and (min-width: 64em) {
       .card{
-        width: calc(25% - 10px);
+        width:300px;/* calc(25% - 10px)*/
         height: 300px;
         margin: 5px 5px 5px 5px;
         border: 3px solid #fff;
@@ -358,7 +355,10 @@ text-align: center;
     background-color: #fef;
     height: 136px;
 }
-/*rewrite css*/
+/************rewrite css********************/
+#example-tabs {
+	margin: auto;
+}
 .kitchen-testimonials,.kitchen-services,.kitchen-delivery-areas,.kitchen-sales{
     display: block;
     line-height: 40px;
@@ -372,5 +372,31 @@ i,.icon {
 }
 .styled-grid {
 	padding: 20px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
+.kitchen-card-item,.kitchen-card-list{
+    list-style: none;
+    display: inline-block;
+}
+
+/***************foundation overrides*****************/
+.tabs {
+  margin: 0;
+  list-style-type: none;
+  background: #fff;
+   }
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+      border-bottom: 3px solid #ea5c22;
+      color: #ea5c22;
+      background: #fefefe;
+      transition: all .3s ease;}
+.tabs-title > a:hover {
+      border-bottom: 3px solid #ea5c22;
+}
+.top-bar,.top-bar ul {
+    background-color: #fff; }
+.row {
+	background-color:#fff; 
+}
+/**************foundation overrides end****************/
+
