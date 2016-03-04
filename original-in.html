@@ -9,14 +9,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">  
-      <!--<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>-->
-      <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css" />
   </head>
   <body>
       <!-------Top level navigation------->
       <header class="header">
-          <!--mobile menu-->
+        <!--<nav class="nav">
+            <ul>
+                <li><a href="#" class="top_nav">Link</a></li>
+                <li><a href="#" class="top_nav">Link</a></li>
+                <li><a href="#" class="top_nav">Link</a></li>
+                <li><a href="#" class="top_nav">Link</a></li>
+                <li><a href="#" class="top_nav">Link</a></li>
+            </ul>
+          </nav>-->
           <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle></button>
                 <div class="title-bar-title">Menu</div>
@@ -25,29 +32,34 @@
                 <a class="add-item"><i class="fa fa-search fa-2x"></i></a>
               </div>
           </div>
-        <!--   Visible menu        -->
           <div class="top-bar" id="example-menu">
               <div class="top-bar-left">
                 <ul class="dropdown menu" data-dropdown-menu>
                   <li class="menu-text">DISHI</li>
                   <li>
-                    <a href="#">Recommended</a>
+                    <a href="#">Discover</a>
+<!--
+                    <ul class="menu vertical">
+                      <li><a href="#">One</a></li>
+                      <li><a href="#">Two</a></li>
+                      <li><a href="#">Three</a></li>
+                    </ul>
+-->
                   </li>
-                  <li><a href="#">Chefs</a></li>
-                  <li><a href="#">Kitchens</a></li>
+                  <li><a href="#">Taste</a></li>
+                  <li><a href="#">Recipes</a></li>
                 </ul>
               </div>
               <div class="top-bar-right">
                 <ul class="menu">
-                  <li><a class="add-item" href="#"><i class="fa fa-search fa-lg"></i></a></li>
-                  <li><a id="add-item" href="#animatedModal"><i class="fa fa-pencil-square fa-lg"></i></a></li>
                     <li class="btn"><a class="button" href="#">Invite</a></li>
+                  <li><a id="add-item" href="#animatedModal"><i class="fa fa-pencil-square fa-2x"></i></a></li>
+                  <li><a class="add-item" href="#"><i class="fa fa-search fa-2x"></i></a></li>
                 </ul>
               </div>
           </div>
       </header>
-      <!--modal-->
-        <div id="animatedModal">
+      <div id="animatedModal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <div id="btn-close-modal"class="close-animatedModal"> 
             CLOSE MODAL
@@ -57,23 +69,39 @@
                   <!--Your modal content goes here-->
             Example menu
         </div>
-        </div>
+    </div>
       <!------- Banner -------->
       <section id="kitchen__banner">
           <div class="image-banner holder">
             <img class="banner" src="img/kitchen-banner1.jpg">
-              
-          </div>
-      </section>
-      <section id="kitchen__menu">
-          <div class="row">
-            <div class="large-12 small-12 medium-12 columns">
-              <div class="small-2 medium-2 large-2 columns">
-                    <div id="kitchen__logo">
-                        <img src="img/kitchen-logo.jpg"/>
-                  </div>
+<!--
+              <div class="row">
+                <div class="small-12 columns">
+                    <div class="small-3 columns">BANNER TEXT</div>needs review
                 </div>
-              <div id="kitchen_menu_list" class="small-10 medium-10 large-10  columns">
+              </div>
+-->
+          </div>
+<!--
+          <div class="kitchen__details detail">needs review
+              <div class="row">
+                  <h3>AMANDAS KITCHEN </h3>
+                  <h4>Bakery</h4>
+              </div>      
+          </div>-->
+      </section>
+      
+
+    <!------- Kitchen Details-------->
+      <!-- Kitchen Menu -->
+      <section id="kitchen__menu">
+          <!-- The Logo/Photo -->
+          <div class="expanded row">
+              <div class="small-12 medium-12 large-2 columns">
+                  <div id="kitchen__logo"><img src="img/kitchen-logo.jpg"/></div>
+              </div>
+
+              <div id="kitchen_menu_list" class="small-12 medium-12 large-10 columns">
                   <nav class="k-inner__nav">
                     <ul class="tabs" data-tabs id="example-tabs">
                         <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" class="k-inner_item">
@@ -99,82 +127,76 @@
                       </ul>
           
                   </nav>
-            </div><!--menu-list end-->
-          </div>    
-        </div><!--row end-->
+            </div>
+        </div>
 
       </section>
-      <section id="kitchen-contents">
-        <div class="row">
-            <div class="small-3 medium-3 large-3 columns styled-grid">
-                <div class="kitchen-about">
-                    <h3>Amanda's Kitchen</h3>
-                    <h4>Bakery</h4>
-                    <p>Amanda's kitchen is a bakery store. Find the best cakes in Nairobi.</p>
-                    <div class="kitchen-testimonials">
-                        <span class="icon"><i class="fa fa-bullhorn fa-lg"></i></span>
-                        <span class="icon-text testimonials">Testimonials</span>
-                    </div>
-                    <div class="kitchen-services">
-                        <span class="icon"><i class="fa fa-cutlery fa-lg"></i></span>
-                        <span class="icon-text testimonials">Services</span>
-                    </div>
-                    <div class="kitchen-delivery-areas">
-                        <span class="icon"><i class="fa fa-truck fa-lg"></i></span>
-                        <span class="icon-text testimonials">Delivery Areas</span>
-                    </div>
-                    <div class="kitchen-sales">
-                        <span class="icon"><i class="fa fa-usd fa-lg"></i></span>
-                        <span class="icon-text testimonials">Sales</span>
-                    </div>
-                    <div class="contact-btn">
-                        <a class="button" href="#">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-            <div class="small-9 medium-9 large-9 columns">
-                <div class="expanded row" id="row">
-                   <div class="large-12 columns">
-                     <div class="tabs-content" data-tabs-content="example-tabs">
-                            <div class="tabs-panel is-active" id="panel1">
-                                <!--<div class="row">-->
-                                    <!--<div id="kitchen_content" class="small-12 medium-12 large-12 columns">-->
-                                    <!--<div class="large-12 columns">-->
-                                     <ul class="kitchen-card-list">
-                                        <li class="kitchen-card-item">
-                                            <div id="card1" class="card">
-                                                <div class="menu-pic"><img src="img/recipe.jpg"/></div>
-                                                <div class="menu-details">Muffins<br></div>
-                                            </div>
 
-                                            <div id="card2" class=" card">
-                                                <div class="menu-pic"><img src="img/recipe1.jpg"/></div>
-                                                <div class="menu-details">Chocolate cake<br></div>
-                                            </div>
-                                         </li>
-                                     </ul>
-                                        <div id="card1" class="card">
+      <!--bottom section --->
+      <section>
+      <div id="bottom" class="expanded row">
+
+        <div class="small-12 columns">
+            <div class=" expanded row">
+                <div class="small-12 medium-3 large-2 columns menu">
+                    <nav class="side__nav">
+                        <ul>
+                            <div class="side-card">
+                                <li class="k-side_item1">Amanda's kitchen is a bakery store. Find the best cakes in Nairobi</li>
+                                <li><a href="#" class="k-side_item">
+                                    <i class="fa fa-bullhorn"></i>Testimonials</a></li>
+                            </div>
+                            <div class="side-card">
+                                <li class="k-side_item1">
+                                    <a href="#" class="k-side_item"><i class="fa fa-cutlery"></i>Services</a></li>
+                                <li class="k-side_item1"><a href="#" class="k-side_item"><i class="fa fa-truck"></i>
+Delivery Areas</a></li>
+                            </div> 
+                            <div class="side-card">
+                                <li class="k-side_item1"><a href="#" class="k-side_item"><i class="fa fa-usd"></i>
+Sales</a></li>
+                            </div>
+
+                            <!--Buttons -->
+                            <div class="btns">
+                                <li class="btn">
+                                    <a class="button" href="#">Contact Us</a>
+                                </li>
+                            </div>
+                          </ul>
+                    </nav>
+                </div>
+
+                <!------ Kitchen Content ------>
+                <div id="kitchen_content" class="small-12 medium-9 large-10 columns">
+                    <div class="expanded row">
+                        <div class="tabs-content" data-tabs-content="example-tabs">
+                            <div class="tabs-panel is-active" id="panel1">
+                                <div class="row">
+                                    <div id="kitchen_content" class="small-12 medium-12 large-12 columns">
+                                    <!--<div class="large-12 columns">-->
+                                        <div id="card1" class="small-6 medium-4 large-4 columns card">
                                             <div class="menu-pic"><img src="img/recipe.jpg"/></div>
                                             <div class="menu-details">Muffins<br></div>
                                         </div>
 
-                                        <div id="card2" class=" card">
+                                        <div id="card2" class="small-6 medium-4 large-4 columns card">
                                             <div class="menu-pic"><img src="img/recipe1.jpg"/></div>
                                             <div class="menu-details">Chocolate cake<br></div>
                                         </div>
 
-                                        <div id="card3" class=" card">
+                                        <div id="card3" class="small-6 medium-4 large-4 columns card">
                                             <div class="menu-pic"><img src="img/recipe3.jpg"/></div>
                                             <div class="menu-details">Cheese cake<br></div>
                                         </div>
 
-                                        <!--<div id="card4" class="small-6 medium-4 large-4 columns card">
+                                        <div id="card4" class="small-6 medium-4 large-4 columns card">
                                             <div class="menu-pic"><img src="img/recipe4.jpg"/></div>
                                             <div class="menu-details">Menu details<br></div>
-                                        </div>-->
+                                        </div>
                      <!--</div>-->
-                                     <!--</div>--> <!---kitchen content end ---->
-                                <!--</div> -->   
+                                     </div> <!---kitchen content end ---->
+                                </div>    
                             </div>
                         <div class="tabs-panel" id="panel2">
                           <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
@@ -189,25 +211,19 @@
                           <p>People who love your food are likely to support you.</p>
                         </div>    
                         </div><!--tabs content holder-->
-                   </div>    
-                </div>    
-            </div>
-        </div>
-      </section>
+                     </div><!--Kitchen row-->
+                </div> <!---kitchen content end ---->
+            </div><!---expanded row end -->
+          </div>
+      </div>
+      </section>  <!---bottom section end ---->      
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="https://raw.githubusercontent.com/kombai/freewall/master/freewall.js"></script>  
     <script src="js/animatedModal.js-master/animatedModal.min.js"></script>
     <script>
         $("#add-item").animatedModal();
-    </script>  
-    <script>
-        $(function(){
-           var wall = new Freewall("#row");
-            wall.fillWidth();
-        });
-    </script>  
+      </script>  
   </body>
-</html>      
+</html>

@@ -335,7 +335,7 @@ text-align: center;
   /* Large and up */
   @media screen and (min-width: 64em) {
       .card{
-        width:300px;/* calc(25% - 10px)*/
+        width:393px;/* calc(25% - 10px)*/
         height: 300px;
         margin: 5px 5px 5px 5px;
         border: 3px solid #fff;
@@ -357,13 +357,13 @@ text-align: center;
 #example-tabs {
 	margin: auto;
 }
-.kitchen-testimonials,.kitchen-services,.kitchen-delivery-areas,.kitchen-sales{
+.kitchen-data{
     display: block;
     line-height: 40px;
     width: 100%;
 }
 i,.icon {
-	max-width: 8px;
+	max-width: 7px;
 }
 .icon-text {
 	padding-left: 25px;
@@ -373,10 +373,17 @@ i,.icon {
     /*border: 1px solid black;*/
 }
 .kitchen-card-item,.kitchen-card-list{
-    list-style: none;
-    display: inline-flex;
+    list-style: none;   
 }
-
+.add-item,.search-item {
+	margin: 0 1%;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
 /***************foundation overrides*****************/
 .tabs {
   margin: 0;
