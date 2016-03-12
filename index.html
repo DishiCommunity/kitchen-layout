@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="css/app.css" />
   </head>
   <body>
+      <div class="row main">
       <!-------Top level navigation------->
       <header class="header">
           <!--mobile menu-->
           <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle></button>
-                <div class="title-bar-title">DISHI</div>
+                <div class="title-bar-title">Menu</div>
               <div class="title-bar-right">
                 <a class="add-item" href="#animatedModal"><i class="fa fa-pencil-square fa-2x"></i></a>
                 <a class="search-item"><i class="fa fa-search fa-2x"></i></a>
@@ -28,8 +29,10 @@
         <!--   Visible menu        -->
           <div class="top-bar" id="example-menu">
               <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
-                  <li class="menu-text">DISHI</li>
+                <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+                  <li class="menu-text">
+                      DISHI
+                  </li>
                   <li>
                     <a href="#">Recommended</a>
                   </li>
@@ -41,7 +44,7 @@
                 <ul class="menu">
                   <li><a class="search-item" href="#"><i class="fa fa-search fa-lg"></i></a></li>
                   <li><a class="add-item" href="#animatedModal"><i class="fa fa-pencil-square fa-2x"></i></a></li>
-                    <li class="btn"><a class="button" href="#">Invite</a></li>
+                  <li class="btn"><a class="button inv" href="#">Invite</a></li>
                 </ul>
               </div>
           </div>
@@ -49,13 +52,32 @@
       <!--modal-->
         <div id="animatedModal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div id="btn-close-modal"class="close-animatedModal"> 
-            CLOSE MODAL
-        </div>
-            
+            <div class="row">
+                <div id="btn-close-modal"class="close-animatedModal"> 
+                    <i class="fa fa-times fa-lg">close</i>
+                </div>
+            </div>
         <div class="modal-content">
                   <!--Your modal content goes here-->
-            Example menu
+          <div class="row">
+            <div class="small-12 columns">
+                <div class="small-4 columns">
+                    <div class="modalIcon">
+                        <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Add Menu</p>
+                    </div>
+                </div>  
+                <div class="small-4 columns">
+                    <div class="modalIcon">
+                        <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Add recipe</p>
+                    </div>
+                </div>  
+                <div class="small-4 columns">
+                    <div class="modalIcon">
+                        <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Post to community</p>
+                    </div>
+                </div>  
+            </div>
+      </div>
         </div>
         </div>
       <!------- Banner -------->
@@ -76,33 +98,35 @@
               <div id="kitchen_menu_list" class="small-10 medium-10 large-10  columns">
                   <nav class="k-inner__nav">
                     <ul class="tabs" data-tabs id="example-tabs">
-                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" class="k-inner_item">
-                            <span class="k-link">Dishes</span><br>
-                            <span class="k-link-value">3</span>
+                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" class="k-Fmenuinner_item">
+                            <span class="k-link">Dishes <span class="badge" id="messageCount">6</span></span><br>
+                            
                             </a></li>
                         <li class="tabs-title"><a href="#panel2" class="k-inner_item">
-                            <span class="k-link">Recipes</span><br>
-                            <span class="k-link-value">5</span>
+                            <span class="k-link">Recipes<span class="badge" id="messageCount">5</span></span><br>
+                            <!--<span class="k-link-value">5</span>-->
                             </a></li>
                         <li class="tabs-title"><a href="#panel3" class="k-inner_item">
-                            <span class="k-link">Conversations</span><br>
-                            <span class="k-link-value">10</span>
+                            <span class="k-link">Conversations<span class="badge" id="messageCount">5</span></span><br>
+                            <!--<span class="k-link-value">10</span>-->
                             </a></li>
                         <li class="tabs-title"><a href="#panel4" class="k-inner_item">
-                                <span class="k-link">Followers</span><br>
-                            <span class="k-link-value">14</span>
+                                <span class="k-link">Watchers<span class="badge" id="messageCount">19</span></span><br>
+                          <!--  <span class="k-link-value">14</span>-->
                             </a></li>
                         <li class="tabs-title"><a href="#panel5" class="k-inner_item">
-                            <span class="k-link">Following</span><br>
-                            <span class="k-link-value">3</span>
+                            <span class="k-link">Testimonials</span><br>
+                            
                             </a></li>
+                        
                       </ul>
           
                   </nav>
+                        
             </div><!--menu-list end-->
           </div>    
         </div><!--row end-->
-
+          
       </section>
       <section id="kitchen-contents">
         <div class="row">
@@ -111,7 +135,13 @@
                     <h3>Amanda's Kitchen</h3>
                     <h4>Bakery</h4>
                     <p>Amanda's kitchen is a bakery store. Find the best cakes in Nairobi.</p>
-                    <div class="kitchen-testimonials">
+                    <div class="kitchen-data follow">
+                        <a href="#" class=" button">
+                            <span class="icon"><i class="fa fa-plus"></i></span>
+                            <span class="icon-text ">Follow</span>
+                        </a>
+                    </div>    
+                    <div class="kitchen-data">
                         <span class="icon"><i class="fa fa-bullhorn fa-lg"></i></span>
                         <span class="icon-text testimonials">Testimonials</span>
                     </div>
@@ -137,7 +167,10 @@
                     </div>
                     
                     <div class="contact-btn">
-                        <a class="button" href="#">Contact Us</a>
+                        <span class="icon"><i class="fa fa-phone fa-lg"></i></span>
+                        <span class="icon-text contacts">{{Mobile one}},{{Mobile two }}</span>
+                        <span class="icon-text contacts">{{kitchen email}}</span>
+                        
                     </div>
                 </div>
             </div>
@@ -152,8 +185,16 @@
                                      <ul id="container" class="kitchen-card-list">
                                         <li class="kitchen-card-item">
                                             <div id="card1" class="card">
-                                                <div class="menu-pic"><img src="img/recipe.jpg"/></div>
-                                                <div class="menu-details">Muffins<br></div>
+                                                <div class="menu-pic"><img src="img/recipe.jpg"/>Photo</div>
+                                                <div class="item menu-title ">Muffins<br></div>
+                                                <div class="item description">
+                                                    <p>Chococalte chipped muffins with nuts</p>
+                                                </div>
+                                               <!-- <div class="price">Ksh. 200</div>-->
+                                                <div class="item order-detail">
+                                                    <h3>{{Ksh. 200 price}}</h3>
+                                                    <a href="#" class="order button">Order</a>
+                                                </div>
                                             </div></li>
                                         <li>
                                             <div id="card2" class="card">
@@ -180,12 +221,6 @@
                                             </div>
                                          </li>
                                      </ul>
-                                        
-
-                                        
-
-                                        
-
                                         <!--<div id="card4" class="small-6 medium-4 large-4 columns card">
                                             <div class="menu-pic"><img src="img/recipe4.jpg"/></div>
                                             <div class="menu-details">Menu details<br></div>
@@ -205,13 +240,15 @@
                         </div>
                         <div class="tabs-panel" id="panel5">
                           <p>People who love your food are likely to support you.</p>
-                        </div>    
+                        </div> 
+                         
                         </div><!--tabs content holder-->
                    </div>    
                 </div>    
             </div>
         </div>
       </section>
+    </div>      
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>

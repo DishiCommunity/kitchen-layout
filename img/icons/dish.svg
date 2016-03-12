@@ -1,56 +1,8 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <!--<link rel="stylesheet" href="css/foundation.css" />-->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/app.css" />
-  </head>
-  <body>
-      <div class="row">
-        <div class="small-12 columns">
-            <div class="small-4 columns">
-                <div class="modalIcon">
-                    <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Post to community</p>
-                </div>
-            </div>  
-            <div class="small-4 columns">
-                <div class="modalIcon">
-                    <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Post to community</p>
-                </div>
-            </div>  
-            <div class="small-4 columns">
-                <div class="modalIcon">
-                    <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Post to community</p>
-                </div>
-            </div>  
-        </div>
-      </div>   
-      
-<p><a data-toggle="animatedModal10">Click me for a modal</a></p>
-
-<div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in" data-animation-out="spin-out">
-  <h1>Whoa, I'm dizzy!</h1>
-  <p class='lead'>There are many options for animating modals, check out the Motion UI library to see them all</p>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-      <img src="img/icons/dish.png"/>
-      <!--////////////////////////-->
-    <div class="reveal" id="exampleModal1" data-reveal>
-          <div class="row">
-                <div class="small-12 columns">
-                    <h4 class="decorated"><span>Whats Cooking in your Mind</span></h4>
-                    <div class="small-4 columns">
-                        <div class="modalIcon">
-                            <i class="food.png">
-                                <a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="112px" height="112px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" class="dish">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
 <g>
 	<path fill="#EA5C22" d="M511.849,274.537c-0.714-3.499-3.792-6.012-7.364-6.012h-41.181c-3.276-20.69-19.858-36.926-40.983-39.571
 		c-10.29-15.242-27.598-24.556-46.086-24.556c-4.744,0-9.419,0.601-13.971,1.788c-8.053-15.711-24.177-25.834-42.139-25.834
@@ -125,37 +77,4 @@
 		c-1.393-1.402-3.326-2.205-5.31-2.205c-1.975,0-3.918,0.803-5.311,2.205c-1.403,1.393-2.204,3.326-2.204,5.311
 		c0,1.974,0.801,3.917,2.204,5.311C348.27,346.877,350.213,347.678,352.188,347.678z"/>
 </g>
-</svg></a>
-                            </i><br><p>Share with community</p>
-                        </div>
-                    </div>  
-                    <div class="small-4 columns">
-                        <div class="modalIcon">
-                            <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Add a Recipe</p>
-                        </div>
-                    </div>  
-                    <div class="small-4 columns">
-                        <div class="modalIcon">
-                            <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Add Dish to Menu</p>
-                        </div>
-                    </div>  
-                </div>
-              </div>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-      <p><a data-open="exampleModal1">Click me for a modal</a></p>
-      
-      
-      
-      
-    
-      <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-     
-  </body>
-</html>
+</svg>

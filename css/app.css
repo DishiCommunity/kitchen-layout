@@ -4,7 +4,8 @@ html{
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: #eee;
+    background-color: #cfdedc;
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -19,7 +20,9 @@ i{
 a:hover{
     color: #ea5c22;
 }
-
+.main {
+	background-color: #fff;
+}
 /**--------- Aligning Divs ---------**/
 .center-h {
     left: 50%;
@@ -99,14 +102,14 @@ nav ul  li{
 *
 */
 
-
 /*
 *Kitchen__menu
 *k-inner__nav
 *
 */
 .k-inner__nav {
-	margin-left: 20%;
+    
+	margin-left: 10em;
 }
 /*------------- Kitchen Menu------------*/
 
@@ -115,7 +118,7 @@ nav ul  li{
     position: relative;
 	height: 63.3px;
     padding: 2px 1%;
-       border-bottom: 1px solid #e0e0e0;
+       border-bottom: 1px solid #ea5c22;
 /*    margin-top: 50px;*/
 }
 /*#kitchen__menu,#kitchen__menu >.row{
@@ -131,7 +134,7 @@ nav ul  li{
     border-radius: 50%;
     position: absolute;
     bottom: 0px;
-    left: 315px;
+    left: 50px;
     overflow: hidden;
 }
 
@@ -146,8 +149,14 @@ nav ul  li{
     #kitchen__menu {
         padding: 0 !important;
     }
-
-    #kitchen_menu_list{
+   /* #kitchen__contents,.row > .styled-grid{
+        display: none;
+    }
+    .k-inner__nav {
+	margin-left: 0;*/  /*TESTED RESPONSIVE CODE*/
+}
+/*modifiy k-inner_nav block margin*/
+   /* #kitchen_menu_list{
         padding: 0 !important;
     }
 
@@ -168,22 +177,25 @@ nav ul  li{
         width: auto;
         height: 100%;
         vertical-align: middle;
-    }
+    }*/
 }
 /*    Medium Only*/
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     #kitchen__logo{
         bottom: 50px;
-        height: 160px;
-         width: 160px;
+        height: 130px;
+         width: 130px;
     }
+    .k-inner__nav {
+	margin-left: 1em;
+}
 }
 
 #kitchen_menu_list{
 text-align: center;
 }
 
-.k-inner__nav ul li{
+/*.k-inner__nav ul li{
     display: inline-block;
 	height: 60px;
 }
@@ -195,7 +207,7 @@ text-align: center;
     width: 100px;
     height: 100%;
     vertical-align: middle;
-}
+}*/
 .k-inner_item {
     
     line-height: 1;
@@ -203,108 +215,26 @@ text-align: center;
 	text-align: center;
 }
 .k-link,.k-link-value {
-	display: block;
+	display: inline-block;
     
 }
-/*------------- bottom section------------*/
-#bottom {
-    background-color:#eee;
-
-}
-
-
 /*---------------Side Nav------------------*/
-/*.side-card:nth-child(1) {
-	margin-bottom: 30px;
-}
-.side-card:nth-child(2){
-    margin-bottom: 30px;
-}*/
-.k-side_item {
-	display: block;
-    max-height: 100%;
-    max-width: 100%;
-}
-.k-side_item1 {
-	/*position: relative;*/
-}
-.side-card {
-	background-color:#fff ;
-    position: relative;
-}
-.menu{
-    height: 100%;
-    padding: 0 !important;
-    background-color: #fff;
-}
-
-.side__nav {
-    border-right: thin solid grey;
-	width: 100%;
-    padding: 0 !important;
-    background-color: #eee;
-    text-align: center;
-}
-
-.side__nav ul {
-    margin: 0 !important;
-    padding: 0 1px 0 1px;
-}
-
-.side__nav ul li {
-	display: block;
-    height: auto;
-    width: 100%;
-    /*border: 1px solid darkgrey;*/
-    border-radius: 1px;
-    padding: 0 !important;
-    background-color: floralwhite;
-}
-
-
-.side__nav ul li a{
-    padding: 5% 0;
-    vertical-align: middle;
-    text-align: center;
-    display: block;
-    height: 100%;
-}
-.btns {
-    padding: 10px
-}
-.button {
-    margin: 0;
-    width: 100%;
-}
-
-#side__menu{
-    background-color: darkgrey;
-    float: left;
-    height: 100%;
-    width: 20%;
-}
-#side__menu li{
-    display: block;
   
 /*--------------Kitchen content ----------*/
 }
 #kitchen_content{
     height: 100%;
-
     float: right;
-   /* border: 1px solid darkgrey;*/
     border-radius: 2px;
     text-align: center;
     padding: 20px 20px;
-/*
-    box-shadow: 0 0 10px #000;
-    text-decoration: none;
-    text-shadow: 0 0 2px #000;
-*/
 }
 
 .card {
+    height: 500px;
     padding: 0 !important;
+    border: 1px solid #e0e0e0;
+    border-radius: 30%;
 }
 /*Cards*/
   /* Small only */
@@ -313,7 +243,7 @@ text-align: center;
             width:400px; /*calc(100% - 10px)*/
             height: 500px;
             margin: 5px 5px 5px 5px;
-            border: 3px solid #fff;
+            
             border-radius: 5px;
         }
 }
@@ -327,7 +257,7 @@ text-align: center;
             width:400px; /*calc(50% - 10px);*/
             height: 300px;
             margin: 5px 5px 5px 5px;
-            border: 3px solid #fff;
+            
             border-radius: 5px;
         }
 }
@@ -335,38 +265,48 @@ text-align: center;
   /* Large and up */
   @media screen and (min-width: 64em) {
       .card{
-        width:393px;/* calc(25% - 10px)*/
-        height: 300px;
+        width:458px;/* calc(25% - 10px)*/
+        height: 480px;
         margin: 5px 5px 5px 5px;
-        border: 3px solid #fff;
+        
         border-radius: 5px;
         }
     }
 
 .menu-pic{
     overflow: hidden;
-    height:160px ;
+    height:170px ;
     background-color: beige;
 }
-
-.menu-details {
+.item {
+	padding: .5em;
+    
+}
+.menu-title {
+    object-fit: contain;
     background-color: #fef;
-    height: 136px;
+    height: auto;;
 }
 /************rewrite css********************/
-#example-tabs {
+/*#example-tabs {
 	margin: auto;
-}
+}*/
 .kitchen-data{
+    position: relative;
     display: block;
     line-height: 40px;
     width: 100%;
 }
-i,.icon {
+
+.kitchen-data >i,.icon {
+    position: relative;
+    display: inline;
 	max-width: 7px;
+    margin-right: .3em
 }
-.icon-text {
-	padding-left: 25px;
+.kitchen-data >.icon-text {
+    position: absolute;
+	left: 2em;
 }
 .styled-grid {
 	padding: 20px;
@@ -375,22 +315,69 @@ i,.icon {
 .kitchen-card-item,.kitchen-card-list{
     list-style: none;   
 }
-.add-item,.search-item {
-	margin: 0 1%;
+.top-bar-right,.menu >.add-item,.search-item,.inv {
+	margin: 0 .5em;
 }
+.modalIcon {
+	text-align: center;
+}
+
 #container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
 }
+/* headlines with lines */
+.decorated{
+     overflow: hidden;
+     text-align: center;
+    margin-bottom: 1.6em;
+ }
+.decorated > span{
+    position: relative;
+    display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 100px; /* half of limiter */
+    margin: 0 50px;
+}
+.decorated > span:before{
+    right: 90%;
+}
+.decorated > span:after{
+    left: 90%;
+}
+.dish:hover{
+    stroke: #fff;
+    
+}
 /***************foundation overrides*****************/
+.button {
+	background-color: transparent;
+    color: #ea5c22;
+    border: 1.5px solid #ea5c22;
+    width: 100%;
+}
+.button:hover{
+    color: #fff;
+    background-color: #ea5c22;
+}
+.order-detail >.order {
+	width: 10em;
+}
 .tabs {
+  max-width: 100%;    
   margin: 0;
   list-style-type: none;
   background: #fff;
   border:#fff; 
    }
+
 .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
       border-bottom: 3px solid #ea5c22;
       color: #ea5c22;
@@ -401,24 +388,32 @@ i,.icon {
       border-bottom: 3px solid #ea5c22;
 }
 .tabs-content {
-  background: #eee;
+  background: #fff;
   transition: all 0.5s ease;
   border: 1px solid #eee;
   border-top: 0; }
 .tabs-title > a {
-    display: block;
+    display: inline-block;
     padding: 1.25rem 1.5rem;
     line-height: 1;
     font-size: 14.5px;
     color: #212121; }
 .top-bar,.top-bar ul {
     background-color: #fff; }
-/*.row {
-	background-color:#fff; 
-}*/
-#row {
-  max-width: 75rem;
+.row {
+  max-width: 85rem !important;
   margin-left: auto;
   margin-right: auto; }
+.reveal {
+    padding: 3em 0;
+	height: 300px;
+    width: 900px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    border-style: double;
+    background-color: rgba(10, 10, 10, 0);
+}
+
 /**************foundation overrides end****************/
 
