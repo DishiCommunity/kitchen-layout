@@ -7,40 +7,162 @@
     <title>Foundation | Welcome</title>
     <!--<link rel="stylesheet" href="css/foundation.css" />-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/app.css" />
+      <link rel="stylesheet" href="css/app.css" />
+      <link rel="stylesheet" href="css/test.css"/>
   </head>
   <body>
-      <div class="row">
-        <div class="small-12 columns">
-            <div class="small-4 columns">
-                <div class="modalIcon">
-                    <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Post to community</p>
+      <div class="form-addItem-holder">
+          <div class="add form-addDish">
+              <h4>Add Dish</h4>
+            <form class="dish-form">
+               <div class="row">
+                  <div class="medium-12 columns">
+                      <input type="text" placeholder="Dish name">
+                      <input type="text" placeholder="Description">
+                      <label for="middle-label" class="text-right middle">Price
+                        <input type="number">
+                      </label>
+                      <label for="middle-label" class="text-right middle">Plates available
+                          <input type="number" value="0">
+                      </label>
+                      <textarea placeholder="Ingredients"></textarea>
+                    <label for="exampleFileUpload" class="button">Add photo of dish</label>
+                    <input type="file" id="exampleFileUpload" class="show-for-sr">  
+                   </div>
+                   <div class="medium-6 columns">
+                    <button class="button" type="submit">Add to menu</button>
+                   </div>
+                   <button class="close-button" type="button">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+              </form>
             </div>  
-            <div class="small-4 columns">
-                <div class="modalIcon">
-                    <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Post to community</p>
+          <div class="add form-addRecipe">
+              <h4>Add Recipe</h4>
+            <form class="recipe-form">
+                  <div class="row">
+                    <div class="medium-12 columns">
+                     <textarea placeholder="Recipe name"></textarea>
+                     <textarea placeholder="Description"></textarea>
+                     <textarea placeholder="Ingredients"></textarea>
+                     <textarea placeholder="How to prepare"></textarea>
+                     <textarea placeholder="About Recipe"></textarea>
+                      <label for="exampleFileUpload" class="button">Add photo of dish</label>
+                    <input type="file" id="exampleFileUpload" class="show-for-sr">  
+                    </div>
+                      <div class="medium-6 columns end">
+                        <button class="button" type="submit">Add to recipes</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+          <div class="add form-addPost">
+              <h4>New post</h4>
+            <form class="post-form">
+                  <div class="row">
+                      <div class="medium-12 columns">
+                          <textarea placeholder="What's cooking"></textarea>
+                          <div class="medium-6 columns">
+                            <label for="exampleFileUpload" class="button">Add photo of dish</label>
+                            <input type="file" id="exampleFileUpload" class="show-for-sr"> 
+                          </div>
+                          <div class="medium-6 columns">
+                            <button class="button" type="submit">Share</button>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+    </div>      
+      <p><a data-open="addItemModal">add item modal</a></p>
+      <div class="reveal" id="addItemModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+  <!--modal content goes here-->
+           <div class="form-addItem-holder">
+          <div class="add form-addDish">
+            <form class="dish-form">
+               <div class="row">
+                  <div class="medium-6 columns">
+                      <label>Input Label
+                        <input type="text" placeholder="dish">
+                      </label>
+                   </div>
+                   <div class="medium-6 columns">
+                      <label>Input Label
+                        <input type="text" placeholder="dishes">
+                      </label>
+                   </div>
+                     <label>
+                       How many puppies?
+                       <input type="number" value="100">
+                     </label>
+                   <button class="close-button" type="button">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+              </form>
             </div>  
-            <div class="small-4 columns">
-                <div class="modalIcon">
-                    <i class="fa fa-paper-plane-o fa-4x"></i><br><p>Post to community</p>
-                </div>
-            </div>  
-        </div>
-      </div>   
-      
-<p><a data-toggle="animatedModal10">Click me for a modal</a></p>
-
-<div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in" data-animation-out="spin-out">
-  <h1>Whoa, I'm dizzy!</h1>
-  <p class='lead'>There are many options for animating modals, check out the Motion UI library to see them all</p>
+          <div class="add form-addRecipe">
+            <form class="recipe-form">
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <label>Input Label
+                        <input type="text" placeholder="recipe">
+                      </label>
+                    </div>
+                    <div class="medium-6 columns">
+                      <label>Input Label
+                        <input type="text" placeholder="recipes">
+                      </label>
+                    </div>
+                      <label>
+                  How many recipes?
+                  <input type="number" value="100">
+                </label>
+                  </div>
+              </form>
+          </div>
+          <div class="add form-addPost">
+            <form class="post-form">
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <label>Input Label
+                        <input type="text" placeholder="post">
+                      </label>
+                    </div>
+                    <div class="medium-6 columns">
+                      <label>Input Label
+                        <input type="text" placeholder="post">
+                      </label>
+                    </div>
+                      <label>
+                  How many posts?
+                  <input type="number" value="100">
+                </label>
+                  </div>
+              </form>
+          </div>
+    </div>
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-      <img src="img/icons/dish.png"/>
+      
+      <!--Cards designs-->
+      <div class="row">
+        <div class="large-12 columns">
+            <div class="card">
+                <div class="card-kitchenName"></div>
+                <div class="card-dishPicture"></div>
+                <div class="card-dishContent"></div>
+                <div class="card-dishRatings"></div>
+            </div>
+       </div>
+      </div>
+
+      
       <!--////////////////////////-->
     <div class="reveal" id="exampleModal1" data-reveal>
           <div class="row">
