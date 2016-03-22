@@ -5,8 +5,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
-    <!--<link rel="stylesheet" href="css/foundation.css" />-->
+    <link rel="stylesheet" href="css/foundation.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/app.css" />
@@ -163,37 +164,50 @@
                 <div class="card-kitchenName">
                     <div class="card-kitchenImage"></div>
                     <span class="card-kitchenImageDetails">
-                        <h6 class="details">Amanda's Kitchen</h6>
-                    <p class="details">Food made with love</p></span>
+                        <a href="#" class="card-kitchen-link"><h6 class="details"><strong>Amanda's Kitchen</strong></h6></a>
+                        <p class="details">Food made with love</p></span>
                 </div>
                 <div class="card-dishPicture">
                     <figure>
-                        <img src="img/recipe1.jpg" alt="Dish">
-                        <figcaption>
-                            <p>Ksh 200</p>
-                        </figcaption>
+                        <img src="img/recipe.jpg" alt="Dish">
+                        <!--<figcaption> remake with absolte positioning
+                            <p><strong>Ksh 200</strong></p>
+                        </figcaption>-->
                     </figure>
+                    <div class="card-recipeDetails">
+                    <figcaption class="recipeDescription">
+                        <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>
+                    <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
+                    </figcaption>
                 </div>
+                </div>
+                
                 <div class="card-dishContent">
-                    <h5>Apple pie</h5>
-                    <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p>
+                    <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>
+                    <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
                     <p class="plates-order">Plates remaining: 30/50</p>
                     <a class="button plates-order" href="#">Order now</a>
-                    <hr>
+                    
+                  </div>
+                <div class="card-conversatoinContent">
+                    <i><p>Get a 50% discount on all dishes from Amanda's kitchen this easter, offer lasts until Thursday May 1</p></i>
+                    <a class="conversation-linktoorder">Follow link to order</a>
+                </div>
+                <hr>
                     <div class="card-chefDetails">
                         <div class="card-chefImage"></div>
-                        <h5>By: Chef Amanda</h5>
+                        <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
                     </div>    
-                </div>
+               
                 <div class="card-dishRatings">
                     <div class="ratings card-likes">
-                        <a href="#"><i class="fa fa-heart"></i><span class="likes-counter counter">300</span></a>
+                        <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
                     </div>
                     <div class="ratings card-comments">
-                        <a href="#"><i class="fa fa-comment"></i><span class="comments-counter counter">300</span></a>
+                        <a href="#"><i class="fa fa-comment-o"></i><span class="comments-counter counter">300</span></a>
                     </div>
                     <div class="ratings card-orders">
-                        <a href="#"><i class="fa fa-heart"></i><span class="dishes-counter counter">300</span></a>
+                        <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
                     </div>
                 </div>
             </div>

@@ -40,7 +40,7 @@ a:hover{
     width: 100%;
     margin: 0 auto;
 }
-
+hr{margin: 0;padding: 0;}
 /*--------------------Top level navigation --------------*/
 /*---Header--*/
 .header  {
@@ -223,7 +223,7 @@ nav ul  li{
 
 .styled-grid {
 	padding: 0 60px;
-    border: 1px solid black;}
+    }
  /* Medium only */
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .styled-grid {
@@ -231,7 +231,8 @@ nav ul  li{
 }    
 }
 .kitchen-card-item,.kitchen-card-list{
-    list-style: none;}
+    list-style: none;
+    }
 
 #container{
     display: flex;
@@ -265,7 +266,7 @@ nav ul  li{
 	width: 35em;
     height: 50em;
     position: relative;
-    transform: translateX(120%);  }
+    transform: translateX(220%);  }
     .form-addItem-holder .add {
         margin: .2em 0;
         padding: 1em;
@@ -278,17 +279,29 @@ nav ul  li{
         border-radius: 5px; }
      textarea{resize: none;}
     .is-animated{
-        transform: translateY(-50%);}
+        transform: translateY(-150%);}
     .recipe-form,textarea{
 	border-radius: 5px;}
 
 .card-kitchen {
+    margin: 15px;
+    border-radius: 5px;
     background-color: #fff;
     position: relative;
     display: block;
     border:1px solid #ea5c22;
-	width: 500px;
+	width: 450px;
     height:auto;}
+    .card-kitchen hr{color: #ea5c22;}
+    .card-kitchenName {    
+	border-bottom: 1px solid #ea5c22;
+    border-bottom-width: 80%;
+    padding: .9em .9em 0 .9em;}
+    .card-kitchen-link {
+    color: #ea5c22;
+    transition: all .3s ease;}
+    .card-kitchen-link:hover {
+	color: #1585cf;}
     .card-kitchenImage {
     margin: .3em;    
     width: 50px;    
@@ -297,34 +310,59 @@ nav ul  li{
     background-color: #200}
     .card-kitchenImage,.card-kitchenImageDetails{        
     display: inline-block}
-    .card-kitchenImage,.card-kitchenImageDetails > .details{
-    
-    }
+    .card-kitchenImage,.card-kitchenImageDetails > .details:nth-child(2){
+    font-size: 13px;
+    color: #202020;}
     .card-dishPicture {
+    position: relative;
+    border: 4px solid #fff;    
     padding: 0;    
 	width: 100%;}
+    .card-recipeDetails {
+    padding: .9em;    
+	position: absolute;
+    bottom: 0;
+    color: #fff;}
     .card-dishPicture>figure {
     position: relative;
-    overflow: hidden;
-    border-top: 1px solid #eee;    
-    border-bottom: 1px solid #eee;    
+    overflow: hidden;    
+    /*border-top: 1px solid #eee;*/    
+   /* border-bottom: 1px solid #eee;   */ 
     padding: 0;
     margin: 0;    
     width: 100%;
     height: 100%;}
+    .card-conversatoinContent {
+	padding: 0.9em;}
+    .card-dishPicture >figure figcaption p {
+	color: #fff;}
     .card-dishPicture>figure figcaption{
+    color: #fff;    
     position: absolute;
     padding: 0 1em;    
-    border: .5px solid #ea5c22;    
     left: 5px;    
-    bottom:10px;}
+    bottom:0;}
     .card-dishContent {
 	padding: .9em;}
     .card-dishContent,.plates-order {
 	display: inline-block;}
+    .card-dishContent .card-contentHeading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #ea5c22;}    
     .card-dishContent >  .button {
-    width: 10em;    
-    margin-left: 10em;}
+    color: #fff;
+    font-size: 20px;    
+    background-color: #ea5c22;    
+    font-family: 'Dancing Script', cursive;
+    height:60px ;    
+    width: 6em;    
+    margin-left: 5em;}
+    .card-chefDetails {
+    padding: .9em;}
+/*.card-chefDetails,.card-chefLink{}*/
+   .card-chefDetails h5 {
+	font-size: 16px;}
     .card-chefImage {
     background-color: #200;    
 	height: 50px;
@@ -339,6 +377,22 @@ nav ul  li{
     display: inline-block;}
     .card-dishContent.is-recipe{display: none;}
     .card-kitchenName.is-kitchen{display: none;}
+
+.watcher-holder {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+	width: 100%;}
+    .watcher-picture {
+    margin: 3em ;    
+	height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 2px solid #ea5c22;}
+    .watcher-name {
+	margin-bottom: 10px;
+}
+    .watcher-picture,.watcher-name {
+    display: inline-block;} 
 
 /***************foundation overrides*****************/
 .button {
