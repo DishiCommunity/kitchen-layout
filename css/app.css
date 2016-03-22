@@ -60,7 +60,7 @@ nav ul  li{
     width: 100%;
     position: relative;
     min-height: 150px;
-    max-height: 500px;
+    max-height: 400px;
     overflow: hidden;}
 
 .banner{
@@ -91,70 +91,56 @@ nav ul  li{
 *
 */
 .k-inner__nav {
-    
-	margin-left: 10em;}
+	margin-left: 6em;}
 /*------------- Kitchen Menu------------*/
 
 #kitchen__menu {
     background-color: #fff;
     position: relative;
-	height: 63.3px;
-    padding: 2px 1%;
-       border-bottom: 1px solid #ea5c22;
-/*    margin-top: 50px;*/}
-/*#kitchen__menu,#kitchen__menu >.row{
-    background: #eee;
-}*/
+	height: 63.2px;
+    padding: 2px 1px 0 0;
+    border-bottom: 1px solid #ea5c22;}
+    #kitchen__logo {
+        background-color: #000;
+        height: 150px;
+        width: 150px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0px;
+        left: 50px;
+        overflow: hidden;}
+        #kitchen_menu_list{
+        text-align: center;
+        }
+        .k-inner_item {
+            line-height: 1;
+            display: block;
+            text-align: center;}
+        .k-link,.k-link-value {
+            display: inline-block;}
+         /* Small only */
+        @media screen and (max-width: 39.9375em) {
+            #kitchen__logo{
+                width: 120px;
+                height: 120px;
+                bottom: 70px;}
 
+            #kitchen__menu {
+                padding: 0 !important;}
+        }
+        /*    Medium Only*/
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            #kitchen__logo{
+                bottom: 50px;
+                height: 130px;
+                 width: 130px;
+            }
+            .k-inner__nav {
+            margin-left: 1em;
+        }
+        }
 
-#kitchen__logo {
-	background-color: #000;
-    height: 150px;
-    width: 150px;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0px;
-    left: 50px;
-    overflow: hidden;}
-
- /* Small only */
-@media screen and (max-width: 39.9375em) {
-    #kitchen__logo{
-        width: 120px;
-        height: 120px;
-        bottom: 70px;
-    }
-
-    #kitchen__menu {
-        padding: 0 !important;
-    }
-  
-}
-/*    Medium Only*/
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    #kitchen__logo{
-        bottom: 50px;
-        height: 130px;
-         width: 130px;
-    }
-    .k-inner__nav {
-	margin-left: 1em;
-}
-}
-
-#kitchen_menu_list{
-text-align: center;
-}
-
-
-.k-inner_item {
-    
-    line-height: 1;
-    display: block;
-	text-align: center;}
-.k-link,.k-link-value {
-	display: inline-block;}
 /*---------------Side Nav------------------*/
   
 /*--------------Kitchen content ----------*/
@@ -189,7 +175,7 @@ text-align: center;
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       .card{
             width:400px; /*calc(50% - 10px);*/
-            height: 300px;
+            height: 500px;
             margin: 5px 5px 5px 5px;
             
             border-radius: 5px;
@@ -199,9 +185,9 @@ text-align: center;
   /* Large and up */
   @media screen and (min-width: 64em) {
       .card{
-        width:458px;/* calc(25% - 10px)*/
+        width:420px;/* calc(25% - 10px)*/
         height: 480px;
-        margin: 5px 5px 5px 5px;
+        margin: 5px 5px 5px 40px;
         
         border-radius: 5px;
         }
@@ -220,9 +206,7 @@ text-align: center;
 
 
 /************rewrite css********************/
-/*#example-tabs {
-	margin: auto;
-}*/
+
 .kitchen-data{
     position: relative;
     display: block;
@@ -239,7 +223,13 @@ text-align: center;
 
 .styled-grid {
 	padding: 0 60px;
-    /*border: 1px solid black;*/}
+    border: 1px solid black;}
+ /* Medium only */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .styled-grid {
+	padding: 0 1.5em;
+}    
+}
 .kitchen-card-item,.kitchen-card-list{
     list-style: none;}
 
@@ -275,19 +265,80 @@ text-align: center;
 	width: 35em;
     height: 50em;
     position: relative;
-    transform: translateX(20%);  }
+    transform: translateX(120%);  }
     .form-addItem-holder .add {
         margin: .2em 0;
         padding: 1em;
         width: 100%;
         height: auto;
+        border: 1px solid #ea5c22;
         background-color: rgba(10,10,10,0.1); }
-    .form-addItem-holder .add  input[type=text] {
+    .form-addItem-holder .add  input[type=text],input[type=number] {
     color: #ea5c22;    
         border-radius: 5px; }
-textarea{resize: none;}
+     textarea{resize: none;}
     .is-animated{
         transform: translateY(-50%);}
+    .recipe-form,textarea{
+	border-radius: 5px;}
+
+.card-kitchen {
+    background-color: #fff;
+    position: relative;
+    display: block;
+    border:1px solid #ea5c22;
+	width: 500px;
+    height:auto;}
+    .card-kitchenImage {
+    margin: .3em;    
+    width: 50px;    
+	height: 50px;
+    border-radius: 100%;    
+    background-color: #200}
+    .card-kitchenImage,.card-kitchenImageDetails{        
+    display: inline-block}
+    .card-kitchenImage,.card-kitchenImageDetails > .details{
+    
+    }
+    .card-dishPicture {
+    padding: 0;    
+	width: 100%;}
+    .card-dishPicture>figure {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #eee;    
+    border-bottom: 1px solid #eee;    
+    padding: 0;
+    margin: 0;    
+    width: 100%;
+    height: 100%;}
+    .card-dishPicture>figure figcaption{
+    position: absolute;
+    padding: 0 1em;    
+    border: .5px solid #ea5c22;    
+    left: 5px;    
+    bottom:10px;}
+    .card-dishContent {
+	padding: .9em;}
+    .card-dishContent,.plates-order {
+	display: inline-block;}
+    .card-dishContent >  .button {
+    width: 10em;    
+    margin-left: 10em;}
+    .card-chefImage {
+    background-color: #200;    
+	height: 50px;
+    width: 50px;
+    border-radius: 100%;}
+    .card-chefImage,h5{ display: inline-block;}
+    .card-dishRatings {
+    padding: .3em;    
+	background-color: rgba(10,10,10,.1);}
+    .card-dishRatings > .ratings{
+    padding: .5em;    
+    display: inline-block;}
+    .card-dishContent.is-recipe{display: none;}
+    .card-kitchenName.is-kitchen{display: none;}
 
 /***************foundation overrides*****************/
 .button {
@@ -312,24 +363,45 @@ textarea{resize: none;}
   background: #fff;
   border:#fff;  }
   .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-        border-bottom: 3px solid #ea5c22;
+        background-color: rgba(234,92,34,.1);
         color: #ea5c22;
-        background: #fefefe !important;
         transition: all .3s ease;}
   .tabs-title > a:hover {
       color: #ea5c22;
-        border-bottom: 3px solid #ea5c22;}
+      background-color: rgba(234,92,34,.1);
+      }
   .tabs-content {
     background: #fff;
     transition: all 0.5s ease;
     border: 1px solid #eee;
     border-top: 0; }
+  .tabs-panel {
+	padding: .3rem;}
   .tabs-title > a {
       display: inline-block;
       padding: 1.25rem 1.5rem;
       line-height: 1;
       font-size: 14.5px;
       color: #212121; }
+      /*Medium only*/
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            .tabs{
+            margin-left: -10em;    
+            }
+            .tabs-content {
+	        width: 10%;
+            margin-left: 4em;}
+            
+        }
+        @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+            .tabs-content {
+            margin-left: 5em;}
+        }
+        @media screen and (max-width: 39.9375em) {
+        .tabs {
+        margin-left: -15em;    
+            }
+        }
 
 .top-bar-right,.menu >.add-item,.search-item,.inv {
 	margin: 0 .5em;}

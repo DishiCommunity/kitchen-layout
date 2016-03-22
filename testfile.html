@@ -46,8 +46,8 @@
                   <div class="row">
                     <div class="medium-12 columns">
                      <textarea placeholder="Recipe name"></textarea>
-                     <textarea placeholder="Description"></textarea>
-                     <textarea placeholder="Ingredients"></textarea>
+                     <textarea rows="2" placeholder="Description"></textarea>
+                     <textarea rows="2" placeholder="Ingredients"></textarea>
                      <textarea placeholder="How to prepare"></textarea>
                      <textarea placeholder="About Recipe"></textarea>
                       <label for="exampleFileUpload" class="button">Add photo of dish</label>
@@ -56,6 +56,9 @@
                       <div class="medium-6 columns end">
                         <button class="button" type="submit">Add to recipes</button>
                       </div>
+                      <button class="close-button" type="button">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
               </form>
           </div>
@@ -64,7 +67,7 @@
             <form class="post-form">
                   <div class="row">
                       <div class="medium-12 columns">
-                          <textarea placeholder="What's cooking"></textarea>
+                          <textarea rows="5" placeholder="What's cooking"></textarea>
                           <div class="medium-6 columns">
                             <label for="exampleFileUpload" class="button">Add photo of dish</label>
                             <input type="file" id="exampleFileUpload" class="show-for-sr"> 
@@ -73,6 +76,9 @@
                             <button class="button" type="submit">Share</button>
                           </div>
                       </div>
+                      <button class="close-button" type="button">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
               </form>
           </div>
@@ -153,11 +159,43 @@
       <!--Cards designs-->
       <div class="row">
         <div class="large-12 columns">
-            <div class="card">
-                <div class="card-kitchenName"></div>
-                <div class="card-dishPicture"></div>
-                <div class="card-dishContent"></div>
-                <div class="card-dishRatings"></div>
+            <div class="card-kitchen">
+                <div class="card-kitchenName">
+                    <div class="card-kitchenImage"></div>
+                    <span class="card-kitchenImageDetails">
+                        <h6 class="details">Amanda's Kitchen</h6>
+                    <p class="details">Food made with love</p></span>
+                </div>
+                <div class="card-dishPicture">
+                    <figure>
+                        <img src="img/recipe1.jpg" alt="Dish">
+                        <figcaption>
+                            <p>Ksh 200</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card-dishContent">
+                    <h5>Apple pie</h5>
+                    <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p>
+                    <p class="plates-order">Plates remaining: 30/50</p>
+                    <a class="button plates-order" href="#">Order now</a>
+                    <hr>
+                    <div class="card-chefDetails">
+                        <div class="card-chefImage"></div>
+                        <h5>By: Chef Amanda</h5>
+                    </div>    
+                </div>
+                <div class="card-dishRatings">
+                    <div class="ratings card-likes">
+                        <a href="#"><i class="fa fa-heart"></i><span class="likes-counter counter">300</span></a>
+                    </div>
+                    <div class="ratings card-comments">
+                        <a href="#"><i class="fa fa-comment"></i><span class="comments-counter counter">300</span></a>
+                    </div>
+                    <div class="ratings card-orders">
+                        <a href="#"><i class="fa fa-heart"></i><span class="dishes-counter counter">300</span></a>
+                    </div>
+                </div>
             </div>
        </div>
       </div>

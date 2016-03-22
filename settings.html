@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>  
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/settings.css"/>
+  </head>
+  <body>
+      <h5>Settings</h5>
+      <div class="row">
+        <div class="large-8 columns">
+            <div class="settings-accountBasics">
+                <h3>Account</h3>
+                <form>
+                    <label>Username
+                        <input type="text"> 
+                    </label>
+                    <label>Email
+                        <input type="email">
+                    </label>
+                        <input type="radio"><label>Male</label>
+                        <input type="radio"><label>Female</label>
+                    <label>Country
+                        <select>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kenya">Uganda</option>
+                            <option value="Kenya">Tanzania</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <div class="settings-profileSettings">
+                <h3>Profile</h3>
+                <form>
+                    <label>Profile picture
+                        <div class="profile-image"></div>
+                    </label>
+                    <label>Name
+                        <input type="text">
+                    </label>
+                    <label>About
+                        <textarea rows="5" placeholder="Tell people about yourself"></textarea>
+                    </label>
+                    <label>Website
+                        <input type="text">
+                    </label>
+                </form>
+            </div>
+            <div class="settings-kitchenSettings">
+                <h3>Kitchen</h3>
+                <label>Kitchen Logo
+                    <div class="kitchen-profile-image"></div>
+                </label>
+                <label>Kitchen name
+                    <input type="text">
+                </label>
+                <label>Kitchen type>
+                    <select>
+                        <option value="bakery">Bakery</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="grill">Grill</option>
+                    </select>
+                </label>
+                <label>About Kitchen
+                    <textarea rows="5" placeholder="Tell you new community about what's amazing about you"></textarea>
+                </label>
+                <label>Delivery areas
+                    <textarea rows="2"></textarea>
+                </label>
+                <label>Delivery policy
+                    <textarea rows="4" placeholder="How do you charge for delivery"></textarea>
+                </label>
+            </div>
+            <div class="settings-passwordSettings">
+                <h3>Security</h3>
+                <input type="password" placeholder="Old password">
+                <input type="password" placeholder="New password">
+                <input type="password" placeholder="Confirm password">
+            </div>
+        </div>
+      </div>
+      
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  
+  </body>
+</html>      
