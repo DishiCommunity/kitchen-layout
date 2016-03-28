@@ -336,7 +336,7 @@ nav ul  li{
       font-size: 30px;
       color: #ea5c22;}    
     .card-dishContent >  .button {
-    color: #fff;
+      color: #fff;
       font-size: 20px;    
       background-color: #ea5c22;    
       font-family: 'Dancing Script', cursive;
@@ -365,6 +365,11 @@ nav ul  li{
         @media screen and (max-width: 39.9375em) {
             .card-kitchen {
               width: 332px;}
+            .card-dishContent > .button{
+                height: 40px;
+              width: 6.38em;    
+              font-size: 13.5px;    
+            }
         }          
 
 .watcher-pictureHolder {
@@ -463,20 +468,21 @@ nav ul  li{
         }
         /*Small only*/
         @media screen and (max-width: 39.9375em) {
-        .k-inner__nav {
-	       width: 100%;}
+        /*.k-inner__nav {
+	       width: 100%;}*/
         .tabs {  
         width: 100%;    
         display: inline;
         font-size: 11px;    
-        margin-left: -0.em;}
+        margin-left: 0;}
         .tabs-title {
 	       width: 20%;}
          .tabs-title > a{
            font-size: 12px;
            width: auto;}    
         .tabs-content {
-            margin-left: -5em;}        
+            font-size: 13.5px;
+            margin-left: -6.5em;}        
         }
         /*Large only*/
         @media screen and (min-width: 64em) {
