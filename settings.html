@@ -15,19 +15,41 @@
   <body>
       <h5>Settings</h5>
       <div class="row">
-        <div class="large-8 columns">
-            <div class="settings-accountBasics">
-                <h3>Account</h3>
-                <form>
-                    <label>Username
+          <div class="large-3 columns settings-navHolder">
+            <div class="settings-navigation">
+                <nav class="settings-nav">
+                    <ul class="settings-navList">
+                        <a href="#" class="settings-navigationLink"><li class="settings-navListItem">Account Basics</li></a>
+                        <a href="#" class="settings-navigationLink"><li class="settings-navListItem">Profile</li></a>
+                        <a href="#" class="settings-navigationLink"><li class="settings-navListItem">Password Settings</li></a>
+                        <a href="#" class="settings-navigationLink"><li class="settings-navListItem">Kitchen settings</li></a>
+                    </ul>
+                </nav>  
+           </div>
+          </div>
+        <div class="large-7 columns end">
+            <div class="settings-formHolder settings-accountBasics">
+                <h3 class="settings-title"><strong>Account</strong></h3>
+                <hr>
+                <form class="account-settingsForm">
+                    <label><strong>Username</strong>
                         <input type="text"> 
                     </label>
-                    <label>Email
+                    <hr>
+                    <label><strong>Email</strong>
                         <input type="email">
                     </label>
-                        <input type="radio"><label>Male</label>
-                        <input type="radio"><label>Female</label>
-                    <label>Country
+                    <hr>
+                        <div class="gender">
+                            <label><strong>Gender</strong>
+                                <div class="gender-radio">
+                                    <input type="radio"><label><strong>Male</strong></label>
+                                    <input type="radio"><label><strong>Female</strong></label>
+                                </div>    
+                        </label>        
+                        </div>    
+                    <hr>
+                    <label><strong>Country</strong>
                         <select>
                             <option value="Kenya">Kenya</option>
                             <option value="Kenya">Uganda</option>
@@ -36,53 +58,91 @@
                     </label>
                 </form>
             </div>
-            <div class="settings-profileSettings">
-                <h3>Profile</h3>
+            <div class="settings-formHolder settings-profileSettings">
+                <h3 class="settings-title">Profile</h3>
                 <form>
-                    <label>Profile picture
-                        <div class="profile-image"></div>
+                    <label><strong>Profile picture</strong>
+                        <div class="profile-image">
+                            <ul class="kitchen-logo photo">
+                            <li class="settings-kitchenLogo">
+                                <div class="upload-picture"><i class="fa fa-camera-retro fa-2x "></i></div>
+                            </li>
+                            <li class="settings-kitchenLogo">
+                                <label for="exampleFileUpload" class="button">Upload picture</label>
+                                <input type="file" id="exampleFileUpload" class="show-for-sr"> 
+                            </li>
+                        </ul>
+                        </div>
                     </label>
-                    <label>Name
+                    <label><strong>Name</strong>
                         <input type="text">
                     </label>
-                    <label>About
+                    <hr>
+                    <label><strong>About</strong>
                         <textarea rows="5" placeholder="Tell people about yourself"></textarea>
                     </label>
-                    <label>Website
+                    <hr>
+                    <label><strong>Website</strong>
                         <input type="text">
                     </label>
                 </form>
             </div>
-            <div class="settings-kitchenSettings">
-                <h3>Kitchen</h3>
-                <label>Kitchen Logo
-                    <div class="kitchen-profile-image"></div>
+            <div class="settings-formHolder settings-kitchenSettings">
+                <h3 class="settings-title">Kitchen</h3>
+                <label><strong>Kitchen Logo</strong>
+                    <div class="kitchen-profile-image">
+                        <ul class="kitchen-logo photo">
+                            <li class="settings-kitchenLogo">
+                                <div class="upload-picture"><i class="fa fa-camera-retro fa-2x "></i></div>
+                            </li>
+                            <li class="settings-kitchenLogo">
+                                <label for="exampleFileUpload" class="button">Upload logo</label>
+                                <input type="file" id="exampleFileUpload" class="show-for-sr"> 
+                            </li>
+                        </ul>
+                    </div>
                 </label>
-                <label>Kitchen name
+                <hr>
+                <label><strong>Kitchen name</strong>
                     <input type="text">
                 </label>
-                <label>Kitchen type>
+                <hr>
+                <label><strong>Kitchen type</strong>
                     <select>
                         <option value="bakery">Bakery</option>
                         <option value="fruits">Fruits</option>
                         <option value="grill">Grill</option>
                     </select>
                 </label>
-                <label>About Kitchen
+                <hr>
+                <label><strong>About Kitchen</strong>
                     <textarea rows="5" placeholder="Tell you new community about what's amazing about you"></textarea>
                 </label>
-                <label>Delivery areas
+                <hr>
+                <label><strong>Delivery areas</strong>
                     <textarea rows="2"></textarea>
                 </label>
-                <label>Delivery policy
+                <hr>
+                <label><strong>Delivery policy</strong>
                     <textarea rows="4" placeholder="How do you charge for delivery"></textarea>
                 </label>
             </div>
-            <div class="settings-passwordSettings">
-                <h3>Security</h3>
+            <div class="settings-formHolder settings-passwordSettings">
+                <h3 class="settings-title">Set password</h3>
+                <hr class="divide">
                 <input type="password" placeholder="Old password">
+                    <hr class="divide">
                 <input type="password" placeholder="New password">
+                    <hr class="divide">
                 <input type="password" placeholder="Confirm password">
+            </div>
+            <div class="settings-actionButtons">
+                <div class="settings-actionBtns settings-cancelBtn">
+                    <a class="button cancel-settings" href="#">Cancel</a>
+                </div>
+                <div class="settings-actionBtns settings-cancelBtn">
+                    <a class="button save-settings" href="#">Save settings</a>
+                </div>
             </div>
         </div>
       </div>
