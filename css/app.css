@@ -4,7 +4,7 @@ html{
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: #cfdedc;
+    background-color: #eee;
     overflow-x: hidden;}
 ul{
     list-style: none;}
@@ -12,8 +12,11 @@ section{
     width: 100%;}
 i{
  margin-left: 10;}
-a:hover{
-    color: #ea5c22;}
+a{
+    color: #ea5c22;
+}
+a:hover,a:focus{
+    color: #ff7840;}
 .main {
 	background-color: #fff;}
 /**--------- Aligning Divs ---------**/
@@ -48,9 +51,7 @@ hr{margin: 0;padding: 0;}
     background-color: #fff;}
 nav ul  li{
     display: inline-block;}
-.add-item {
-	color: #212121;
-    padding: 0 3px;}
+
 
 /*
 *
@@ -121,7 +122,8 @@ nav ul  li{
             #kitchen__logo{
                 width: 80px;
                 height: 80px;
-                bottom: 70px;}
+                bottom: 80px;
+                left:5px;}
 
             #kitchen__menu {
                 padding: 0 !important;}
@@ -171,6 +173,9 @@ nav ul  li{
         .styled-grid {
 	       display: none;
         }
+        #mobile-about {   
+	    display: block;
+}
 }
 
 .styled-grid {
@@ -192,6 +197,7 @@ nav ul  li{
     flex-wrap: wrap;
     width: 100%;
     margin: auto; }
+#mobile-about{display: none;}
 /* headlines with lines */
 
 .decorated{
@@ -220,7 +226,7 @@ nav ul  li{
 	width: 35em;
     height: 50em;
     position: relative;
-    transform: translate(20%,65%);  }
+    transform: translate(20%,75%);  }
     .form-addItem-holder .add {
         z-index: 9999;
         position: absolute;
@@ -254,8 +260,8 @@ nav ul  li{
             to{transform: translate(20%,-120%);}
          }
         @keyframes animate-out{
-            from{transform:translate(20%,-120%);}
-            to{transform: translate(20%,65%);}
+            to{transform:translate(20%,-120%);}
+            from{transform: translate(20%,65%);}
         }
 .add-item-links > ul{
     text-align: center;
@@ -263,12 +269,11 @@ nav ul  li{
     height: 100%;}
     .add-item-links > ul li{
       display: inline-block;
-      padding: 2em;
+      padding: 5em 0;
       margin: 0 2em;
       cursor: pointer;}
     .add-item-links > ul li:hover{
-        transform: scale(1.3);
-}
+        transform: scale(1.3);}
 
 .card-kitchen {
     margin: 15px;
@@ -277,7 +282,6 @@ nav ul  li{
     position: relative;
     display: block;
     border:1px solid #ea5c22;
-	
     width: 450px;
     height:auto;}
     .card-kitchen hr{color: #ea5c22;}
@@ -302,9 +306,11 @@ nav ul  li{
       font-size: 13px;
       color: #202020;}
     .card-dishPicture {
+      overflow: hidden;    
       position: relative;
       border: 4px solid #fff;    
-      padding: 0;    
+      padding: 0;
+      height: 250px;    
 	  width: 100%;}
      .card-contentPadding{padding: .9em}
     .card-recipeDetails {
@@ -313,14 +319,14 @@ nav ul  li{
       bottom: 0;
       color: #fff;}
     .card-dishPicture>figure {
+      background: linear-gradient(rgba(),rgba());   
       position: relative;
-      overflow: hidden;    
-    /*border-top: 1px solid #eee;*/    
-   /* border-bottom: 1px solid #eee;   */ 
+      overflow: hidden;  
       padding: 0;
       margin: 0;    
       width: 100%;
       height: 100%;}
+    .card-dishPicture > figure > img{}
     .card-dishPicture >figure figcaption p {
 	  color: #fff;}
     .card-dishPicture>figure figcaption{
@@ -360,8 +366,18 @@ nav ul  li{
     .card-dishRatings > .ratings{
       padding: .5em;    
       display: inline-block;}
+    .ratings > ul li{
+      display: inline-block;}
     .card-dishContent.is-recipe{display: none;}
     .card-kitchenName.is-kitchen{display: none;}
+    .circled{
+      text-align: center;
+      color: #fff;    
+      width: 40px;
+	  height: 40px;
+      border-radius: 100%;    
+	  background: red;
+      position: relative;}
         @media screen and (max-width: 39.9375em) {
             .card-kitchen {
               width: 332px;}
@@ -422,7 +438,7 @@ nav ul  li{
   background: #fff;
   border:#fff;  }
   .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-        background-color: rgba(234,92,34,.1);
+        background-color: rgba(234,92,34,.3);
         color: #ea5c22;
         transition: all .3s ease;}
   .tabs-title > a:hover {
@@ -451,7 +467,8 @@ nav ul  li{
             margin-left: -3em;    
             }
             .tabs-title {
-	           width: 20%;}
+               height: auto;    
+	           width: auto;}
             .k-link .badge {
 	            display: block;}
             .tabs-title > a{
@@ -463,26 +480,34 @@ nav ul  li{
             
         }
         @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+            .k-inner__nav {
+	           height: auto;}
+            .tabs {
+	         width: 100%;
+             display: inline;
+             font-size: 13px;    
+}
             .tabs-content {
-            margin-left: 5em;}
+              margin-left: 5em;}
         }
         /*Small only*/
         @media screen and (max-width: 39.9375em) {
-        /*.k-inner__nav {
-	       width: 100%;}*/
+        .k-inner__nav {
+	      height: auto;}
         .tabs {  
         width: 100%;    
         display: inline;
-        font-size: 11px;    
+        font-size: 10px;    
         margin-left: 0;}
         .tabs-title {
-	       width: 20%;}
+	       width: 7em;}
          .tabs-title > a{
-           font-size: 12px;
+           padding: 1rem .5rem;
+           font-size: 10px;
            width: auto;}    
         .tabs-content {
             font-size: 13.5px;
-            margin-left: -6.5em;}        
+            margin-left: -7.5em;}        
         }
         /*Large only*/
         @media screen and (min-width: 64em) {
@@ -507,7 +532,7 @@ nav ul  li{
     overflow: hidden;
     border: 3px solid #fff;
     border-radius: 5px;
-    border-style: double;
+    
     background-color: rgba(10, 10, 10, 0);}
 
 /**************foundation overrides end****************/

@@ -122,7 +122,7 @@
     
       
    <!--Cards designs-->
-      <!--<div class="row">
+      <div class="row">
         <div class="large-12 columns">
             <div class="card-kitchen">
                 <div class="card-kitchenName">
@@ -179,7 +179,14 @@
                     <i><p>I really enjoyed this Kitchen's services,great food,great quality,fast delivery,amazing taste :D</p></i>
                     <div class="ratings">
                         <ul>
-                            <li></li>
+                            <li>
+                                <div class="card-testimonialRating">
+                                    <p><small>Service</small></p>
+                                    <div class="circled">
+                                        
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -266,6 +273,9 @@
       $('.addDish').on('click', function(){
           $('.form-addDish').addClass("is-animated-in");
       });
+         $('.close-button').on('click', function(){
+             $('.add').removeClass("is-animated-out").addClass("is-animated-out");
+         });
        $('.addRecipe').on('click', function(){
           $('.form-addRecipe').addClass("is-animated-in");
       });
