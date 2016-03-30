@@ -222,20 +222,20 @@ nav ul  li{
 
 /*add item content*/
 .form-addItem-holder {
-    z-index:9998;
+    /*z-index:9998;*/
 	width: 35em;
     height: 50em;
     position: relative;
-    transform: translate(20%,75%);  }
+    transform: translate(57%,-22%);  }
     .form-addItem-holder .add {
-        z-index: 9999;
+        /*z-index: 9999;*/
         position: absolute;
         margin: .2em 0;
         padding: 1em;
         width: 100%;
         height: auto;
         border: 1px solid #ea5c22;
-        background-color: rgba(10,10,10,0.1); }
+        background-color: rgba(10,10,10,0.4); }
     .form-addItem-holder .add  input[type=text],input[type=number] {
         color: #ea5c22;    
         border-radius: 5px; }
@@ -256,8 +256,8 @@ nav ul  li{
     .recipe-form,textarea{
 	    border-radius: 5px;}
         @keyframes animate-in{
-            from{transform: translate(20%,65%);}
-            to{transform: translate(20%,-120%);}
+            from{transform: translate(40%,65%);}
+            to{transform: translate(40%,-120%);}
          }
         @keyframes animate-out{
             to{transform:translate(20%,-120%);}
@@ -268,9 +268,9 @@ nav ul  li{
     width: 100%;
     height: 100%;}
     .add-item-links > ul li{
+      color: #f17f42;    
       display: inline-block;
-      padding: 5em 0;
-      margin: 0 2em;
+      margin: 9em 4em;
       cursor: pointer;}
     .add-item-links > ul li:hover{
         transform: scale(1.3);}
@@ -527,13 +527,13 @@ nav ul  li{
   margin-right: auto; }
 .reveal {
     margin: 0;
-	height: 700px;
-    width: 100%;
+	height: 60em;
+    width: 63%;
     overflow: hidden;
-    border: 3px solid #fff;
+    /*border: 3px solid #fff;*/
     border-radius: 5px;
     
-    background-color: rgba(10, 10, 10, 0);}
+    background-color: rgba(10, 10, 10, 0.1);}
 
 /**************foundation overrides end****************/
 
