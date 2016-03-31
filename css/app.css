@@ -564,7 +564,6 @@ nav ul  li{
   margin-left: auto;
   margin-right: auto; }
 .reveal {
-    position: fixed;
     margin-top: 250px;
 	height: 30em;
     width: 63%;

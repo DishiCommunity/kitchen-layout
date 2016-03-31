@@ -19,27 +19,17 @@ $(function () {
         $('.form-addPost').slideToggle(500);
         return false;
     });
-    $('#close-dishForm').find('.fa-times').click(function () {
-        $('#close-dishForm').animate({
-            height: "0",
-            display: "none"
-        },500).hide();
+    $('#close-dishForm').find('.form-closeIcon').click(function () {
+        $('#close-dishForm').hide();
+        $('.page-overlay').css("display","none");
+    });
+    $('#close-recipeForm').find('.form-closeIcon').click(function () {
+        $('#close-recipeForm').hide();
         $('.page-overlay').css("display","none");
 
     });
-    $('#close-recipeForm').find('.fa-times').click(function () {
-        $('#close-recipeForm').animate({
-            height: "0",
-            display: "none"
-        },500).hide();
-        $('.page-overlay').css("display","none");
-
-    });
-    $('#close-postForm').find('.fa-times').click(function () {
-        $('#close-postForm').animate({
-            height: "0",
-            display: "none"
-        },500).hide();
+    $('#close-postForm').find('.form-closeIcon').click(function () {
+        $('#close-postForm').hide();
         $('.page-overlay').css("display","none");
 
     });
