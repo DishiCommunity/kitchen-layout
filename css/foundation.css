@@ -2454,7 +2454,7 @@ body {
               transform: translateX(-250px); }
 
 @media screen and (min-width: 40em) {
-  .position-left.reveal-for-medium {
+  .position-left.-for-medium {
     left: 0;
     z-index: auto;
     position: fixed; }

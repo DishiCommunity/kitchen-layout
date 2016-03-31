@@ -200,6 +200,14 @@ nav ul  li{
 #mobile-about{display: none;}
 /* headlines with lines */
 
+.page-overlay {
+    background-color: transparent;
+	display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10000;
+}
 .decorated{
      overflow: hidden;
      text-align: center;
@@ -222,14 +230,15 @@ nav ul  li{
 
 /*add item content*/
 .form-addItem-holder {
-    /*z-index:9998;*/
+    display: none;
+    z-index:15000;
 	width: 35em;
     height: 50em;
-    position: relative;
-    transform: translate(57%,-22%);  }
+    position: fixed;
+    transform: translate(17%,40%);  }
     .form-addItem-holder .add {
         /*z-index: 9999;*/
-        position: absolute;
+        position: relative;
         margin: .2em 0;
         padding: 1em;
         width: 100%;
@@ -273,7 +282,33 @@ nav ul  li{
       margin: 9em 4em;
       cursor: pointer;}
     .add-item-links > ul li:hover{
-        transform: scale(1.3);}
+      transform: scale(1.3);}
+    /*Medium and up*/
+    @media screen and (min-width: 40em) {
+       .add-item-links > ul li .modalIcon{
+      font-size: 10px;} 
+}
+    /*medium only*/
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+        .add-item-links > ul li{
+            margin: 6em 3em;
+        }
+        .add-item-links > ul li .modalIcon{
+      font-size: 10px;}
+        .form-addItem-holder{
+         width: 29em;    
+        /* transform: translate(28%,-17%);*/   
+        }
+}
+    /*small only*/
+    @media screen and (max-width: 39.9375em) {
+        .add-item-links > ul li {
+	       margin: 1em 1em;}
+        .form-addItem-holder{
+            /*transform: translate(35%, -7%);*/
+            width: 20em;
+        }
+}
 
 .card-kitchen {
     margin: 15px;
@@ -520,14 +555,18 @@ nav ul  li{
 	margin: 0 .5em;}
   .top-bar,.top-bar ul {
       background-color: #fff; }
-
+    @media screen and (max-width: 39.9375em) {
+        .top-bar-right {
+	       display: none;}
+    }
 .row {
   max-width: 85rem !important;
   margin-left: auto;
   margin-right: auto; }
 .reveal {
-    margin: 0;
-	height: 60em;
+    position: fixed;
+    margin-top: 250px;
+	height: 30em;
     width: 63%;
     overflow: hidden;
     /*border: 3px solid #fff;*/

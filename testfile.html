@@ -14,6 +14,39 @@
       <link rel="stylesheet" href="css/test.css"/>
   </head>
   <body>
+      <header class="header">
+          <!--mobile menu-->
+          <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+                <div class="title-bar-title">Menu</div>
+              <div class="title-bar-right">
+                <a class="add-item" data-toggle="addItemModal"><i class="fa fa-pencil-square fa-2x"></i></a>
+                <a class="search-item"><i class="fa fa-search fa-2x"></i></a>
+              </div>
+          </div>
+        <!--   Visible menu        -->
+          <div class="top-bar" id="example-menu">
+              <div class="top-bar-left">
+                <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+                  <li class="menu-text">
+                      DISHI
+                  </li>
+                  <li>
+                    <a href="#">Order</a>
+                  </li>
+                  <li><a href="testfile.html">Discover</a></li>
+                  <li><a href="#">Kitchens</a></li>
+                </ul>
+              </div>
+              <div class="top-bar-right">
+                <ul class="menu">
+                  <li><a class="search-item" href="#"><i class="fa fa-search fa-lg"></i></a></li>
+                  <li><a class="add-item" data-open="addItemModal"><i class="fa fa-pencil-square fa-2x"></i></a></li>
+                  <li class="btn"><a class="button inv" data-toggle="inviteModal">Invite</a></li>
+                </ul>
+              </div>
+          </div>
+      </header>
             
       <p><a data-open="addItemModal">add item modal</a></p>
       <div class="reveal" id="addItemModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
