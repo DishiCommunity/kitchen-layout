@@ -201,13 +201,14 @@ nav ul  li{
 /* headlines with lines */
 
 .page-overlay {
-    background-color: transparent;
+    background-color: red;
 	display: none;
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 10000;
-}
+    overflow: hidden;}
+
 .decorated{
      overflow: hidden;
      text-align: center;
@@ -309,6 +310,66 @@ nav ul  li{
             width: 20em;
         }
 }
+.tag {
+	border:1px solid #0d5302;
+    background: #0d5302;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1em;
+    padding: .25em;
+    text-align: center;
+}
+.comments-modal {
+    padding: .9em;
+	background-color: #eee;}
+    .comments-header:before,
+    .comments-header:after,
+    .comments-body:before,
+    .comments-body:after,
+    .comments-box:before,
+    .comments-box:after{
+        content: '';
+        display: table;}
+    .comments-header:after,
+    .comments-body:after,
+    .comments-box:after{
+      clear: both;}
+    .comments-header-left{float: left;}
+    .comments-header-right{float: right;}
+    .comments-body--image {
+      border: 1px solid #000;    
+      float: left;    
+	  width: 50%;
+      height: 350px;
+      overflow: hidden;
+      object-fit:  contain;}
+    .comments-body{overflow: hidden;}
+    .comments-body--howToPrepare {
+       padding: .9em;    
+	   text-align: center;}
+    .comments-body--ingredients {
+      padding: 1.9em;    
+      border: 1px solid #000;    
+      float: right;    
+	  width: 50%;
+      height: 350px;}
+    .comments-ingredientContainer {
+	   display: flex;
+       flex-direction: column;
+       margin: auto;
+       width: 100%;}
+    .comments-body--ingredients > ul li{
+      margin: 5px;}
+    .comments-textarea{
+        float: left;
+        width: 60%;}
+    .comments-comments-ratings{float: left;}
+    .comments-ratings{
+        background-color: rgba(10,10,10,0);
+        width:40%;} 
+    .comment-input{
+      height: 60px;}
 
 .card-kitchen {
     margin: 15px;
@@ -326,7 +387,7 @@ nav ul  li{
       padding: .9em .9em 0 .9em;}
     .card-kitchen-link {
       color: #ea5c22;
-    transition: all .3s ease;}
+      transition: all .3s ease;}
     .card-kitchen-link:hover {
 	  color: #1585cf;}
     .card-kitchenImage {
@@ -569,9 +630,10 @@ nav ul  li{
     width: 63%;
     overflow: hidden;
     /*border: 3px solid #fff;*/
-    border-radius: 5px;
-    
+    border-radius: 5px;    
     background-color: rgba(10, 10, 10, 0.1);}
-
+    .reveal.full{    
+      overflow-y: scroll;   
+}
 /**************foundation overrides end****************/
 
