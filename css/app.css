@@ -2,6 +2,7 @@ html{
     margin: 0;
 }
 body{
+    width: 100%;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     background-color: #eee;
@@ -80,6 +81,26 @@ nav ul  li{
     bottom: 80px;
     left: 380px;}
 
+.general-banner {
+    background: #9e9e9e;
+    display: block;
+	width: 100%;
+    position: relative;
+    min-height: 150px;
+    max-height: 400px;
+    overflow: hidden;}
+    .general-banner-userProfileData {    
+     width: 300px;
+     font-size: 13px;    
+     margin: 20px auto;
+    text-align: center;}
+    .general-banner-userImage {
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        border: 1px solid #000;
+        border-radius: 100%;
+}
 /*
 *
 *Kitchen logo
@@ -201,7 +222,7 @@ nav ul  li{
 /* headlines with lines */
 
 .page-overlay {
-    background-color: red;
+    background-color: rgba(10,10,10,.1);
 	display: none;
     width: 100%;
     height: 100%;
@@ -363,11 +384,11 @@ nav ul  li{
       margin: 5px;}
     .comments-textarea{
         float: left;
-        width: 60%;}
+        width:100%;}
     .comments-comments-ratings{float: left;}
     .comments-ratings{
-        background-color: rgba(10,10,10,0);
-        width:40%;} 
+        background-color: #eee;
+        width:100%;} 
     .comment-input{
       height: 60px;}
 
@@ -408,6 +429,20 @@ nav ul  li{
       padding: 0;
       height: 250px;    
 	  width: 100%;}
+    .card-dishPicture.card-modalOrderPicture{
+       
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        min-height: 250px;
+        height: 350px;
+        width: 100%;}
+    .card-modalOrderPicture > figure{
+        width: 100%;
+        height: 100%;}
+    .card-modalOrderPicture > figure > img{
+        width: 100%;
+        height: 100%;}
      .card-contentPadding{padding: .9em}
     .card-recipeDetails {
       padding: .9em;    
@@ -415,7 +450,7 @@ nav ul  li{
       bottom: 0;
       color: #fff;}
     .card-dishPicture>figure {
-      background: linear-gradient(rgba(),rgba());   
+      background: rgba(10,10,10,.1);   
       position: relative;
       overflow: hidden;  
       padding: 0;
@@ -431,6 +466,8 @@ nav ul  li{
       padding: 0 1em;    
       left: 5px;    
       bottom:0;}
+    .card-dishOrder {
+	  text-align: center;}
     .card-dishContent,.plates-order {
 	  display: inline-block;}
     .card-dishContent .card-contentHeading {
@@ -458,7 +495,7 @@ nav ul  li{
     .card-chefImage,h5{ display: inline-block;}
     .card-dishRatings {
       padding: .3em;    
-	  background-color: rgba(10,10,10,.1);}
+	  background-color: #eee;}
     .card-dishRatings > .ratings{
       padding: .5em;    
       display: inline-block;}
@@ -466,6 +503,7 @@ nav ul  li{
       display: inline-block;}
     .card-dishContent.is-recipe{display: none;}
     .card-kitchenName.is-kitchen{display: none;}
+    .card-dishRatings.comments-box{background: #eee;}
     .circled{
       text-align: center;
       color: #fff;    
@@ -482,7 +520,10 @@ nav ul  li{
               width: 6.38em;    
               font-size: 13.5px;    
             }
-        }          
+        }
+    .c-s{
+    margin:10px;
+    width: 350px;}
 
 .watcher-pictureHolder {
   display: block;    
@@ -546,6 +587,7 @@ nav ul  li{
     transition: all 0.5s ease;
     border: 1px solid #eee;
     border-top: 0; }
+.general-tabLook{width: 85rem;margin: 0 auto}
   .tabs-panel {
 	padding: .3rem;}
   .tabs-title > a {
@@ -612,6 +654,16 @@ nav ul  li{
 }
 }
 
+.general-userTabs {
+	width: 100%;}
+    .general-tabsholder {
+	   width: 40%;
+       margin: 0 auto;    
+}
+    .general-userTabs > ul {
+      max-width: 100%;    
+      margin: 0 auto;}
+
 .top-bar-right,.menu >.add-item,.search-item,.inv {
 	margin: 0 .5em;}
   .top-bar,.top-bar ul {
@@ -620,10 +672,28 @@ nav ul  li{
         .top-bar-right {
 	       display: none;}
     }
+    .user-iconPicture {
+    display: inline-block;
+	height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: #200;}
+    .user-linkNavItem {
+	display: inline-block;
+        font-size: 13px;
+}
+.user-linkNavItem > ul li{display: inline-block;height: 100%;margin: 0;}
 .row {
   max-width: 85rem !important;
   margin-left: auto;
   margin-right: auto; }
+ .order-modal {
+   background: #eee;
+   max-width: 40rem !important;
+   margin-left: auto;
+   margin-right: auto;}
+ 
+
 .reveal {
     margin-top: 250px;
 	height: 30em;
@@ -633,7 +703,8 @@ nav ul  li{
     border-radius: 5px;    
     background-color: rgba(10, 10, 10, 0.1);}
     .reveal.full{    
-      overflow-y: scroll;   
-}
+      overflow-y: scroll;}
+    .reveal.full.order-popup {
+      overflow: hidden;}
 /**************foundation overrides end****************/
 

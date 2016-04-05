@@ -104,7 +104,7 @@
                                     <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
                                 </div>
                             </div>
-                            </div>
+                        </div>
                     </div>
                     <div class="comments-body--commentAreaDisplay"></div>
                 </section>
@@ -115,7 +115,51 @@
             </div>
         </div>
     </div>
-
+ <p><a data-toggle="exampleModal99" class="overlay-trigger">Click me for a full-screen modal</a></p>    
+ <div class="full reveal order-popup" id="exampleModal99" data-reveal>
+     <div class="row order-modal">
+        <div class="card-kitchenName">
+            <div class="card-kitchenImage"></div>
+            <span class="card-kitchenImageDetails">
+                        <a href="#" class="card-kitchen-link"><h6 class="details"><strong>Amanda's Kitchen</strong></h6></a>
+                        <p class="details">Food made with love</p></span>
+         </div>
+     <div class="card-dishPicture card-modalOrderPicture">
+        <figure>
+            <img src="img/recipe.jpg"/> 
+        </figure>
+    </div>
+     <div class="card-dishOrder card-contentPadding">
+        <h5 class="card-contentHeading">{{Dish Title}}</h5>
+        <h6>Order Now</h6>
+        <i class="fa fa-phone"></i>: <a href="tel">0722799545</a>
+        <p>Plates remaining : 20/25</p>
+     </div>
+     <div class="card-chefDetails">
+         <div class="card-chefImage"></div>
+         <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
+     </div>
+     <div class="comments-box">
+       
+       <div class="comments-ratings card-dishRatings">
+           <div class="ratings card-likes">
+               <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
+           </div>
+           <div class="ratings card-orders">
+               <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
+           </div>
+       </div>
+         <div class="comment-textarea">
+       <form class="comments-textarea">
+           <textarea class="comment-input"id="comment" placeholder="add comment"></textarea>
+       </form>
+       </div>
+      </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>     
+</div>
 
     <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
     <script src="js/vendor/jquery.min.js"></script>
