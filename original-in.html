@@ -664,20 +664,27 @@
       </section>
     </div>      
     <script src="js/vendor/jquery.min.js"></script>
-    <script type="text/javascript" src="js/Wookmark-jQuery-master/wookmark.js"></script>  
+<!--    <script type="text/javascript" src="js/Wookmark-jQuery-master/wookmark.js"></script>  -->
     <!--<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>-->  
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/main.js"></script>
-    <!--<script>$('#myContent li').wookmark();</script>-->  
-    <!--<script>
-        $('.grid').masonry({
-        // options
-        itemSelector: '.grid-item',
-        columnWidth: 'grid-sizer',
-        percentPosition: true    
-        });    
-    </script>-->  
+    <script src="https://raw.githubusercontent.com/kombai/freewall/master/freewall.js"></script>
+      <script>
+      var wall = new Freewall("#container");
+          wall.reset({
+              selector: '.kitchen-card-item',
+              animate: true,
+              cellW: 200,
+              cellH: 'auto',
+              onResize: function(){
+                  wall.fitWidth();
+              }
+          });
+          wall.container.find('.kitchen-card-item .card-kitchen').load(function(){
+              wall.fitWidth();
+          });
+      </script>
   </body>
 </html>      

@@ -151,8 +151,12 @@ section.about-info {
     .align-imgLeft {
 	  position: absolute;
       top: 50px;}
-
-.align-imgRight{
+    .align-imgbottom {
+	   position: absolute;
+        left: 13%;
+        top: 176.1%;
+}
+    .align-imgRight{
     position: absolute;
     top: 50px;
 }
