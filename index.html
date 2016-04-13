@@ -37,7 +37,7 @@
                   <li>
                     <a href="#">Order</a>
                   </li>
-                  <li><a href="testfile.html">Discover</a></li>
+                  <li><a href="original-in.html">Discover</a></li>
                   <li><a href="#">Kitchens</a></li>
                 </ul>
               </div>
@@ -116,49 +116,49 @@
     </div><!--comment modal end-->
           <!--Order modal-->
           <div class="full reveal order-popup" id="orderModal" data-reveal>
-     <div class="row order-modal">
-        <div class="card-kitchenName">
-            <div class="card-kitchenImage"></div>
-            <span class="card-kitchenImageDetails">
-                        <a href="#" class="card-kitchen-link"><h6 class="details"><strong>Amanda's Kitchen</strong></h6></a>
-                        <p class="details">Food made with love</p></span>
-         </div>
-     <div class="card-dishPicture card-modalOrderPicture">
-        <figure>
-            <img src="img/recipe.jpg"/> 
-        </figure>
-    </div>
-     <div class="card-dishOrder card-contentPadding">
-        <h5 class="card-contentHeading">{{Dish Title}}</h5>
-        <h6>Order Now</h6>
-        <i class="fa fa-phone"></i>: <a href="tel">0722799545</a>
-        <p>Plates remaining : 20/25</p>
-     </div>
-     <div class="card-chefDetails">
-         <div class="card-chefImage"></div>
-         <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
-     </div>
-     <div class="comments-box">
-       
-       <div class="comments-ratings card-dishRatings">
-           <div class="ratings card-likes">
-               <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
-           </div>
-           <div class="ratings card-orders">
-               <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
-           </div>
-       </div>
-         <div class="comment-textarea">
-       <form class="comments-textarea">
-           <textarea class="comment-input"id="comment" placeholder="add comment"></textarea>
-       </form>
-       </div>
-      </div>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    </div>     
-</div>
+             <div class="row order-modal">
+                <div class="card-kitchenName">
+                    <div class="card-kitchenImage"></div>
+                    <span class="card-kitchenImageDetails">
+                                <a href="#" class="card-kitchen-link"><h6 class="details"><strong>Amanda's Kitchen</strong></h6></a>
+                                <p class="details">Food made with love</p></span>
+                 </div>
+             <div class="card-dishPicture card-modalOrderPicture">
+                <figure>
+                    <img src="img/recipe.jpg"/> 
+                </figure>
+            </div>
+             <div class="card-dishOrder card-contentPadding">
+                <h5 class="card-contentHeading">{{Dish Title}}</h5>
+                <h6>Order Now</h6>
+                <i class="fa fa-phone"></i>: <a href="tel">0722799545</a>
+                <p>Plates remaining : 20/25</p>
+             </div>
+             <div class="card-chefDetails">
+                 <div class="card-chefImage"></div>
+                 <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
+             </div>
+             <div class="comments-box">
+
+               <div class="comments-ratings card-dishRatings">
+                   <div class="ratings card-likes">
+                       <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
+                   </div>
+                   <div class="ratings card-orders">
+                       <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
+                   </div>
+               </div>
+                 <div class="comment-textarea">
+               <form class="comments-textarea">
+                   <textarea class="comment-input"id="comment" placeholder="add comment"></textarea>
+               </form>
+               </div>
+              </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>     
+        </div><!--order modal end-->
       <!--Add item modal-->
           <div class="large-5 large-centered columns">
           <div class="form-addItem-holder">
@@ -264,7 +264,14 @@
   </button>
 </div>  
         <div class="reveal" id="inviteModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-            <input type="email" placeholder="Enter email">
+            <div class="row">
+                <div class="large-6 medium-6 small-6 columns large-centered medium-centered small-centered">
+                    <form>
+                    <input type="email" placeholder="Enter email">
+                        <a href="#" class="button">Send invite</a>
+                    </form>   
+                </div>    
+            </div>    
          <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -383,7 +390,7 @@
                                                     <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>
                                                     <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
                                                     <p class="plates-order">Plates remaining: 30/50</p>
-                                                    <a class="button plates-order" href="#" data-toggle="orderModal" class="overlay-trigger">Order now</a>
+                                                    <a class="button plates-order"  data-toggle="orderModal" class="overlay-trigger">Order now</a>
                                                      </div>
                                                 <hr>
                                                     <div class="card-chefDetails">
@@ -395,7 +402,7 @@
                                                         <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
                                                     </div>
                                                     <div class="ratings card-comments">
-                                                        <a href="#" data-toggle="commentModal" class="overlay-trigger"><i class="fa fa-comment-o"></i><span class="comments-counter counter">300</span></a>
+                                                        <a  data-toggle="commentModal" class="overlay-trigger"><i class="fa fa-comment-o"></i><span class="comments-counter counter">300</span></a>
                                                     </div>
                                                     <div class="ratings card-orders">
                                                         <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
@@ -722,14 +729,13 @@
                         <div class="tabs-panel" id="followers">
                           <ul id="container" class="kitchen-card-list watch-list">
                             <li class="kitchen-card-item watch-list">
+                                    <div class="card-kitchen c-f">
                                     <div class="watcher-pictureHolder">
                                         <div class="watcher-picture">
                                         </div>
+                                        <hr class="divide">
+                                        <div class="watcher-name "><p>David Mosie</p></div>
                                     </div>
-                                    <div class="watcher-nameHolder">
-                                        <div class="watcher-name">
-                                            <p>David Mosie</p>
-                                        </div>
                                     </div>    
                             </li>
                               
