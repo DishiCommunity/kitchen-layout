@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app.css"/>
   </head>
   <body>
        <div class="page-overlay"></div>
@@ -37,7 +37,7 @@
                   <li>
                     <a href="eat.html">Order</a>
                   </li>
-                  <li><a href="testfile.html">Discover</a></li>
+                  <li><a href="discover.html">Discover</a></li>
                   <li><a href="index.html">Kitchens</a></li>
                 </ul>
               </div>
@@ -50,35 +50,235 @@
               </div>
           </div>
       </header>
-      <div class="row main">
+      <div class="reveal" id="add-Dish" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="form-addItem-holder">
+          <div class="add form-addDish" id="close-dishForm">
+              <h4>Add Dish</h4>
+            <form class="form-h dish-form">
+                <div class="form-closeIcon">
+                        <i class="fa fa-times fa-1x"></i>
+                   </div>
+               <div class="row">
+                  <div class="medium-12 columns">
+                      <input type="text" placeholder="Dish name">
+                      <input type="text" placeholder="Description">
+                      <label for="middle-label" class="text-right middle">Price
+                        <input type="number">
+                      </label>
+                      <label for="middle-label" class="text-right middle">Plates available
+                          <input type="number" value="0">
+                      </label>
+                      <textarea placeholder="Ingredients"></textarea>
+         
+                    <label for="exampleFileUpload" class="button">Add photo of dish</label>
+                    <input type="file" id="exampleFileUpload" class="show-for-sr">  
+                   </div>
+                   <div class="medium-6 columns">
+                    <button class="button" type="submit">Add to menu</button>
+                   </div>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+      <div class="row main discover-page">
           <div class="discover-postHolder">
               <div class="add-item-links discover">
+                  <div class="add-item-links discover">
+            <ul>
+                <li class="addDish line" >
+                    <div class="modalIcon">
+                        <a href="#" data-open="add-Dish"><img src="img/icons/dishicon.png" width="40"/><br><p>Add a Dish</p></a>
+                    </div>
+                </li> 
+                <li class="addRecipe line">
+                    <div class="modalIcon">
+                        <a href="#"><i class="fa fa-cutlery fa-3x"></i><br><p>Add a Recipe</p></a>
+                     </div>
+                </li>
+                <li class="addPost line">
+                    <div class="modalIcon">
+                        <a href="#"><i class="fa fa-paper-plane-o fa-3x"></i><br><p>Add a post</p></a>
+                    </div>
+                </li>
+            </ul>
+          </div>
               </div>
-          </div>      
-      </div>          
+          </div>
+          <ul id="container" class="grid">
+              <li class="grid-item">
+              <div class="card-kitchen">
+                                      <div class="card-kitchenName">
+                                        <div class="card-kitchenImage"></div>
+                                            <span class="card-kitchenImageDetails">
+                                                <a href="#" class="card-kitchen-link"><h6 class="details"><strong>Amanda's Kitchen</strong></h6></a>
+                                                <p class="details">Food made with love</p></span>
+                                        </div>
+                                        <div class="card-testimonialContent card-contentPadding">
+                                                <i><p>This kitchen makes one of the tastiest cakes, I love it!!</p></i>
+                                        </div>
+                                            <hr>
+                                    <div class="card-dishRatings">
+                                        <div class="ratings card-likes">
+                                          <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">132</span></a>
+                                        </div>
+                                        <div class="ratings card-comments">
+                                             <a href="#"><i class="fa fa-comment-o"></i><span class="comments-counter counter">113</span></a>
+                                        </div>
+                                    </div>
+                                 </div>
+              </li>
+              <li class="grid-item">
+                <div class="card-kitchen">
+                                                <div class="card-dishPicture">
+                                                    <figure>
+                                                        <img src="img/recipe.jpg" alt="Dish">
+                                                        <!--<figcaption>
+                                                            <p><strong>Ksh 200</strong></p>
+                                                        </figcaption>-->
+                                                    </figure>
+                                                  <div class="card-recipeDetails">
+                                                    <figcaption class="recipeDescription">
+                                                        <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>
+                                                    <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
+                                                    </figcaption>
+                                                </div>
+                                                </div>
+                                                <hr>
+                                                    <div class="card-chefDetails">
+                                                        <div class="card-chefImage"></div>
+                                                        <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
+                                                    </div>    
+                                        <div class="card-dishRatings">
+                                           <div class="ratings card-likes">
+                                                 <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">121</span></a>
+                                            </div>
+                                            <div class="ratings card-comments">
+                                                <a href="#"><i class="fa fa-comment-o"></i><span class="comments-counter counter">78</span></a>
+                                            </div>
+                                            <div class="ratings card-orders">
+                                                <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">68</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+              </li>
+              <li class="grid-item">
+                <div class="card-kitchen">
+                                        <div class="card-dishPicture">
+                                            <figure>
+                                                    <img src="img/recipe.jpg" alt="Dish">
+                                                    <!--<figcaption> remake with absolte positioning
+                                                        <p><strong>Ksh 200</strong></p>
+                                                    </figcaption>-->
+                                            </figure>
+                                        </div>
+                                        <div class="card-conversatoinContent card-contentPadding">
+                                                <i><p>Hey guys, I was excited  to try out one of Amanda's  new cakes.I would recommend you to check it out :D</p></i>
+                                            <!--<a class="conversation-linktoorder">Follow link to order</a>-->
+                                        </div>
+                                            <hr>
+                                        <div class="card-chefDetails">
+                                            <div class="card-chefImage"></div>
+                                            <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
+                                        </div>    
+                                    <div class="card-dishRatings">
+                                        <div class="ratings card-likes">
+                                            <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">70</span></a>
+                                        </div>
+                                        <div class="ratings card-comments">
+                                            <a href="#"><i class="fa fa-comment-o"></i><span class="comments-counter counter">46</span></a>
+                                        </div>
+                                         <!--<div class="ratings card-orders">
+                                              <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">50</span></a>
+                                        </div>-->
+                                    </div>
+                                </div>
+              </li>
+              <li class="grid-item">
+                <div class="card-kitchen">
+                                                <div class="card-dishPicture">
+                                                    <figure>
+                                                        <img src="img/recipe.jpg" alt="Dish">
+                                                        <figcaption>
+                                                            <p><strong>Ksh 200</strong></p>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="card-dishContent card-contentPadding">
+                                                    <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>
+                                                    <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
+                                                    <p class="plates-order">Plates remaining: 30/50</p>
+                                                    <a class="button plates-order"  data-toggle="orderModal" class="overlay-trigger">Order now</a>
+                                                     </div>
+                                                <hr>
+                                                    <div class="card-chefDetails">
+                                                        <div class="card-chefImage"></div>
+                                                        <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
+                                                    </div>    
+                                                <div class="card-dishRatings">
+                                                    <div class="ratings card-likes">
+                                                        <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
+                                                    </div>
+                                                    <div class="ratings card-comments">
+                                                        <a  data-toggle="commentModal" class="overlay-trigger"><i class="fa fa-comment-o"></i><span class="comments-counter counter">300</span></a>
+                                                    </div>
+                                                    <div class="ratings card-orders">
+                                                        <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+              </li>
+            <li class="grid-item"></li>  
+            <li class="grid-item"></li>  
+          
+          </ul>
+         
+         
+             
+           
+
+           <!--<ul class="flex-container wrap">
+               <li class="flex-item">
+                <div class="card-kitchen">
+                   <div class="card-kitchenImage"></div> 
+                </div>
+               </li>
+               <li class="flex-item">
+                <div class="card-kitchen">
+                   <div class="card-kitchenImage"></div> 
+                </div>
+               </li>
+               <li class="flex-item">
+                <div class="card-kitchen">
+                   <div class="card-kitchenImage"></div>
+                </div>
+               </li>
+               <li class="flex-item">
+                <div class="card-kitchen">
+                   <div class="card-kitchenImage"></div> 
+                </div>
+               </li>
+               <li class="flex-item">
+                <div class="card-kitchen">
+                   <div class="card-kitchenImage"></div> 
+                </div>
+               </li>
+           </ul>-->
+      </div>
+       
       
       <script src="js/vendor/jquery.min.js"></script>
 <!--    <script type="text/javascript" src="js/Wookmark-jQuery-master/wookmark.js"></script>  -->
-    <!--<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>-->  
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>  
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/main.js"></script>
-    <!--<script src="https://raw.githubusercontent.com/kombai/freewall/master/freewall.js"></script>
-      <script>
-      var wall = new Freewall("#container");
-          wall.reset({
-              selector: '.kitchen-card-item',
-              animate: true,
-              cellW: 200,
-              cellH: 'auto',
-              onResize: function(){
-                  wall.fitWidth();
-              }
-          });
-          wall.container.find('.kitchen-card-item .card-kitchen').load(function(){
-              wall.fitWidth();
-          });
-      </script>-->
+    <!--<script src="js/main.js"></script>-->
+    <script>
+        $('grid').isotope({
+           itemSelector: '.grid-item',
+           layoutMode: 'fitColumns'
+        });
+    </script>
   </body>
 </html>  
