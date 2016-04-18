@@ -2,7 +2,6 @@ html{
     margin: 0;
 }
 body{
-    ;
     width: 100%;
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -90,13 +89,14 @@ nav ul  li{
 
 
 .general-banner {
-    background: #fff;
+    background: #fafafa;
     display: block;
 	width: 100%;
     border-top: 1px solid #9e9e9e;
     position: relative;
+    height: auto;
     min-height: 150px;
-    max-height: 400px;
+    max-height: 450px;
     overflow: hidden;}
     .general-banner-userProfileData { 
      position: absolute;
@@ -128,7 +128,7 @@ nav ul  li{
      top: 0;}
     .g-largeHolder {
 	  width: 400px;}
-    .kitchen-banner{min-height: 270px;}
+    .kitchen-banner{min-height: 270px;background: #fafafa;}
     .kitchen-profImage {
 	  height: 90px;
       width: 90px;
@@ -185,7 +185,7 @@ section.about-info {
 /*------------- Kitchen Menu------------*/
 
 #kitchen__menu {
-    background-color: #fff;
+    background-color: #fafafa;
     position: relative;
 	height: 70.5px;
     padding: 2px 1px 0 0;
@@ -273,6 +273,9 @@ section.about-info {
 	padding: 0 1.5em;
 }    
 }
+.kitchen-card-list {
+	display: inline;
+}
 .kitchen-card-item,.kitchen-card-list{
     list-style: none; }
 .kitchen-card-list > .kitchen-card-item{
@@ -284,6 +287,7 @@ section.about-info {
 #container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     margin: auto; }
 #mobile-about{display: none;}
@@ -295,7 +299,7 @@ section.about-info {
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 10000;
+    : 10000;
     overflow: hidden;}
 
 .decorated{
@@ -362,7 +366,7 @@ section.about-info {
             to{transform:translate(20%,-120%);}
             from{transform: translate(20%,65%);}
         }
-.add-item-links{background: #fff;border-bottom: 1px solid #eee;border-top: 1px solid #eee}
+.kitchen-links{background: #fafafa;border-bottom: 1px solid #eee;border-top: 1px solid #eee}
 .add-item-links > ul{
     text-align: center;
     width: 100%;
@@ -405,15 +409,51 @@ section.about-info {
         }
 }
 .tag {
-	border:1px solid #0d5302;
-    background: #0d5302;
-    color: #fff;
+    margin: 1px;
+	border:1px solid #ea5c22;
+    background: #eee;
+    color: #000;
     border-radius: 5px;
     display: inline-block;
-    font-size: 1em;
-    padding: .25em;
-    text-align: center;
-}
+    font-size: .8em;
+    padding:  0 .2em;
+    text-align: center;}
+     .price-tag{
+       padding-top: .6em;      
+       text-align: center;
+       bottom:-50px;
+       right: 3%;     
+       position: absolute;
+       background: #ffffff;
+       border: 1px solid #9e9e9e; /*set border colour here*/
+       width: 110px;
+       height: 50px;
+       border-radius: 3px;
+       -webkit-filter: drop-shadow(0 1px 10px rgba(113,158,206,0.8)); /*set shadow colour  and size here*/
+      -moz-box-shadow: 0 1px 10px rgba(113, 158, 206,0.8);
+      filter: drop-shadow(0 1px 10px rgba(113, 158, 206,0.8));}
+     .price-tag:after, 
+     .price-tag:before {
+       bottom: 100%;
+       border: solid transparent;
+       content: " ";
+       height: 0;
+       width: 0;
+       position: absolute;
+       pointer-events: none;}
+     .price-tag:after {
+       border-color: rgba(255, 255, 255, 0);
+       border-bottom-color: #ffffff;
+       border-width: 9px;
+       left: 50%;
+       margin-left: -9px;}
+     .price-tag:before {
+       border-color: rgba(113, 158, 206, 0);
+       border-bottom-color: #719ECE;
+       border-width: 10px;
+       left: 50%;
+       margin-left: -10px;}
+
 .comments-modal {
     margin: 0 auto;
     padding: .9em;
@@ -497,7 +537,7 @@ section.about-info {
       font-size: 13px;
       color: #202020;}
     .card-dishPicture {
-      overflow: hidden;    
+      /*overflow: hidden;*/    
       position: relative;
       border: 4px solid #fff;    
       padding: 0;
@@ -568,8 +608,11 @@ section.about-info {
       border-radius: 100%;}
     .card-chefImage,h5{ display: inline-block;}
     .card-dishRatings {
-      padding: .3em;    
-	  background-color: #eee;}
+      padding: .3em;
+      position: relative;}
+    .card-dishRatings > .ratings:last-child{
+      position: absolute;
+      right: 5px;}
     .card-dishRatings > .ratings{
       padding: .5em;    
       display: inline-block;}
@@ -707,10 +750,10 @@ section.about-info {
   margin-left: 0;
   margin-right: 0;
   list-style-type: none;
-  background: #fff;
+  background: #fafafa;
   border:#fff;  }
   .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-        background-color: #fff;
+        background-color: #fafafa;
         color: #ea5c22;
         transition: all .3s ease;
         border-bottom: 2px solid #ea5c22;}
@@ -798,9 +841,9 @@ section.about-info {
 
 .general-userTabs {
 	width: 100%;
-background: #fff;}
+    background: #fff;}
     .general-tabsholder {
-	   width: 40%;
+	   width: 21%;
        margin: 0 auto;    
 }
     .general-userTabs > ul {
@@ -837,14 +880,12 @@ background: #fff;}
    margin-right: auto;}
  
 
-.reveal {
-    
+/*.reveal {
 	height: 30em;
     width: 63%;
     overflow: hidden;
-    /*border: 3px solid #fff;*/
     border-radius: 5px;    
-    background-color: rgba(10, 10, 10, 0.1);}
+    background-color: rgba(10, 10, 10, 0.1);}*/
     .reveal.full{    
       overflow-y: scroll;}
     .reveal.full.order-popup {

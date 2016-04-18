@@ -153,8 +153,9 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div>  
-        <div class="reveal" id="inviteModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="reveal tiny" id="inviteModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
             <input type="email" placeholder="Enter email">
+            <a href="#" class="button">Send invite</a>
          <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -178,7 +179,7 @@
           </div>
       </section>
       <div class="expanded">
-      <div class="add-item-links">
+      <div class="add-item-links kitchen-links">
         <ul>
             <li class="addDish">
                 <div class="modalIcon">
@@ -202,7 +203,7 @@
           <div class="row">
             <div class="large-12 small-12 medium-12 columns">
               <div id="kitchen_menu_list" class="small-12 medium-12 large-6 large-centered   columns">
-                  <nav class="k-inner__nav secondary_nav">
+                  <!--<nav class="k-inner__nav secondary_nav">-->
                     <ul class="tabs" data-tabs id="example-tabs">
                         <li class="tabs-title is-active"><a href="#dishes" aria-selected="true" class="k-Fmenuinner_item">
                             <span class="k-link">Dishes <span class="badge" id="messageCount">6</span></span><br>
@@ -224,7 +225,7 @@
                             <span class="k-link">Testimonials<span class="badge" id="messageCount">19</span></span><br>
                             </a></li>
                       </ul>
-                  </nav>
+                  <!--</nav>-->
             </div><!--menu-list end-->
           </div>    
         </div><!--row end-->
@@ -262,11 +263,18 @@
                     </div>-->    
                     <div class="kitchen-data">
                         <span class="icon"><i class="fa fa-cutlery fa-lg"></i></span>
-                        <span class="icon-text testimonials">Services</span>
+                        <span class="icon-text testimonials"><strong>Services</strong></span>
                     </div>
                     <div class="kitchen-data">
-                        <span class="icon"><i class="fa fa-truck fa-lg"></i></span>
-                        <span class="icon-text testimonials">Delivery Areas</span>
+                        <span class="icon"><i class="fa fa-truck fa-lg"></i></span><span><strong>Delivery areas</strong></span>
+                        <ul class="flex-container">
+                            <li class="flex-item tag">Kileleshwa</li>
+                            <li class="flex-item tag">Valley Arcade</li>
+                            <li class="flex-item tag">Kileleshwa</li>
+                            <li class="flex-item tag">Kileleshwa</li>
+                            <li class="flex-item tag">Kileleshwa</li>
+                            <li class="flex-item tag">Kilimani</li>
+                        </ul>    
                     </div>
                     <div class="kitchen-data"><!--website-->
                         <span class="icon"><i class="fa fa-link fa-lg"></i></span>
@@ -294,10 +302,11 @@
                                                 <div class="card-dishPicture">
                                                     <figure>
                                                         <img src="img/recipe.jpg" alt="Dish">
-                                                        <figcaption>
-                                                            <p><strong>Ksh 200</strong></p>
-                                                        </figcaption>
+                                                        
                                                     </figure>
+                                                    <div class="price-tag">
+                                                            <p><strong>Ksh 200</strong></p>
+                                                        </div>
                                                 </div>
                                                 <div class="card-dishContent card-contentPadding">
                                                     <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>

@@ -1,4 +1,5 @@
 body{
+    width: 100%;
     background: #eee;
 }
 .gender {
@@ -23,6 +24,13 @@ body{
     .settings-navListItem {    
        border-bottom: 1px solid #eee;}
 
+.photo > li:last-child{
+    position: relative;
+    left: 15%;
+}
+    .profile-image,.kitchen-profile-image {
+	position: relative;
+}
 .settings-formHolder {
     background-color: #fff;
     padding: .9em;
@@ -41,11 +49,13 @@ body{
 
 .settings-actionBtns >.button {
     display: inline-block;
-	width: 30%;}
+	width: 100%;}
     .cancel-settings{
       color: #757575;
       border: 1px solid #9e9e9e;    
       background-color: #e0e0e0;}
+    .settings-cancelBtn ,.settings-saveBtn {
+      display: inline-block;} 
     .cancel-settings:hover{
       color: #212121;
       background-color: #bdbdbd; }

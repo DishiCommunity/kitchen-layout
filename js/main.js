@@ -21,16 +21,16 @@ $(function () {
     });
     $('#close-dishForm').find('.form-closeIcon').click(function () {
         $('#close-dishForm').hide();
-        $('.page-overlay').css("display","none");
+        $('.page-overlay').css({"display":"none", "z-index":"-15000"});
     });
     $('#close-recipeForm').find('.form-closeIcon').click(function () {
         $('#close-recipeForm').hide();
-        $('.page-overlay').css("display","none");
+        $('.page-overlay').css({"display":"none", "z-index":"-15000"});
 
     });
     $('#close-postForm').find('.form-closeIcon').click(function () {
         $('#close-postForm').hide();
-        $('.page-overlay').css("display","none");
+        $('.page-overlay').css({"display":"none", "z-index":"-15000"});
 
     });
 });
