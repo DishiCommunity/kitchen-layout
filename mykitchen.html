@@ -51,13 +51,16 @@
               </div>
           </div>
       </header>
-      <!--modal content-->
+
+<!-- ========================================================= -->
+      <!--MODAL CONTENT-->
+
       <!--Add item modal-->
-          <div class="large-5 large-centered columns">
-          <div class="form-addItem-holder">
-          <div class="add form-addDish" id="close-dishForm">
-              <h4>Add Dish</h4>
-            <form class="form-h dish-form">
+
+      <!------------------------------------------------>
+      <!-- add dish -->
+      <div class="tiny reveal" id="addDish" data-reveal>
+          <form class="form-h dish-form">
                 <div class="form-closeIcon">
                         <i class="fa fa-times fa-1x"></i>
                    </div>
@@ -79,12 +82,19 @@
                    <div class="medium-6 columns">
                     <button class="button" type="submit">Add to menu</button>
                    </div>
+
+
                 </div>
-              </form>
-            </div>  
-          <div class="add form-addRecipe" id="close-recipeForm">
-              <h4>Add Recipe</h4>
-            <form class="form-h recipe-form">
+            </form>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+      </div>
+
+      <!------------------------------------------------>
+      <!-- add recipe -->
+      <div class="tiny reveal" id="addRecipe" data-reveal>
+          <form class="form-h recipe-form">
                 <div class="form-closeIcon">
                         <i class="fa fa-times fa-1x"></i>
                    </div>
@@ -103,10 +113,16 @@
                       </div>
                   </div>
               </form>
-          </div>
-          <div class="add form-addPost" id="close-postForm">
-              <h4>New post</h4>
-            <form class="form-h post-form">
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+      </div>
+
+      <!------------------------------------------------>
+      <!-- add post -->
+      <div class="tiny reveal" id="addPost" data-reveal>
+          <form class="form-h post-form">
                 <div class="form-closeIcon">
                         <i class="fa fa-times fa-1x"></i>
                    </div>
@@ -123,44 +139,164 @@
                       </div>
                   </div>
               </form>
-          </div>
-    </div><!--form holder end-->
-    </div>         
-       <div class="reveal" id="addItemModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-  <!--modal content goes here-->
-           <div class="row">
-           <div class="add-item-links">
-            <ul>
-                <li class="addDish">
-                    <div class="modalIcon">
-                        <a href="#"><img src="img/icons/dishicon.png" width="80"/><br><p>Add a Dish</p></a>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+      </div>
+
+      <!------------------------------------------------>
+      <!-- Order -->
+      <div class="tiny reveal" id="orderModal" data-reveal>
+          <div class="card-dishOrder card-contentPadding">
+                <h5 class="card-contentHeading">{{Dish Title}}</h5>
+                <h6>Order Now</h6>
+                <i class="fa fa-phone"></i>: <a href="tel:0725882457">0725882457</a>
+                <p>Plates remaining : 20/25</p>
+             </div>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+      </div>
+
+      <!------------------------------------------------>
+      <!-- Dish Comment -->
+      <div class="reveal full" id="dishCommentModal" data-reveal>
+          <div class="row reveal__custom">
+                <div class="card-kitchenName">
+                    <div class="card-kitchenImage"></div>
+                    <span class="card-kitchenImageDetails">
+                                <a href="#" class="card-kitchen-link"><h6 class="details"><strong>Amanda's Kitchen</strong></h6></a>
+                                <p class="details">Food made with love</p></span>
+                 </div>
+             <div class="card-dishPicture card-modalOrderPicture">
+                <figure>
+                    <img class="cover" src="img/recipe4.jpg"/>
+                </figure>
+            </div>
+             <div class="card-dishOrder card-contentPadding">
+                <h5 class="card-contentHeading">{{Dish Title}}</h5>
+                <h6>Order Now</h6>
+                <i class="fa fa-phone"></i>: <a href="tel:0725882457">0725882457</a>
+                <p>Plates remaining : 20/25</p>
+             </div>
+             <div class="card-chefDetails">
+                 <div class="card-chefImage"></div>
+                 <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
+             </div>
+
+             <div class="comments-box">
+
+               <div class="comments-ratings card-dishRatings">
+                   <div class="ratings card-likes">
+                       <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
+                   </div>
+                   <div class="ratings card-orders">
+                       <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
+                   </div>
+               </div>
+                 <div class="comment-textarea">
+               <form class="comments-textarea">
+                   <textarea class="comment-input"id="comment" placeholder="add comment"></textarea>
+               </form>
+               </div>
+              </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+      </div>
+
+
+      <!------------------------------------------------>
+      <!-- Recipe Comment -->
+      <div class="small reveal" id="recipeCommentModal" data-reveal>
+          <div class="row comments-modal">
+            <div class="comments-contentHolder">
+                <header class="comments-header">
+                    <h6><strong>Classic macoroni salad</strong></h6>
+                    <div class="comments-header-left">
+                        <div class="card-kitchenImage">
+                    </div><span>By Chef Amanda</span></div>
+                    <div class="comments-header-right">
+                        <div class="card-kitchenImage"></div>
                     </div>
-                </li>
-                <li class="addRecipe">
-                    <div class="modalIcon">
-                        <a href="#"><i class="fa fa-cutlery fa-4x"></i><br><p>Add a Recipe</p></a>
-                     </div>
-                </li>
-                <li class="addPost">
-                    <div class="modalIcon">
-                        <a href="#"><i class="fa fa-paper-plane-o fa-4x"></i><br><p>Add a post</p></a>
+                </header>
+                <section class="comments-body">
+                    <div class="comments-body--image">
+                        <div class="comments-image">
+                            <img src="img/recipe4.jpg"/>
+                        </div>
                     </div>
-                </li>
-            </ul>
-          </div>
-          <!--Forms content -->         
-    </div>           
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>  
-        <div class="reveal tiny" id="inviteModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                    <div class="comments-body--ingredients">
+                        <h5>Ingredients</h5>
+                        <ul class="comments-ingredientContainer">
+                            <li class="comments-ingredientItem"><div class="tag">{{Onions}}</div></li>
+                            <li class="comments-ingredientItem"><div class="tag">{{Onions}}</div></li>
+                            <li class="comments-ingredientItem"><div class="tag">{{Onions}}</div></li>
+                            <li class="comments-ingredientItem"><div class="tag">{{Onions}}</div></li>
+                            <li class="comments-ingredientItem"><div class="tag">{{Onions}}</div></li>
+                        </ul>
+                    </div>
+                    <div class="comments-body--howToPrepare">
+                        <h5>How to prepare</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu </p>
+                        <div class="comments-byWhoDetails">
+                            <div class="card-chefImage"></div>
+                            <p>By Chef {{ chefusername}}</p>
+                        </div>
+                        <div class="comments-box">
+                            <div class="comment-textarea">
+                            <form class="comments-textarea">
+                                <textarea class="comment-input"id="comment" placeholder="add comment"></textarea>
+                            </form>
+                            </div>
+                            <div class="comments-ratings card-dishRatings">
+                                <div class="ratings card-likes">
+                                    <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
+                                </div>
+                                <div class="ratings card-orders">
+                                    <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-body--commentAreaDisplay"></div>
+                </section>
+
+                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+      </div>
+
+
+
+
+
+
+      <div class="reveal tiny" id="inviteModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
             <input type="email" placeholder="Enter email">
             <a href="#" class="button">Send invite</a>
          <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
-</div>   
+</div>
+      <!--Modals end -->
+<!-- ========================================================= -->
+
+      <!-- MAIN CONTENT --->
+
       <!------- Banner -------->
       <section class="general-banner kitchen-banner">
           <div class="general-banner-userProfileData g-largeHolder">
@@ -179,27 +315,34 @@
               </div>
           </div>
       </section>
+      <!-- banner end--->
+
+      <!-------------------------------------------------------->
+      <!-- add item links -->
       <div class="expanded bg">
       <div class="add-item-links kitchen-links">
         <ul>
             <li class="addDish">
                 <div class="modalIcon">
-                        <a href="#"><img src="img/icons/dishicon.png" width="40"/><br><p>Add a Dish</p></a>
-                    </div>
+                    <a data-toggle="addDish"><img src="img/icons/dishicon.png" width="40"/><br><p>Add a Dish</p></a>
+                </div>
             </li>
             <li class="addRecipe">
                 <div class="modalIcon">
-                        <a href="#"><i class="fa fa-cutlery fa-2x" ></i><br><p>Add a Recipe</p></a>
-                     </div>
+                    <a data-toggle="addRecipe"><i class="fa fa-cutlery fa-2x" ></i><br><p>Add a Recipe</p></a>
+                 </div>
             </li>
             <li class="addPost">
                 <div class="modalIcon">
-                        <a href="#"><i class="fa fa-paper-plane-o fa-2x"></i><br><p>Add a post</p></a>
-                    </div>
+                    <a data-toggle="addPost"><i class="fa fa-paper-plane-o fa-2x"></i><br><p>Add a post</p></a>
+                </div>
             </li>
         </ul>
       </div>
-      </div>      
+      </div>
+
+      <!-------------------------------------------------------->
+      <!--kitchen tabs -->
       <section id="kitchen__menu">
           <div class="row">
             <div class="large-12 small-12 medium-12 columns">
@@ -231,6 +374,10 @@
           </div>    
         </div><!--row end-->
       </section>
+
+
+      <!------------------------------------------------------------>
+      <!-- mobile responsive kitchen about -->
       <section id="mobile-about">
         <div class="row">
             <div class="small-12 columns">
@@ -248,10 +395,18 @@
             </div>
         </div>    
       </section>
-        <div class="row main">      
+
+
+    <!------------------------------------------------------------>
+    <!------- KITCHEN CONTENT ------>
+     <div class="row main">
       <section id="kitchen-contents">
         <div class="row">
+
+            <!--------------------------------->
+            <!-- kitchen about -->
             <div class="small-3 medium-4 large-3 columns styled-grid">
+
                 <div class="kitchen-about">
                     <!--<h5>Amanda's Kitchen</h5>
                     <h6>Bakery</h6>
@@ -290,7 +445,12 @@
                         <!--<span class="icon-text contacts">{{kitchen email}}</span>-->
                     </div>
                 </div>
-            </div>
+
+            </div> <!-- kitchen about end -->
+
+
+            <!--------------------------------->
+            <!-- kitchen content -->
             <div class="small-9 medium-8 large-9 columns">
                 <div class="expanded row" id="row">
                    <div class="large-12  columns">
@@ -301,7 +461,9 @@
                                     <!--<div class="large-12 columns">-->
                                      <ul id="grid" class="grid">
                                          <li class="grid-sizer"></li>
-                                        <li class="kitchen-card-item">
+
+                                         <!-- card 1 -->
+                                        <li class="grid-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -314,7 +476,7 @@
                                                     <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>
                                                     <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
                                                     <p class="plates-order">Plates remaining: 30/50</p>
-                                                    <a class="button plates-order" href="#">Order now</a>
+                                                    <a class="button plates-order" data-toggle="orderModal">Order now</a>
                                                      </div>
                                                 <hr>
                                                     <div class="card-chefDetails">
@@ -327,7 +489,7 @@
                                                         <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
                                                     </div>
                                                     <div class="ratings card-comments">
-                                                        <a href="#"><i class="fa fa-comment-o"></i><span class="comments-counter counter">300</span></a>
+                                                        <a data-toggle="dishCommentModal"><i class="fa fa-comment-o"></i><span class="comments-counter counter">300</span></a>
                                                     </div>
                                                     <div class="ratings card-orders">
                                                         <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">300</span></a>
@@ -335,11 +497,13 @@
                                                 </div>
                                             </div>
                                          </li>
-                                        <li class="kitchen-card-item">
+
+                                        <!-- card 2 -->
+                                        <li class="grid-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
-                                                        <img src="img/recipe3.jpg" alt="Dish">
+                                                        <img src="" alt="Dish">
                                                         <figcaption>
                                                             <p><strong>Ksh 200</strong></p>
                                                         </figcaption>
@@ -371,7 +535,9 @@
                                                 </div>
                                             </div>
                                          </li>
-                                         <li class="kitchen-card-item">
+
+                                         <!-- card 3 -->
+                                        <li class="grid-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -405,7 +571,9 @@
                                                 </div>
                                             </div>
                                          </li>
-                                         <li class="kitchen-card-item">
+
+                                         <!-- card 4 -->
+                                        <li class="grid-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -439,7 +607,9 @@
                                                 </div>
                                             </div>
                                          </li>
-                                         <li class="kitchen-card-item">
+
+                                       <!-- card 5 -->
+                                        <li class="grid-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -473,7 +643,9 @@
                                                 </div>
                                             </div>
                                          </li>
-                                         <li class="kitchen-card-item">
+
+                                         <!-- card 6 -->
+                                        <li class="grid-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -507,7 +679,9 @@
                                                 </div>
                                             </div>
                                          </li>
-                                         <li>
+
+                                         <!-- card 7 -->
+                                        <li class="grid-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -541,7 +715,9 @@
                                                 </div>
                                             </div> 
                                          </li>
-                                         <li>
+
+                                         <!-- card 8 -->
+                                        <li class="grid-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -606,7 +782,7 @@
                                                  <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">121</span></a>
                                             </div>
                                             <div class="ratings card-comments">
-                                                <a href="#"><i class="fa fa-comment-o"></i><span class="comments-counter counter">78</span></a>
+                                                <a data-toggle="recipeCommentModal"><i class="fa fa-comment-o"></i><span class="comments-counter counter">78</span></a>
                                             </div>
                                             <div class="ratings card-orders">
                                                 <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">68</span></a>
@@ -741,17 +917,24 @@
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/main.js"></script>
+<!--    <script src="js/main.js"></script>-->
     <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
       <script>
         // external js: masonry.pkgd.js
 
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
+        $('.grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          percentPosition: true
+        });
+
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+          $grid.masonry('layout');
+        });
+
+
 
       </script>
   </body>
-</html>      
+</html>

@@ -470,7 +470,16 @@ section.about-info {
        left: 50%;
        margin-left: -10px;}
 
+
+#commentModal {
+    position: relative;
+}
+
+
+
+
 .comments-modal {
+
     margin: 0 auto;
     padding: .9em;
 	background-color: #eee;}
@@ -558,21 +567,29 @@ section.about-info {
       border: 4px solid #fff;    
       padding: 0;
          
-	  width: 100%;}
+	  width: 100%;
+}
+
+
+    .cover {
+/*        object-fit: cover;*/
+
+    }
     .card-dishPicture.card-modalOrderPicture{
-       
         padding: 0;
         margin: 0;
         text-align: center;
         min-height: 250px;
-        height: 350px;
+        height: auto;
         width: 100%;}
     .card-modalOrderPicture > figure{
-        width: 100%;
-        height: 100%;}
+        width: auto;
+        height: auto;}
     .card-modalOrderPicture > figure > img{
-        width: 100%;
-        height: 100%;}
+        width: auto;
+        height: auto;}
+
+
      .card-contentPadding{padding: .9em}
     .card-recipeDetails {
       padding: .9em;    
@@ -580,13 +597,14 @@ section.about-info {
       bottom: 0;
       color: #fff;}
     .card-dishPicture>figure {
-      background: rgba(10,10,10,.1);   
+/*      background: rgba(10,10,10,.1);   */
       position: relative;
       overflow: hidden;  
       padding: 0;
       margin: 0;    
       width: 100%;
-      height: 100%;}
+      height: 100%;
+      min-height: 150px;}
     .card-dishPicture > figure > img{}
     .card-dishPicture >figure figcaption p {
         text-align: right;
@@ -649,6 +667,9 @@ section.about-info {
       border-radius: 100%;    
 	  background: red;
       position: relative;}
+
+        /*Media Queries*/
+        /* Small only */
         @media screen and (max-width: 39.9375em) {
             .card-kitchen {
               width: 332px;}
@@ -658,6 +679,21 @@ section.about-info {
               font-size: 13.5px;    
             }
         }
+
+
+        /* Medium and up */
+        @media screen and (min-width: 40em) {}
+
+        /* Medium only */
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+        /* Large and up */
+        @media screen and (min-width: 64em) {}
+
+        /* Large only */
+        @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
     .c-s{/*card secondary*/
     margin:10px;
     width: 350px;}
@@ -695,7 +731,11 @@ section.about-info {
 }
 
 .grid-sizer,.grid-item{
-    width: 30.5%;}
+/*    width: 30.5%;*/
+    width: 480px !important;
+
+}
+
     .grid:after{
       content: '';
       display: block;
@@ -841,6 +881,7 @@ section.about-info {
                margin-left: 4em;}
             
         }
+        /*Large*/
         @media screen and (min-width: 64em) and (max-width: 74.9375em) {
             .k-inner__nav {
 	           height: auto;}
@@ -917,9 +958,23 @@ section.about-info {
   max-width: 95rem !important;
   margin-left: auto;
   margin-right: auto; }
+
+#orderModal {
+    position: relative !important;
+}
+
  .order-modal {
+
+    /*center horizontal*/
+    left: 50% !important;;
+    transform: translate(-50%, 0%) !important;;
+    position: absolute !important;;
+
+    /*---------------*/
+
    background: #eee;
    max-width: 40rem !important;
+   min-width: 500px;
    margin-left: auto;
    margin-right: auto;}
  
@@ -931,9 +986,39 @@ section.about-info {
     border-radius: 5px;    
     background-color: rgba(10, 10, 10, 0.1);}*/
     .reveal.full{    
-      overflow-y: scroll;}
+      overflow-y: scroll;
+      width: 100% !important;
+      background-color:rgba(239,239,239,0.96) !important;}
     .reveal.full.order-popup {
       overflow: hidden;}
+
+    .reveal__custom {
+        width: 750px;
+        background-color: #fff;
+    }
+
+
+    /* Small only */
+        @media screen and (max-width: 39.9375em) {
+            .reveal__custom {
+                width: 100%;
+
+            }
+        }
+
+
+        /* Medium and up */
+        @media screen and (min-width: 40em) {}
+
+        /* Medium only */
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+        /* Large and up */
+        @media screen and (min-width: 64em) {}
+
+        /* Large only */
+        @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
 /**************foundation overrides end****************/
 /*open a kitchen auth css*/
 .form-signIn > ul {
