@@ -39,6 +39,7 @@
                   </li>
                   <li><a href="discover.html">Discover</a></li>
                   <li><a href="index.html">Kitchens</a></li>
+                  <li><a href="mykitchen.html">My Kitchen</a></li>    
                 </ul>
               </div>
               <div class="top-bar-right">
@@ -268,7 +269,6 @@
                     </div>
                     <div class="kitchen-data">
                         <span class="icon"><i class="fa fa-truck fa-lg"></i></span><span><strong>Delivery areas</strong></span>
-                        <p class="info pad"><small><i class="fa fa-info-circle fa-lg"></i> {{Delivery past 60km may incur additional charges.}}</small> </p>
                         <ul class="flex-container pad">
                             <li class="flex-item tag">{{Kileleshwa}}</li>
                             <li class="flex-item tag">{{Valley Arcade}}</li>
@@ -276,7 +276,8 @@
                             <li class="flex-item tag">{{Westlands}}</li>
                             <li class="flex-item tag">{{Kileleshwa}}</li>
                             <li class="flex-item tag">{{Kilimani}}</li>
-                        </ul>    
+                        </ul>
+                        <p class="info pad"><small><i class="fa fa-info-circle fa-lg"></i> {{Delivery past 60km may incur additional charges.}}</small> </p>
                     </div>
                     <div class="kitchen-data"><!--website-->
                         <span class="icon"><i class="fa fa-link fa-lg"></i></span>
@@ -298,7 +299,8 @@
                                 <!--<div class="row">-->
                                     <!--<div id="kitchen_content" class="small-12 medium-12 large-12 columns">-->
                                     <!--<div class="large-12 columns">-->
-                                     <ul id="container" class="kitchen-card-list">
+                                     <ul id="grid" class="grid">
+                                         <li class="grid-sizer"></li>
                                         <li class="kitchen-card-item">
                                             <div class="card-kitchen">
                                                 <div class="card-dishPicture">
@@ -306,9 +308,7 @@
                                                         <img src="img/recipe.jpg" alt="Dish">
                                                         
                                                     </figure>
-                                                    <div class="price-tag">
-                                                            <p><strong>Ksh 200</strong></p>
-                                                        </div>
+                                                    
                                                 </div>
                                                 <div class="card-dishContent card-contentPadding">
                                                     <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>
@@ -320,7 +320,8 @@
                                                     <div class="card-chefDetails">
                                                         <div class="card-chefImage"></div>
                                                         <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
-                                                    </div>    
+                                                    </div>
+                                                <hr>
                                                 <div class="card-dishRatings">
                                                     <div class="ratings card-likes">
                                                         <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">300</span></a>
@@ -345,8 +346,6 @@
                                                     </figure>
                                                 </div>
                                                 <div class="card-dishContent card-contentPadding">
-                                                    <i><h5 class="card-contentHeading"><strong>Cheese Cake</strong></h5>
-                                                    <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
                                                     <i><h5 class="card-contentHeading"><strong>Cheese Cake</strong></h5>
                                                     <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
                                                     <p class="plates-order">Plates remaining: 30/50</p>
@@ -579,8 +578,9 @@
                                      </ul>
                             </div>
                         <div class="tabs-panel" id="recipes">
-                            <ul id="container" class="kitchen-card-list">
-                                <li class="kitchen-card-item">
+                            <ul id="grid" class="grid">
+                                <li class="grid-sizer"></li>
+                                <li>
                                     <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -614,10 +614,45 @@
                                         </div>
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="card-kitchen">
+                                                <div class="card-dishPicture">
+                                                    <figure>
+                                                        <img src="img/recipe.jpg" alt="Dish">
+                                                        <!--<figcaption>
+                                                            <p><strong>Ksh 200</strong></p>
+                                                        </figcaption>-->
+                                                    </figure>
+                                                  <div class="card-recipeDetails">
+                                                    <figcaption class="recipeDescription">
+                                                        <i><h5 class="card-contentHeading"><strong>Apple pie</strong></h5>
+                                                    <p>Mouth watering dish made wih a touch of honey,fresh apples and mint to give an exotic taste you will never forget</p></i>
+                                                    </figcaption>
+                                                </div>
+                                                </div>
+                                                <hr>
+                                                    <div class="card-chefDetails">
+                                                        <div class="card-chefImage"></div>
+                                                        <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
+                                                    </div>    
+                                        <div class="card-dishRatings">
+                                           <div class="ratings card-likes">
+                                                 <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">121</span></a>
+                                            </div>
+                                            <div class="ratings card-comments">
+                                                <a href="#"><i class="fa fa-comment-o"></i><span class="comments-counter counter">78</span></a>
+                                            </div>
+                                            <div class="ratings card-orders">
+                                                <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">68</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>s
                             </ul>
                         </div>
                         <div class="tabs-panel" id="conversations">
                           <ul id="container" class="kitchen-card-list">
+                              <li class="grid-sizer"></li>
                                 <li>
                                     <div class="card-kitchen">
                                         <div class="card-dishPicture">
@@ -653,7 +688,7 @@
                             </ul>
                         </div>
                         <div class="tabs-panel" id="followers">
-                          <ul id="container" class="kitchen-card-list watch-list">
+                          <ul id="container" class="kitchen-card-list watch-list">  
                             <li class="kitchen-card-item watch-list">
                                     <div class="watcher-pictureHolder">
                                         <div class="watcher-picture">
@@ -670,6 +705,7 @@
                         </div>
                         <div class="tabs-panel" id="testimonials">
                           <ul class="kitchen-card-list" id="container">
+                              <li class="grid-sizer"></li>
                                 <li class="kitchen-card-item">
                                 <div class="card-kitchen">
                                       <div class="card-kitchenName">
@@ -701,28 +737,21 @@
         </div>
       </section>
     </div>      
-    <script src="js/vendor/jquery.min.js"></script>
-<!--    <script type="text/javascript" src="js/Wookmark-jQuery-master/wookmark.js"></script>  -->
-    <!--<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>-->  
+    <script src="js/vendor/jquery.min.js"></script> 
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/main.js"></script>
-    <!--<script src="https://raw.githubusercontent.com/kombai/freewall/master/freewall.js"></script>
+    <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
       <script>
-      var wall = new Freewall("#container");
-          wall.reset({
-              selector: '.kitchen-card-item',
-              animate: true,
-              cellW: 200,
-              cellH: 'auto',
-              onResize: function(){
-                  wall.fitWidth();
-              }
-          });
-          wall.container.find('.kitchen-card-item .card-kitchen').load(function(){
-              wall.fitWidth();
-          });
-      </script>-->
+        // external js: masonry.pkgd.js
+
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+      </script>
   </body>
 </html>      

@@ -433,18 +433,20 @@ section.about-info {
     padding:  0 .2em;
     text-align: center;}
      .price-tag{
-       padding-top: .6em;      
+         color: #fff;
+       padding-top: .3em;      
        text-align: center;
-       bottom:-50px;
+       bottom:-15px;
        right: 3%;     
        position: absolute;
-       background: #ffffff;
+       background: #dd191d;
        border: 1px solid #9e9e9e; /*set border colour here*/
-       width: 110px;
-       height: 50px;
+       width: 80px;
+       height: 40px;
        border-radius: 3px;
-       -webkit-filter: drop-shadow(0 1px 10px rgba(113,158,206,0.8)); /*set shadow colour  and size here*/
-      -moz-box-shadow: 0 1px 10px rgba(113, 158, 206,0.8);
+          /*set shadow colour  and size here*/
+       /*-webkit-filter: drop-shadow(0 1px 10px rgba(113,158,206,0.8));
+      -moz-box-shadow: 0 1px 10px rgba(113, 158, 206,0.8);/**/
       filter: drop-shadow(0 1px 10px rgba(113, 158, 206,0.8));}
      .price-tag:after, 
      .price-tag:before {
@@ -587,9 +589,13 @@ section.about-info {
       height: 100%;}
     .card-dishPicture > figure > img{}
     .card-dishPicture >figure figcaption p {
+        text-align: right;
+        font-size: 22px;
 	  color: #fff;}
     .card-dishPicture>figure figcaption{
-      color: #fff;    
+        background: linear-gradient(rgba(10,10,10,.1),rgba(10,10,10,.4));
+      color: #ea5c22;  
+      width: 100%;    
       position: absolute;
       padding: 0 1em;    
       left: 5px;    
@@ -621,7 +627,7 @@ section.about-info {
       width: 50px;
       border-radius: 100%;}
     .card-chefImage,h5{ display: inline-block;}
-    .card-dishRatings {
+    .card-dishRatings {   
       padding: .3em;
       position: relative;}
     .card-dishRatings > .ratings:last-child{
@@ -658,6 +664,10 @@ section.about-info {
     .c-f{/* card follow*/
     width: 250px;    
 }
+    .kitchen-summary {
+	 position: absolute;
+     bottom: 0;
+     width: 100%;}
 
 
 .watcher-pictureHolder {
@@ -683,10 +693,30 @@ section.about-info {
 .discover-page {
     height: 1000px;
 }
-.grid-item{
-    margin: 0 auto;
-    width: 30.5%;
+
+.grid-sizer,.grid-item{
+    width: 30.5%;}
+    .grid:after{
+      content: '';
+      display: block;
+      clear: both;}
+    .grid-item {
+	float: left;}
+#grid {
+	max-width: 99em;
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
 }
+
+.grid li {
+	display: block;
+	float: left;
+	padding: 7px;
+	width: 33%;
+
+}
+
 .discover {
 	border-radius: 50px;
 }
@@ -929,6 +959,39 @@ section.about-info {
     .authentication-form {
       border: 5px solid #ea5c22;    
 	  background-color: #f4f4f4;}
+
+.round-button {
+	width:15%;
+}
+.round-button-circle {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #cfdcec;
+    overflow:hidden;
+    background: #4679BD; 
+    box-shadow: 0 0 3px gray;
+}
+.round-button-circle:hover {
+	background:#30588e;
+}
+.round-button a {
+    display:block;
+	float:left;
+	width:100%;
+	padding-top:60%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
 
 
 
