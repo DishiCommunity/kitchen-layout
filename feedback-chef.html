@@ -1,70 +1,36 @@
 <!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amanda's Kitchen</title>
-    <!--<link rel="stylesheet" href="css/foundation.css" />-->
-      <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+<html lang=en>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Dishi - Chef Registration</title>
 
-    <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="slider/vegas.min.css">
+    <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="foundation/css/foundation.min.css">
 
-    <!-- styles -->
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/custom_styles.css" />
-    <link rel="stylesheet" href="css/feedback_app.css" />
-  </head>
+<!--    <link rel="stylesheet" href="font/fonts.css">-->
+    <link rel="stylesheet" href="css/custom_styles.css">
+    <link rel="stylesheet" href="css/feedback_app.css">
+    <link rel="stylesheet" href="css/app.css">
 
 
-  <body>
-      <div class="row main">
+    <!-- Scripts -->
 
-      <!-------Top level navigation------->
-      <header class="header">
-          <!--mobile menu-->
-          <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle></button>
-                <div class="title-bar-title">Menu</div>
-              <div class="title-bar-right">
-                <a class="add-item" data-toggle="addItemModal"><i class="fa fa-pencil-square fa-lg"></i></a>
-                <a class="search-item"><i class="fa fa-search fa-lg"></i></a>
-              </div>
-          </div>
-        <!--   Visible menu        -->
-          <div class="top-bar" id="example-menu">
-              <div class="top-bar-left">
-                <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
-                  <li class="menu-text">
-                      DISHI
-                  </li>
-                  <li>
-                    <a href="#">Order</a>
-                  </li>
-                  <li><a href="testfile.html">Discover</a></li>
-                  <li><a href="#">Kitchens</a></li>
-                </ul>
-              </div>
-              <div class="top-bar-right">
-                <ul class="menu">
-                  <li><a class="search-item is-mobile" href="#"><i class="fa fa-search fa-lg"></i></a></li>
-                  <li><a class="add-item is-mobile" data-open="addItemModal"><i class="fa fa-pencil-square fa-lg"></i></a></li>
-                  <li class="btn"><a class="button inv" data-toggle="inviteModal">Invite</a></li>
-                </ul>
-              </div>
-          </div>
-      </header>
+</head>
+<!---------------------------------------------------------------------->
+<body>
 
-      <!--- THE FORM -->
-      <section class="feedback-form">
-          <div class="small-8 medium-8 large-7 medium-centered small-centered columns">
+    <!-- CHEF REGISTRATION FORM-->
+    <div class="row columns title">
+        <br>
+        <h3 class=""> ...be  a dishi chef... </h3>
+        <hr>
+    </div>
 
-
-      <div id="inside-forms" class="row center-h">
+<!--    <div id="outside-forms" class="row">-->
+    <div id="inside-forms" class="row center-h">
 
         <!-- STEP 1 -->
         <div class="row form-row">
@@ -199,14 +165,36 @@
 
     </div> <!-- inside-form end -->
     <br class="clear">
-            </div>      
-          </section>
-      
-      </div>  
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+
+<!--    </div>  outside-form end -->
+
+
+
+<!---------------------------------------------------------------------->
+    <!--- Scripts ----->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="foundation/js/foundation.min.js"></script>
+
+    <!--Vegas-->
+    <script src="slider/vegas.min.js"></script>
+
+    <script>
+    $("#photo").vegas({
+        overlay: true,
+        transition: 'fade',
+        transitionDuration: 4000,
+        delay: 10000,
+//        animation: 'random',
+//        animationDuration: 20000,
+        slides: [
+            { src: "/assets/byakuya.jpg" },
+        ],
+        overlay: '/slider/overlays/06.png'
+    });
+
+    </script>
+
+<!---------------------------------------------------------------------->
+
+</body>
 </html>
