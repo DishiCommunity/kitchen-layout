@@ -30,6 +30,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
+
     font-weight: bold;
 }
 
@@ -220,3 +221,29 @@ a {}
 /*Contact*/
 .C {color: #E87A4A !important;
     color:  #F0414C !important}
+
+/**-----------------------------------------------------**/
+/**-----------------------------------------------------**/
+/*-------FONTS-------*/
+/*Chardons*/
+@font-face {
+    font-family: Chardons;
+    src: url(../font/Chardons/Chardons.ttf);
+}
+
+
+/*DAX*/
+@font-face {
+    font-family: DaxBold;
+    src: url(../font/Dax/DaxBold.ttf);
+}
+
+@font-face {
+    font-family: DaxMedium;
+    src: url(../font/Dax/DaxMedium.ttf);
+}
+
+@font-face {
+    font-family: DaxRegular;
+    src: url(../font/Dax/DaxRegular.ttf);
+}

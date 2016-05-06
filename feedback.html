@@ -20,193 +20,277 @@
     <link rel="stylesheet" href="css/feedback_app.css" />
   </head>
 
+<!--______________________________________________________________________________
+------------------------------------------------------------------------------>
+<body>
+  <div class="row main">
 
-  <body>
-      <div class="row main">
-
-      <!-------Top level navigation------->
-      <header class="header">
-          <!--mobile menu-->
-          <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle></button>
-                <div class="title-bar-title">Menu</div>
-              <div class="title-bar-right">
-                <a class="add-item" data-toggle="addItemModal"><i class="fa fa-pencil-square fa-lg"></i></a>
-                <a class="search-item"><i class="fa fa-search fa-lg"></i></a>
-              </div>
+    <!-------Top level navigation------->
+    <header class="header">
+      <!--mobile menu-->
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">Menu</div>
+          <div class="title-bar-right">
+            <a class="add-item" data-toggle="addItemModal"><i class="fa fa-pencil-square fa-lg"></i></a>
+            <a class="search-item"><i class="fa fa-search fa-lg"></i></a>
           </div>
-        <!--   Visible menu        -->
-          <div class="top-bar" id="example-menu">
-              <div class="top-bar-left">
-                <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
-                  <li class="menu-text">
-                      DISHI
-                  </li>
-                  <li>
-                    <a href="#">Order</a>
-                  </li>
-                  <li><a href="testfile.html">Discover</a></li>
-                  <li><a href="#">Kitchens</a></li>
-                </ul>
-              </div>
-              <div class="top-bar-right">
-                <ul class="menu">
-                  <li><a class="search-item is-mobile" href="#"><i class="fa fa-search fa-lg"></i></a></li>
-                  <li><a class="add-item is-mobile" data-open="addItemModal"><i class="fa fa-pencil-square fa-lg"></i></a></li>
-                  <li class="btn"><a class="button inv" data-toggle="inviteModal">Invite</a></li>
-                </ul>
-              </div>
+      </div>
+    <!--   Visible menu        -->
+      <div class="top-bar" id="example-menu">
+          <div class="top-bar-left">
+            <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+              <li class="menu-text">
+                  DISHI
+              </li>
+              <li>
+                <a href="#">Order</a>
+              </li>
+              <li><a href="testfile.html">Discover</a></li>
+              <li><a href="#">Kitchens</a></li>
+            </ul>
           </div>
-      </header>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li><a class="search-item is-mobile" href="#"><i class="fa fa-search fa-lg"></i></a></li>
+              <li><a class="add-item is-mobile" data-open="addItemModal"><i class="fa fa-pencil-square fa-lg"></i></a></li>
+              <li class="btn"><a class="button inv" data-toggle="inviteModal">Invite</a></li>
+            </ul>
+          </div>
+      </div>
+  </header>
 
-      <!--- THE FORM -->
-      <section class="feedback-form">
-          <div class="small-8 medium-8 large-7 medium-centered small-centered columns">
+    <!--- THE FORM -->
+    <section class="feedback-form">
+        <div class="small-8 medium-8 large-7 medium-centered small-centered columns">
 
+          <div id="inside-forms" class="row center-h">
+            <div class="row form-row">
+            <form class="round-plain">
 
-      <div id="inside-forms" class="row center-h">
-
-        <!-- STEP 1 -->
-        <div class="row form-row">
-
-        <form class="round-plain">
-            <h5> Chef Details </h5>
-            <div class="row">
-
-                <!--name-->
-                <div class="small-12 columns">
-                  <label>Full Name
-                    <input type="text" placeholder="name" />
-                  </label>
-                </div>
-
-                <!--email-->
-                <div class="small-12 columns">
-                      <div class="row collapse">
-                        <label>Email</label>
-                        <div class="small-9 columns">
-                          <input type="text" placeholder="your@email" />
-                        </div>
-                        <div id="com" class="small-3 columns">
-                          <span class="postfix">.com</span>
-                        </div>
-                      </div>
-                </div>
-
-                <!-- Password -->
-                <div class="small-12 columns">
-                  <label>Password
-                    <input type="text" placeholder="password" />
-                  </label>
-                </div>
-
-
-                <!-- Confirm Password -->
-                <div class="small-12 columns">
-                  <label>Confirm Password
-                    <input type="text" placeholder="confirm password" />
-                  </label>
-                </div>
-
-            </div><!-- Chef Details end -->
-            <br>
-            <br>
-
-            <!-- STEP 2 -->
-            <h5> Your Kitchen </h5>
-            <div class="row">
-                <div class="small-12 columns">
-                    <label>What kind of kitchen do you need?</label>
-
-                    <!--start food business -->
-                    <div>
-                    <input type="radio" name="KitchenKind" value="StartBusiness" id="StartBusiness">
-                    <label for="StartBusiness">Start a Food Business</label>
-                    </div>
-
-
-                    <!--start food business -->
-                    <input type="radio" name="KitchenKind" value="ScaleBusiness" id="ScaleBusiness">
-                    <label for="ScaleBusiness">Scale an existing food business</label>
-                    <br>
-
-                    <!--start food business -->
-                    <input type="radio" name="KitchenKind" value="SpareTimeBusiness" id="SpareTimeBusiness">
-                    <label for="SpareTimeBusiness">Sell food in my spare time</label>
-                    <br>
-
-                    <!--start food business -->
-                    <input type="radio" name="KitchenKind" value="CookingClasses" id="CookingClasses">
-                    <label for="CookingClasses">Offer cooking classes</label>
-                    <br>
-                </div>
+                <!-- STEP 1 -->
+                <h5 class="feedback_headings"> What Doesn't Work? </h5>
+                <p> Please select all the problems that you came accross when setting up and using your kitchen</p>
                 <br>
+                <br>
+                <div class="row">
 
-                <!-- choose kitchen name -->
-                <div class="small-12 columns">
-                    <label>Name your kitchen
-                        <input type="text" placeholder="Enter kitchen name" />
-                    </label>
-                </div>
+                    <!-- BANNER AREA -->
+                    <div class="row kitchen_banner_area">
+                        <div class="small-12 columns">
+                            <div><h6>Banner Area</h6></div>
 
-                <!-- select kitchen type -->
-                <div class="large-12 columns">
-                  <label>Kitchen type
-                    <select>
-                      <option value="bakery">Bakery</option>
-                      <option value="cuisine">Cuisine</option>
-                      <option value="African">African</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </label>
-                </div>
+                            <fieldset class="fieldset">
+                                <legend>1. Which problems have you encountered? (tick all that apply)
+                                </legend>
 
-                <!--Submit Button -->
-                <div class="small-12 medium-3 medium-offset-9 columns">
-                    <a href="#" class="button submit orange-bg">Submit</a>
-                </div>
-            </div> <!-- Your Kitchen end -->
+                                <!--logo -->
+                                <input type="checkbox" name="" value="" id="banner_logo_problem">
+                                <label for="banner_logo_problem">Logo</label>
+                                <br>
 
-        </form> <!-- Form end -->
-        </div><!-- Form end -->
-        <br>
-        <br>
+                                <!-- edit kitchen details -->
+                                <input type="checkbox" name="" value="" id="banner_kitchen_details_problem">
+                                <label for="banner_kitchen_details_problem">Can't edit kitchen details</label>
+                                <br>
 
-        <!-- STEP 3 -->
-        <div id="step3" class="row form-row">
+                                <!-- Can't add dish -->
+                                <input type="checkbox" name="" value="" id="banner_add_dish_problem">
+                                <label for="banner_add_dish_problem">Can't add dish</label>
+                                <br>
+
+                                <!-- Can't add recipe -->
+                                <input type="checkbox" name="" value="" id="banner_add_recipe_problem">
+                                <label for="banner_add_recipe_problem">Can't add recipe</label>
+                                <br>
+
+                                <!-- Can't add post -->
+                                <input type="checkbox" name="" value="" id="banner_add_post_problem">
+                                <label for="banner_add_post_problem">Can't add post</label>
+                                <br>
+
+                                <!-- Other -->
+                                <input type="checkbox" name="" value="" id="banner_other">
+                                <label for="banner_other">Other</label>
+                                <br>
+                            </fieldset>
+                            <br>
+
+                            <!-- any other problems-->
+                            <fieldset class="fieldset">
+                                <legend>2. Any other...
+                                </legend>
+                                <textarea placeholder="...problems you've encountered on the banner area"></textarea>
+                            </fieldset>
+                        </div>
+                    </div> <!-- end banner area -->
 
 
-        <form class="round-plain">
-            <h5> Invite </h5>
-            <div class="row">
-                <!--Invite your friends-->
-                <div class="small-12 columns">
-                  <label>Create buzz around your kitchen by inviting people who want to see you grow...</label>
-                      <br>
-                      <div>
-                          <input type="text" placeholder="yourfriend@name" />
-                      </div>
+                    <!-- Kitchen Services Area -->
+                    <div class="row kitchen_services">
+                        <div class="small-12 columns">
+                            <div><h6>Kitchen Services</h6></div>
 
-                </div>
-                <div class="small-12 medium-3 medium-offset-9 columns">
-                    <a href="#" class="button invite orange-bg">Invite</a>
-                </div>
-            </div>
-        </form>
-        </div> <!-- step 2 end -->
-        <br>
-        <br>
+                            <fieldset class="fieldset">
+                                <legend>1.  Which areas have a problem?
+                                </legend>
 
-    </div> <!-- inside-form end -->
-    <br class="clear">
-            </div>      
-          </section>
+                                <!-- Can't edit the information -->
+                                <input type="checkbox" name="" value="" id="kitchen_services_edit_problem">
+                                <label for="kitchen_services_edit_problem">Can't edit the information </label>
+                                <br>
+
+                                <!-- Can't edit the information -->
+                                <input type="checkbox" name="" value="" id="kitchen_services_save_problem">
+                                <label for="kitchen_services_save_problem">Can't save the edited information </label>
+                                <br>
+
+                                <!-- Other -->
+                                <input type="checkbox" name="" value="" id="kitchen_services_other">
+                                <label for="kitchen_services_other">Other</label>
+                                <br>
+                            </fieldset>
+                            <br>
+
+                            <!-- any other problems-->
+                            <fieldset class="fieldset">
+                                <legend>2. Any other...
+                                </legend>
+                                <textarea placeholder="...problems you've encountered on the kitchen services area"></textarea>
+                            </fieldset>
+                        </div>
+                    </div> <!-- end kitchen services area -->
+
+
+                    <!-- rest of page -->
+                    <div class="row rest_of_kitchen">
+                        <div class="small-12 columns">
+                            <div><h6>The rest of the kitchen</h6></div>
+
+                            <fieldset class="fieldset">
+                                <legend>1. Which areas have a problem?
+                                </legend>
+
+                                <!-- Can't edit the information -->
+                                <input type="checkbox" name="" value="" id="kitchen_tabs_problem">
+                                <label for="kitchen_tabs_problem">Tabs not working/issue with the tabs </label>
+                                <br>
+
+                                <!-- Can't edit the information -->
+                                <input type="checkbox" name="" value="" id="kitchen_services_save_problem">
+                                <label for="StartBusiness">Can't save the edited information </label>
+                                <br>
+
+                                <!-- Other -->
+                                <input type="checkbox" name="" value="" id="ROK_other">
+                                <label for="ROK_other">Other</label>
+                                <br>
+                            </fieldset>
+                            <br>
+
+                            <!-- any other problems-->
+                            <fieldset class="fieldset">
+                                <legend>2. Any other...
+                                </legend>
+
+                                <textarea placeholder="...problems you've encountered on the rest of the website area"></textarea>
+                            </fieldset>
+                        </div>
+                    </div> <!-- end rest of kitchen area -->
+
+
+                    <!-- other general problems -->
+                    <div class="row other_general_problems">
+                        <div class="small-12 columns">
+                            <div><h6>Other general problems</h6></div>
+
+                            <!-- any other problems-->
+                            <fieldset class="fieldset">
+                                <legend>1. Look and Feel issues
+                                </legend>
+
+                                <!-- Look and feel -->
+                                <input type="checkbox" name="" value="" id="kitchen_alignment">
+                                <label for="kitchen_alignment">Alignment</label>
+                                <br>
+
+                                <!-- Look and feel -->
+                                <input type="checkbox" name="" value="" id="kitchen_colors">
+                                <label for="kitchen_colors">Colors</label>
+                                <br>
+
+                                <!-- Look and feel -->
+                                <input type="checkbox" name="" value="" id="kitchen_font">
+                                <label for="kitchen_font">Font</label>
+                                <br>
+
+                                <!-- Look and feel -->
+                                <input type="checkbox" name="" value="" id="kitchen_font">
+                                <label for="kitchen_tabs_problem">Font</label>
+                                <br>
+
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend>2. Functional issues
+                                </legend>
+
+                                <!-- Can't edit the information -->
+                                <input type="checkbox" name="" value="" id="kitchen_tabs_problem">
+                                <label for="kitchen_tabs_problem">Tabs not working/issue with the tabs </label>
+                                <br>
+
+                                <!-- Can't edit the information -->
+                                <input type="checkbox" name="" value="" id="kitchen_services_save_problem">
+                                <label for="StartBusiness">Can't save the edited information </label>
+                                <br>
+
+                                <!-- Other -->
+                                <input type="checkbox" name="" value="" id="ROK_other">
+                                <label for="ROK_other">Other</label>
+                                <br>
+                            </fieldset>
+                            <br>
+
+                            <!-- any other problems-->
+                            <fieldset class="fieldset">
+                                <legend>2. Expound/Explain any of your thoughts...
+                                </legend>
+
+                                <textarea placeholder="...in as much detail as you want"></textarea>
+                            </fieldset>
+                        </div>
+                    </div> <!-- end rest of kitchen area -->
+
+
+                    <!--Submit Button -->
+                    <div class="small-12 medium-3 medium-offset-9 columns">
+                        <a href="#" class="button submit">Submit</a>
+                    </div>
+                </div> <!-- Your Kitchen end -->
+
+            </form> <!-- Form end -->
+            </div><!-- -->
+            <br>
+            <br>
+
+          </div> <!-- inside-form end -->
+          <br class="clear">
+        </div>
+    </section>
       
-      </div>  
+  </div>  <!-- main end -->
+
+<!--______________________________________________________________________________
+------------------------------------------------------------------------------>
+    <!-- scripts -->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/main.js"></script>
+<!--______________________________________________________________________________
+------------------------------------------------------------------------------>
+
+
   </body>
 </html>
