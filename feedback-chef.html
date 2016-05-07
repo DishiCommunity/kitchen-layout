@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Dishi - Chef Registration</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="slider/vegas.min.css">
+    <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="foundation/css/foundation.min.css">
+
+<!--    <link rel="stylesheet" href="font/fonts.css">-->
+    <link rel="stylesheet" href="css/custom_styles.css">
+    <link rel="stylesheet" href="css/feedback_app.css">
+    <link rel="stylesheet" href="css/app.css">
+
+
+    <!-- Scripts -->
+
+</head>
+<!---------------------------------------------------------------------->
+<body>
+
+    <!-- CHEF REGISTRATION FORM-->
+    <div class="row columns title">
+        <br>
+        <h3 class=""> ...be  a dishi chef... </h3>
+        <hr>
+    </div>
+
+<!--    <div id="outside-forms" class="row">-->
+    <div id="inside-forms" class="row center-h">
+
+        <!-- STEP 1 -->
+        <div class="row form-row">
+
+        <form class="round-plain">
+            <h5> Chef Details </h5>
+            <div class="row">
+
+                <!--name-->
+                <div class="small-12 columns">
+                  <label>Full Name
+                    <input type="text" placeholder="name" />
+                  </label>
+                </div>
+
+                <!--email-->
+                <div class="small-12 columns">
+                      <div class="row collapse">
+                        <label>Email</label>
+                        <div class="small-9 columns">
+                          <input type="text" placeholder="your@email" />
+                        </div>
+                        <div id="com" class="small-3 columns">
+                          <span class="postfix">.com</span>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Password -->
+                <div class="small-12 columns">
+                  <label>Password
+                    <input type="text" placeholder="password" />
+                  </label>
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="small-12 columns">
+                  <label>Confirm Password
+                    <input type="text" placeholder="confirm password" />
+                  </label>
+                </div>
+
+            </div><!-- Chef Details end -->
+            <br>
+            <br>
+
+            <!-- STEP 2 -->
+            <h5> Your Kitchen </h5>
+            <div class="row">
+                <div class="small-12 columns">
+                    <label>What kind of kitchen do you need?</label>
+
+                    <!--start food business -->
+                    <div>
+                    <input type="radio" name="KitchenKind" value="StartBusiness" id="StartBusiness">
+                    <label for="StartBusiness">Start a Food Business</label>
+                    </div>
+
+
+                    <!--start food business -->
+                    <input type="radio" name="KitchenKind" value="ScaleBusiness" id="ScaleBusiness">
+                    <label for="ScaleBusiness">Scale an existing food business</label>
+                    <br>
+
+                    <!--start food business -->
+                    <input type="radio" name="KitchenKind" value="SpareTimeBusiness" id="SpareTimeBusiness">
+                    <label for="SpareTimeBusiness">Sell food in my spare time</label>
+                    <br>
+
+                    <!--start food business -->
+                    <input type="radio" name="KitchenKind" value="CookingClasses" id="CookingClasses">
+                    <label for="CookingClasses">Offer cooking classes</label>
+                    <br>
+                </div>
+                <br>
+
+                <!-- choose kitchen name -->
+                <div class="small-12 columns">
+                    <label>Name your kitchen
+                        <input type="text" placeholder="Enter kitchen name" />
+                    </label>
+                </div>
+
+                <!-- select kitchen type -->
+                <div class="large-12 columns">
+                  <label>Kitchen type
+                    <select>
+                      <option value="bakery">Bakery</option>
+                      <option value="cuisine">Cuisine</option>
+                      <option value="African">African</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                </div>
+
+                <!--Submit Button -->
+                <div class="small-12 medium-3 medium-offset-9 columns">
+                    <a href="#" class="button submit orange-bg">Submit</a>
+                </div>
+            </div> <!-- Your Kitchen end -->
+
+        </form> <!-- Form end -->
+        </div><!-- Form end -->
+        <br>
+        <br>
+
+        <!-- STEP 3 -->
+        <div id="step3" class="row form-row">
+
+
+        <form class="round-plain">
+            <h5> Invite </h5>
+            <div class="row">
+                <!--Invite your friends-->
+                <div class="small-12 columns">
+                  <label>Create buzz around your kitchen by inviting people who want to see you grow...</label>
+                      <br>
+                      <div>
+                          <input type="text" placeholder="yourfriend@name" />
+                      </div>
+
+                </div>
+                <div class="small-12 medium-3 medium-offset-9 columns">
+                    <a href="#" class="button invite orange-bg">Invite</a>
+                </div>
+            </div>
+        </form>
+        </div> <!-- step 2 end -->
+        <br>
+        <br>
+
+    </div> <!-- inside-form end -->
+    <br class="clear">
+
+<!--    </div>  outside-form end -->
+
+
+
+<!---------------------------------------------------------------------->
+    <!--- Scripts ----->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="foundation/js/foundation.min.js"></script>
+
+    <!--Vegas-->
+    <script src="slider/vegas.min.js"></script>
+
+    <script>
+    $("#photo").vegas({
+        overlay: true,
+        transition: 'fade',
+        transitionDuration: 4000,
+        delay: 10000,
+//        animation: 'random',
+//        animationDuration: 20000,
+        slides: [
+            { src: "/assets/byakuya.jpg" },
+        ],
+        overlay: '/slider/overlays/06.png'
+    });
+
+    </script>
+
+<!---------------------------------------------------------------------->
+
+</body>
+</html>

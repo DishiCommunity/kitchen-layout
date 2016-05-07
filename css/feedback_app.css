@@ -1,0 +1,90 @@
+.title {
+    text-align: center;
+}
+
+.title h3 {
+    font-family: DaxRegular;
+    font-weight: bold;
+}
+
+hr {
+    color: #E87A4A;
+}
+
+
+/*
+#outside-forms {
+    width: 100%;
+    overflow: auto;
+}
+*/
+
+#com {
+    height: 39px;
+    padding: 10px 0 0 3px;
+}
+.clear {
+    clear: both;
+}
+
+h5 {
+    font-family: Chardons !important;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #E87A4A;
+}
+
+h6 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #E87A4A;
+}
+
+
+.submit, .invite {
+    width: 80px;
+    margin-left: 45px;
+    font-size: 0.9rem;
+    color: #E87A4A;
+
+
+}
+
+.submit:hover {
+    color: #fff;
+    background: #E87A4A;
+
+}
+
+/*Banner area*/
+.kitchen_banner_area, .kitchen_services, .rest_of_kitchen, .other_general_problems {
+    padding: 10px;
+}
+
+.fieldset legend {
+    background: none !important;
+}
+
+/*=========================================================================== */
+        /*---------- Media Queries -------------*/
+/*=========================================================================== */
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    #inside-forms {
+        width: 600px;
+    }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    #inside-forms {
+        width: 90%;
+    }
+
+    .submit, .invite {
+        width: 80px;
+        float: right;
+        font-size: 1.rem;
+    }
+}
