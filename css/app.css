@@ -133,6 +133,14 @@ nav ul  li{
 	  height: 90px;
       width: 90px;
       border-radius: 100%;}
+    .g-edit-icon {
+	  position: absolute;
+      top: 0;
+      right: 0;
+      display: none;}
+.kitchen-about:hover + .g-edit-icon{
+    display: block;
+}
 /*
 *
 *Dishi about
@@ -252,6 +260,10 @@ section.about-info {
     margin: 15px 0;
     line-height: 40px;
     width: 100%;}
+    .kitchen-about{
+        position: relative;
+        padding: 10px;
+}
    .kitchen-data >i,.icon {
        position: relative;
        display: inline;
@@ -526,10 +538,29 @@ section.about-info {
         width:100%;}
     .comments-comments-ratings{float: left;}
     .comments-ratings{
-        background-color: #eee;
+        background-color: #fff;
         width:100%;} 
     .comment-input{
       height: 60px;}
+    /*comments holder section*/
+    .comments-holder {
+	 display: block;
+     width: 100%;
+     padding: 14px 20px;}
+    #comments {
+	  display: block;}
+    #comments .cmmnt .avatar{
+        position: absolute;
+        top: 0;
+        left: 0;}
+    #comments .cmmnt, ul .cmmnt{
+        display: block;
+        position: relative;
+        padding-left: 65px;}
+    #comments .cmmnt .comments-content{
+        padding: 0px 3px;
+        padding-bottom: 12px;
+        padding-top: 8px;}
 
 .card-kitchen {
     margin: 15px;
@@ -550,6 +581,12 @@ section.about-info {
       transition: all .3s ease;}
     .card-kitchen-link:hover {
 	  color: #1585cf;}
+    .card-kitchenlink {
+	  position: absolute;
+      top: 5px;
+      left: 5px;
+      z-index: 9999;     
+}
     .card-kitchenImage {
       margin: .3em;    
       width: 50px;    
@@ -564,8 +601,9 @@ section.about-info {
     .card-dishPicture {
       /*overflow: hidden;*/    
       position: relative;
-      border: 4px solid #fff;    
+      /*border: 4px solid #fff;*/    
       padding: 0;
+        
          
 	  width: 100%;
 }
@@ -667,7 +705,19 @@ section.about-info {
       border-radius: 100%;    
 	  background: red;
       position: relative;}
-
+     .figuer--shade {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;     
+	   background: rgba(10,10,10,.11);}
+    .follow-block {
+    position: absolute;
+    bottom: 0;
+    right: 10px;    
+	 width: 7em;
+}
         /*Media Queries*/
         /* Small only */
         @media screen and (max-width: 39.9375em) {
@@ -704,6 +754,14 @@ section.about-info {
 	 position: absolute;
      bottom: 0;
      width: 100%;}
+    .kitchens-details {
+	 width: 50%;
+}
+    .kitchens-details > div ~ p{
+        display: inline;
+}
+    .kitchen-summary > ul{margin: 0;padding: 0;}
+    foll.kitchen-summary > ul > li{margin: 0;padding: 0;}
 
 
 .watcher-pictureHolder {
@@ -818,7 +876,7 @@ section.about-info {
       background: #fff;
       color: #ea5c22; }
     .button-follow {
-	 width: 40%;
+	 width: 30em;
 }
 .order-detail >.order {
 	width: 10em;}
