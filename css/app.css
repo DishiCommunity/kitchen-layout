@@ -101,8 +101,7 @@ nav ul  li{
     .general-banner-userProfileData { 
      position: absolute;
      top: 20px;
-     display: block;
-     left: 38.5%;    
+     display: block;    
      width: 300px;
      font-size: 13px;    
      /*margin: 30px;*/
@@ -133,6 +132,21 @@ nav ul  li{
 	  height: 90px;
       width: 90px;
       border-radius: 100%;}
+    .g-edit-icon {
+	  position: absolute;
+      top: 0;
+      right: 0;
+      display: none;}
+.kitchen-about:hover + .g-edit-icon{
+    display: block;
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .general-banner-userProfileData{
+        width: 100%;
+    }
+}
+
 /*
 *
 *Dishi about
@@ -187,7 +201,7 @@ section.about-info {
 #kitchen__menu {
     background-color: #fafafa;
     position: relative;
-	height: 70.5px;
+	height: 71.5px;
     padding: 2px 1px 0 0;
     border-bottom: 1px solid #9e9e9e;}
     #kitchen__logo {
@@ -200,6 +214,10 @@ section.about-info {
         bottom: 0px;
         left: 50px;
         overflow: hidden;}
+#kitchen_menu_list{width: auto !important;
+    max-width: 750px;
+    min-width: 685px;
+}
          /* Small only */
         @media screen and (max-width: 39.9375em) {
             #kitchen__logo{
@@ -208,9 +226,14 @@ section.about-info {
                 bottom: 80px;
                 left:5px;}
             #kitchen_menu_list {
+                min-width: 330px;
 	           margin:0; 
+               padding: 0 0 0 5px;
+               
 }
+            
             #kitchen__menu {
+                height: 80px;
                 margin: 0;
                 padding: 0 !important;}
         }
@@ -222,7 +245,14 @@ section.about-info {
                  width: 100px;}
             .k-inner__nav {
             margin-left: 1em;}
+            #kitchen_menu_list{}
         }
+        /* Large and up */
+@media screen and (min-width: 64em) {
+        #kitchen_menu_list {
+	       width: 750px !important;
+}
+}
 
 /*---------------Side Nav------------------*/
   
@@ -252,6 +282,10 @@ section.about-info {
     margin: 15px 0;
     line-height: 40px;
     width: 100%;}
+    .kitchen-about{
+        position: relative;
+        padding: 10px;
+}
    .kitchen-data >i,.icon {
        position: relative;
        display: inline;
@@ -375,7 +409,7 @@ section.about-info {
 .bg{background: #fafafa;}
 .kitchen-links{
     margin: 0 auto;
-    width: 20%;
+    width: 300px;
     background: #fafafa;
     border: 1px solid #616161;
     border-radius: 35px;
@@ -526,10 +560,29 @@ section.about-info {
         width:100%;}
     .comments-comments-ratings{float: left;}
     .comments-ratings{
-        background-color: #eee;
+        background-color: #fff;
         width:100%;} 
     .comment-input{
       height: 60px;}
+    /*comments holder section*/
+    .comments-holder {
+	 display: block;
+     width: 100%;
+     padding: 14px 20px;}
+    #comments {
+	  display: block;}
+    #comments .cmmnt .avatar{
+        position: absolute;
+        top: 0;
+        left: 0;}
+    #comments .cmmnt, ul .cmmnt{
+        display: block;
+        position: relative;
+        padding-left: 65px;}
+    #comments .cmmnt .comments-content{
+        padding: 0px 3px;
+        padding-bottom: 12px;
+        padding-top: 8px;}
 
 .card-kitchen {
     margin: 15px;
@@ -549,7 +602,12 @@ section.about-info {
       color: #ea5c22;
       transition: all .3s ease;}
     .card-kitchen-link:hover {
-	  color: #1585cf;}
+	  color: #fff;}
+    .card-kitchenlink {
+	  position: absolute;
+      top: 5px;
+      left: 5px;
+      z-index: 9999;}
     .card-kitchenImage {
       margin: .3em;    
       width: 50px;    
@@ -564,8 +622,9 @@ section.about-info {
     .card-dishPicture {
       /*overflow: hidden;*/    
       position: relative;
-      border: 4px solid #fff;    
+      /*border: 4px solid #fff;*/    
       padding: 0;
+        
          
 	  width: 100%;
 }
@@ -667,12 +726,26 @@ section.about-info {
       border-radius: 100%;    
 	  background: red;
       position: relative;}
-
+     .figuer--shade {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;     
+	   background: rgba(10,10,10,.11);}
+    .follow-block {
+    position: absolute;
+    bottom: 0;
+    right: 10px;    
+	 width: 7em;
+}
         /*Media Queries*/
         /* Small only */
         @media screen and (max-width: 39.9375em) {
             .card-kitchen {
-              width: 332px;}
+              width: 100%;
+              margin: 3px 0 3px 0;}
+            
             .card-dishContent > .button{
                 height: 40px;
               width: 6.38em;    
@@ -704,6 +777,14 @@ section.about-info {
 	 position: absolute;
      bottom: 0;
      width: 100%;}
+    .kitchens-details {
+	 width: 50%;
+}
+    .kitchens-details > div ~ p{
+        display: inline;
+}
+    .kitchen-summary > ul{margin: 0;padding: 0;}
+    foll.kitchen-summary > ul > li{margin: 0;padding: 0;}
 
 
 .watcher-pictureHolder {
@@ -735,7 +816,16 @@ section.about-info {
     width: 480px !important;
 
 }
-
+/*Small*/
+@media screen and (max-width: 39.9375em){
+    .grid-sizer,.grid-item {
+	 width: 100% !important;
+     padding: 0 !important;    
+}
+    .grid {
+	padding: 0 !important;
+}
+}
     .grid:after{
       content: '';
       display: block;
@@ -818,7 +908,7 @@ section.about-info {
       background: #fff;
       color: #ea5c22; }
     .button-follow {
-	 width: 40%;
+	 width: 30em;
 }
 .order-detail >.order {
 	width: 10em;}
@@ -836,6 +926,7 @@ section.about-info {
   list-style-type: none;
   background: #fafafa;
   border:#fff;  }
+#mykitchen.tabs{width: auto !important;}
   .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
         background-color: #fafafa;
         color: #ea5c22;
@@ -864,10 +955,10 @@ section.about-info {
         @media screen and (min-width: 40em) and (max-width: 63.9375em) {
             .k-inner__nav {
             width: 100%;}
-            .tabs{               
+            /*.tabs{               
             max-width: 100%;    
             margin-left: -3em;    
-            }
+            }*/
             .tabs-title {
                height: auto;    
 	           width: auto;}
@@ -887,7 +978,7 @@ section.about-info {
 	           height: auto;}
             .tabs {
 	         width: 100%;
-             display: inline;
+             /*display: inline;*/
              font-size: 13px;    
 }
             .tabs-content {
@@ -906,7 +997,7 @@ section.about-info {
         font-size: 10px;    
         margin-left: 0;}
         .tabs-title {
-	       width: 7em;}
+	       width: 7.8em;}
          .tabs-title > a{
              position: relative;
            padding: 1rem .5rem;
@@ -914,9 +1005,12 @@ section.about-info {
            width: auto;}
         .tabs-content {
             font-size: 13.5px;
-            margin-left: -7.5em;
+            /*margin-left: -7.5em;*/
             margin-right: 0;}        
         }
+    tabs-panel{
+        padding: 0;
+    }
         /*Large only*/
         @media screen and (min-width: 64em) {
             .tabs {
@@ -934,6 +1028,9 @@ section.about-info {
     .general-userTabs > ul {
       max-width: 100%;    
       margin: 0 auto;}
+    .top-bar-right > .menu .dropdown {
+	display: inline;
+}
 
 .top-bar-right,.menu >.add-item,.search-item,.inv {
 	margin: 0 .5em;}
