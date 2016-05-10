@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css" />
     <script type="text/javascript" src="js/prefixfree.min.js"></script>  
   </head>
@@ -43,12 +43,45 @@
                   <li><a href="mykitchen.html">My Kitchen</a></li>    
                 </ul>
               </div>
+              <!--<div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                    <a href="#" class="user-linkNavItem">
+                        <ul>
+                            <li><div class="user-iconPicture"></div></li>
+                            <li>{{user.name}}</li>
+                        </ul></a>
+                    <ul class="menu vertical">
+                      <li><a href="userprofile.html">Profile</a></li>
+                      <li><a href="settings.html">Settings</a></li>
+                      <li><a href="#">Feedback</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>-->
               <div class="top-bar-right">
                 <ul class="menu">
                   <li><a class="search-item is-mobile" href="#"><i class="fa fa-search fa-lg"></i></a></li>
                   <li><a class="add-item is-mobile" data-open="addItemModal"><i class="fa fa-pencil-square fa-lg"></i></a></li>
                   <li class="btn"><a class="button inv" data-toggle="inviteModal">Invite</a></li>
+                    <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                    <a href="#" class="user-linkNavItem">
+                        <ul>
+                            <li><div class="user-iconPicture"></div></li>
+                            <!--<li>{{user.name}}</li>-->
+                        </ul></a>
+                    <ul class="menu vertical">
+                      <li><a href="userprofile.html">Profile</a></li>
+                      <li><a href="settings.html">Settings</a></li>
+                      <li><a href="#">Feedback</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </li>
                 </ul>
+                </ul>
+                  
               </div>
           </div>
       </header>
@@ -310,7 +343,7 @@
 
       <!------- Banner -------->
       <section class="general-banner kitchen-banner">
-          <div class="general-banner-userProfileData g-largeHolder">
+          <div class="general-banner-userProfileData g-largeHolder center-h">
               <!--inline edit reveal link-->
               <div class="g-edit-icon"><a href="#"><i class="fa fa-pencil fa-lg"></i></a></div>
             <div class="general-banner-userImage kitchen-profImage">
@@ -357,11 +390,11 @@
       <!-------------------------------------------------------->
       <!--kitchen tabs -->
       <section id="kitchen__menu">
-          <div class="row">
-            <div class="large-12 small-12 medium-12 columns">
-              <div id="kitchen_menu_list" class="small-12 medium-12 large-6 large-centered   columns">
+          <div class="row columns">
+            
+              <div id="kitchen_menu_list" class="center-h">
                   <!--<nav class="k-inner__nav secondary_nav">-->
-                    <ul class="tabs" data-tabs id="example-tabs">
+                    <ul class="tabs" data-tabs id="mykitchen-tabs">
                         <li class="tabs-title is-active"><a href="#dishes" aria-selected="true" class="k-Fmenuinner_item">
                             <span class="k-link">Dishes <span class="badge" id="messageCount">6</span></span><br>
                             
@@ -374,6 +407,18 @@
                             <span class="k-link">Conversations<span class="badge" id="messageCount">5</span></span><br>
                             <!--<span class="k-link-value">10</span>-->
                             </a></li>
+                            <!--drop down in small screens-->
+                              <!--  <ul class="dropdown menu" data-dropdown-menu>
+                                  <li>
+                                    <i class="fa fa-ellipsis-v"></i>
+                                    <ul class="menu vertical">
+                                      <li><a href="userprofile.html">Profile</a></li>
+                                      <li><a href="settings.html">Settings</a></li>
+                                      <li><a href="#">Feedback</a></li>
+                                      <li><a href="#">Logout</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>-->
                         <li class="tabs-title"><a href="#followers" class="k-inner_item">
                                 <span class="k-link">Watchers<span class="badge" id="messageCount">19</span></span><br>
                           <!--  <span class="k-link-value">14</span>-->
@@ -384,7 +429,7 @@
                       </ul>
                   <!--</nav>-->
             </div><!--menu-list end-->
-          </div>    
+             
         </div><!--row end-->
       </section>
 
@@ -456,7 +501,7 @@
 
             <!--------------------------------->
             <!-- kitchen content -->
-            <div class="small-9 medium-8 large-9 columns">
+            <div class="small-12 medium-8 large-9 columns">
                 <div class="expanded row" id="row">
                    <div class="large-12  columns">
                      <div class="tabs-content" data-tabs-content="example-tabs">
@@ -761,7 +806,7 @@
                         <div class="tabs-panel" id="recipes">
                             <ul id="grid" class="grid">
                                 <li class="grid-sizer"></li>
-                                <li>
+                                <li class="grid-item">
                                     <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -795,7 +840,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="grid-item">
                                     <div class="card-kitchen">
                                                 <div class="card-dishPicture">
                                                     <figure>
@@ -832,7 +877,7 @@
                             </ul>
                         </div>
                         <div class="tabs-panel" id="conversations">
-                          <ul id="container" class="kitchen-card-list">
+                          <ul id="grid" class="grid">
                               <li class="grid-sizer"></li>
                                 <li class="grid-item">
                                     <div class="card-kitchen">
@@ -884,7 +929,7 @@
                          </ul>
                         </div>
                         <div class="tabs-panel" id="testimonials">
-                          <ul class="kitchen-card-list" id="container">
+                          <ul class="grid" id="grid">
                               <li class="grid-sizer"></li>
                                 <li class="grid-item">
                                 <div class="card-kitchen">
