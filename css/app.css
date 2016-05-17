@@ -136,10 +136,8 @@ nav ul  li{
 	  position: absolute;
       top: 0;
       right: 0;
-      display: none;}
-.kitchen-about:hover + .g-edit-icon{
-    display: block;
-}
+      }
+
 /* Small only */
 @media screen and (max-width: 39.9375em) {
     .general-banner-userProfileData{
