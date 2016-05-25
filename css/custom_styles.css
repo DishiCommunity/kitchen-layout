@@ -247,3 +247,33 @@ a {}
     font-family: DaxRegular;
     src: url(../font/Dax/DaxRegular.ttf);
 }
+
+/*====================================================================*/
+
+/*Flex*/
+
+.Flex {
+    display: inline-flex;
+    position: relative;
+    width: auto;
+    align-items: center;
+}
+
+.Flex-Div {
+/*    width: auto;*/
+}
+
+Flex-v {
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    width: auto;
+    align-items: center;
+}
+
+/*Break wowd wrap*/
+.br-word {
+    height: auto;
+    word-wrap: break-word;
+    white-space: normal;
+}
