@@ -263,7 +263,7 @@ a {}
 /*    width: auto;*/
 }
 
-Flex-v {
+.Flex-v {
     display: flex;
     flex-direction:column;
     position: relative;
@@ -271,6 +271,10 @@ Flex-v {
     align-items: center;
 }
 
+.f-center {
+    display: flex;
+    justify-content: center;
+}
 /*Break wowd wrap*/
 .br-word {
     height: auto;
