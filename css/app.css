@@ -666,9 +666,10 @@ section.about-info {
     width: 0px !important;
     height: 0px !important;
 }
+
 #dishes ul#grid .grid-item{
     margin: 0 auto;
-    padding: 5px 5px 0px 0px;
+    padding: 10px 10px 0px 0px;
 
 
 }
@@ -678,7 +679,14 @@ section.about-info {
 
 }
    /*Large*/
-    @media screen and (max-width: 85.9375em) and (min-width: 64em) {
+    @media screen and (max-width: 85.9375em) and (min-width: 74em) {
+        .grid-item{
+            width: 45% !important;
+        }
+    }
+
+       /*Large*/
+    @media screen and (max-width: 73.9375em) and (min-width: 64em) {
         .grid-item{
             width: 50% !important;
         }
@@ -718,7 +726,7 @@ section.about-info {
 
 .card-kitchen {
     padding: 0;
-    width: 98%;
+    width: 100%;
     height:auto;
 
     border-radius: 5px;
@@ -1087,15 +1095,11 @@ section.about-info {
       width: 100%;
       height: auto;
       min-height: 150px;
-/*        max-height:300px;*/
-
-        display: flex;
-        justify-content: center;
-
-}
+    }
     .card-dishPicture > figure > img{
-        max-width: 150%;
-}
+        max-width: 100%;
+        height: auto;
+    }
 
     /* Medium only */
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
