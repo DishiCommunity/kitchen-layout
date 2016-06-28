@@ -49,6 +49,9 @@ a:hover,a:focus{
     margin: 0 auto;
 }
 hr{margin: 0;padding: 0;}
+
+.margin{margin: 10px;
+}
 /*--------------------Top level navigation --------------*/
 /*---Header--*/
 .header  {
@@ -1176,4 +1179,6 @@ section.about-info {
 }
 
 
-
+.tabs-panel{
+    margin-top:50px;
+}

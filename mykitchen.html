@@ -403,8 +403,8 @@
                             <span class="k-link">Recipes<span class="badge" id="messageCount">5</span></span><br>
                             <!--<span class="k-link-value">5</span>-->
                             </a></li>
-                        <li class="tabs-title"><a href="#conversations" class="k-inner_item">
-                            <span class="k-link">Conversations<span class="badge" id="messageCount">5</span></span><br>
+                        <li class="tabs-title"><a href="#Kitchen-Policies" class="k-inner_item">
+                            <span class="k-link">Kitchen Policies<span class="badge" id="messageCount">5</span></span><br>
                             <!--<span class="k-link-value">10</span>-->
                             </a></li>
                             <!--drop down in small screens-->
@@ -466,7 +466,14 @@
             <div class="small-3 medium-4 large-3 columns styled-grid">
 
                 <div class="kitchen-about">
-                    <div class="g-edit-icon"><a href="#"><i class="fa fa-pencil fa-lg"></i></a></div>    
+                    <div class="g-edit-icon"><a href="#"><i class="fa fa-pencil fa-lg"></i></a></div>
+                     <div class="kitchen-data">
+                        <span class="icon"><i class="fa fa-cutlery fa-lg"></i></span>
+                        <span class="icon-text testimonials"><strong>About</strong></span>
+                        <p class="info pad"><small>{{Amandas kitchen is the best bakery in town where every cake is baked with love and passion}} <strong>(word limit ??)</strong></small></p>
+                    </div>
+
+                    <hr class="margin">
                     <div class="kitchen-data">
                         <span class="icon"><i class="fa fa-cutlery fa-lg"></i></span>
                         <span class="icon-text testimonials"><strong>Services</strong></span>
@@ -876,42 +883,128 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tabs-panel" id="conversations">
-                          <ul id="grid" class="grid">
-                              <li class="grid-sizer"></li>
-                                <li class="grid-item">
-                                    <div class="card-kitchen">
-                                        <div class="card-dishPicture">
-                                            <figure>
-                                                    <img src="img/recipe.jpg" alt="Dish">
-                                                    <!--<figcaption> remake with absolte positioning
-                                                        <p><strong>Ksh 200</strong></p>
-                                                    </figcaption>-->
-                                            </figure>
-                                        </div>
-                                        <div class="card-conversatoinContent card-contentPadding">
-                                                <i><p>Hey guys, I was excited  to try out one of Amanda's  new cakes.I would recommend you to check it out :D</p></i>
-                                            <!--<a class="conversation-linktoorder">Follow link to order</a>-->
-                                        </div>
-                                            <hr>
-                                        <div class="card-chefDetails">
-                                            <div class="card-chefImage"></div>
-                                            <span class="card-chefLink"><a href="#"><h5>By: Chef Amanda</h5></a></span>
-                                        </div>    
-                                    <div class="card-dishRatings">
-                                        <div class="ratings card-likes">
-                                            <a href="#"><i class="fa fa-heart-o"></i><span class="likes-counter counter">70</span></a>
-                                        </div>
-                                        <div class="ratings card-comments">
-                                            <a href="#"><i class="fa fa-comment-o"></i><span class="comments-counter counter">46</span></a>
-                                        </div>
-                                         <!--<div class="ratings card-orders">
-                                              <a href="#"><i class="fa fa-bookmark-o"></i><span class="dishes-counter counter">50</span></a>
-                                        </div>-->
-                                    </div>
+ <!--------------------------------------------------------------------About Kitchen------------------------------------------------------->
+                        <div class="tabs-panel" id="Kitchen-Policies">
+                           <div class="row margin">
+                            <div class="large-2 columns">
+                            <h5>About</h5>
+                            </div>
+
+                               <div class="large-10 columns">
+                                           <i><p>This tab allows the kitchen owner to describe the kitchen</p></i>
+                            </div>
+                            </div>
+                              <!-- kitchen about -->
+                            <hr class="margin">
+
+                     <div class="row margin">
+                        <div class="large-2 columns">
+                            <h5>City</h5>
+                              </div>
+                        <div class="large-10 columns">
+                                           <i><p>Nairobi</p></i>
+                              </div>
+
                                 </div>
-                              </li>
-                            </ul>
+                            <!-- Kitchen City -->
+
+                            <hr class="margin">
+
+                     <div class="row margin">
+                        <div class="large-2 columns">
+                            <h5>Address</h5>
+                               </div>
+
+                               <div class="large-10 columns">
+                                           <i><p>Bishop Magua plaza</p></i>
+                                            <i><p>4th floor</p></i>
+                            </div>
+                            </div>
+                            <!-- Kitchen Address -->
+
+                            <hr class="margin"
+
+                                <div class="row margin">
+                        <div class="large-2 columns">
+                            <h5>Working hours</h5>
+                               </div>
+                            <div class="large-10 columns">
+                                           <i><p>8:00 a.m - 9:00 pm</p></i>
+                            </div>
+<!--                            </div>-->
+                         <!-- Working hours -->
+
+                            <hr class="margin">
+
+<!--                         <div class="tabs-panel" id="Kitchen-Policies">-->
+
+                    <div class="row margin">
+                        <div class="large-2 columns">
+                            <h5>Services</h5>
+                               </div>
+                                       <div class="large-10 columns">
+                                           <i><p>{{Kitchen services}}</p></i>
+                            </div>
+                            </div>
+
+                            <hr class="margin">
+<!--                <div class="kitchen-about">-->
+<!--
+                    <div clas="large-2 columns">
+                        <span class="icon-text testimonials"><strong>Services</strong></span>
+                        </div>
+-->
+
+<!--
+                    <div clas="large-10 columns">
+                        <p class="info pad"><small>{{Kitchen services}}</small></p>
+                    </div>
+-->
+<!--                    </div>-->
+<!--                    <div class="kitchen-data">-->
+                        <div class="row margin">
+                            <div class="large-2 columns">
+                                <h5>Delivery areas</h5>
+                                </div>
+                             <div class="large-10 columns">
+                        <ul class="flex-container pad">
+                            <li class="flex-item tag">{{Kileleshwa}}</li>
+                            <li class="flex-item tag">{{Valley Arcade}}</li>
+                            <li class="flex-item tag">{{Kileleshwa}}</li>
+                            <li class="flex-item tag">{{Westlands}}</li>
+                            <li class="flex-item tag">{{Kileleshwa}}</li>
+                            <li class="flex-item tag">{{Kilimani}}</li>
+                        </ul>
+                            </div>
+<!--                        <p class="info pad"><small><i class="fa fa-info-circle fa-lg"></i> {{Delivery past 60km may incur additional charges.}}</small> </p>-->
+                    </div>
+                        <!-- Delivery Areas -->
+
+                        <hr class="margin">
+                         <br>
+<!--                        </div>-->
+<!--                    <div class="kitchen-data">-->
+                        <span class="icon"><i class="fa fa-link fa-lg"></i></span>
+                        <a href="#"><span class="icon-text testimonials">website</span></a>
+<!--                    </div>-->
+
+                    <hr class="margin">
+                            <br>
+                    <div class="contact-btn">
+                        <span class="icon"><i class="fa fa-phone fa-lg"></i></span>
+                        <span class="icon-text contacts"><i>0722 421 999</i>,<i>0734 982 115</i></span>
+                        <!--<span class="icon-text contacts">{{kitchen email}}</span>-->
+                        <hr class="margin">
+                    </div>
+                </div>
+                <!-- Kitchen contacts -->
+
+<!----------------------------------------------------- kitchen about end---------------------------------------------------------------->
+
+
+
+                                        </div>
+
                         </div>
                         <div class="tabs-panel" id="followers">
                           <ul id="container" class="kitchen-card-list watch-list">
